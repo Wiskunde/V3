@@ -1,4 +1,4 @@
-\documentclass[11pt]{article}
+\documentclass[12pt]{article}
 
 \textwidth 16cm \textheight 23cm \evensidemargin 0cm
 \oddsidemargin 0cm \topmargin -2cm
@@ -9,18 +9,66 @@
 \usepackage[dutch]{babel}
 \usepackage{amssymb}
 \usepackage{amsmath}
-\usepackage[utf8]{inputenc}
+\usepackage[utf8,latin1]{inputenc}
 \usepackage[normalem]{ulem} % strikethrough normal text with \sout{text}
 \usepackage{cancel} % strikethrough in math mode with \cancel{text}
-\usepackage{gensymb}
+%\usepackage{gensymb}
 
 \usepackage{subfig}
 \usepackage{graphicx}
-
+\usepackage{graphics}
+\usepackage{latexsym}
+%\usepackage[latin1]{inputenc} %letters met accenten mogen in broncode gebruikt worden
+\usepackage{amssymb,amsmath,amsthm} %allerlei wiskundige symbolen => http://www.ams.org/tex/amslatex.html voor read-me's
+%\usepackage[small,bf,hang]{caption}
 \usepackage[table]{xcolor}
-
 \usepackage{pgf,tikz}
 \usetikzlibrary{arrows}
+
+\usepackage[pdftex]{hyperref} 
+\hypersetup{setpagesize=false}
+%\hypersetup{bookmarksopen}
+\hypersetup{bookmarksnumbered} %voor de bookmarks in pdf de nrs zetten ook
+\hypersetup{pdfborder=0.1pt} %de rand rond de links smaller maken
+\hypersetup{linktocpage=true} %titels of pgnrs omkaderen in toc
+\hypersetup{colorlinks=true} %kaders rond links of tekst in kleur, kaders gaan weg bij afprinten, kleur blijft
+
+
+\numberwithin{equation}{section} %om de equations labels te geven die met section meegaan, dus niet gwn (1) (2) ... maar (1.1) (1.2) ...
+
+%iets voor modulonotatie
+\makeatletter
+\def\imod#1{\allowbreak\mkern10mu({\operator@font mod}\,\,#1)}
+\makeatother
+
+%Getallenverzamelingen
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\mO}{\mathcal{O}}
+%<= en >= mooier maken
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+%speciale wiskunde letters: \mathcal{} of \mathfrak{}
+
+%Nieuwe omgevingen voor definities en stellingen
+\theoremstyle{plain}  \newtheorem{stel}{Stelling}[section]
+\theoremstyle{plain}  \newtheorem{lemma}[stel]{Lemma}
+\theoremstyle{plain}  \newtheorem{gevolg}[stel]{Gevolg}
+\theoremstyle{definition}  \newtheorem{defi}[stel]{Definitie}
+\theoremstyle{definition} \newtheorem{vb}[stel]{Voorbeeld}
+\theoremstyle{definition} \newtheorem{vbn}[stel]{Voorbeelden}
+\theoremstyle{definition}  \newtheorem{opm}[stel]{Opmerking}
+\theoremstyle{plain}  \newtheorem{opdracht}{Opdracht}
+
+\hyphenation{e-ner-zijds}
+\hyphenation{ka-nons-ko-gel}
+\hyphenation{schrij-ven}
+\hyphenation{ka-nons-ko-gels}
+
 
 \usepackage{color}
 \newcommand{\todo}[1]{\textcolor{red}{\##1\#}}
@@ -30,9 +78,79 @@
 
 \begin{document}
 
-\section{Vullen van Vlakken en Volumes ({\sc $V^3$})}
+\thispagestyle{empty}
 
-\input{les_perfectevierkanten.tex}
+\begin{center}
+ \begin{minipage}{7cm}
+\begin{center}
+%\aula 
+%B
+
+
+\includegraphics[width=5cm]{ruglogo.pdf}
+
+
+ {\large
+Universiteit Gent \\
+Faculteit  Wetenschappen \\
+Vakgroep  Wiskunde
+} \end{center}\end{minipage}
+
+\vspace{3cm}
+
+ {\Huge\bf 
+  Vullen van Vlakken en Volumes}
+
+\baselineskip=12pt
+\vspace{1.5cm}
+
+{\large\bf  Lien Lambert }\\
+\vspace{0.5cm}
+{\large \bf Pieter Pareit }\\
+\vspace{0.5cm}
+{\large \bf Jordy Vanpoucke}\\
+
+\baselineskip=12pt
+
+\vspace{2cm}
+
+ 
+\bigskip
+
+{\large Academiejaar 2011-2012}
+
+%\vspace{5cm}
+%\baselineskip=1.2cm
+
+
+
+\end{center}
+
+\vfill
+
+\hspace*{\fill}
+\begin{minipage}{8cm}
+\noindent   Project Vakdidactiek Wiskunde II
+ \end{minipage}
+
+
+\bigskip
+
+\hspace*{\fill}
+\begin{minipage}{8cm}
+\noindent  Prof. Dr.  F. De Clerck\\
+Praktijkassistent G. Maes
+ \end{minipage}
+
+\newpage
+\tableofcontents 
+\newpage
+
+
+%\section{Vullen van Vlakken en Volumes ({\sc $V^3$})}
+
+
+\input{les_perfectevierkanten}
 
 \end{document}
 

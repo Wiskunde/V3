@@ -11,5 +11,63 @@ Nemen we een vierkant met zijde $10$, dan kan dit vierkant gevuld worden met $10
   \subfloat[in vierkantjes met zijde $2$]{\label{fig:vierkant10_2x2}\input{figuren/vierkant10_2x2.tex}}
   \subfloat[in vierkantjes met zijde $3$]{\label{fig:vierkant10_3x3}\input{figuren/vierkant10_3x3.tex}}
   \caption{Verdelen van een vierkant met zijde $10$.}
-%  \label{fig:vierkant10_1x1}
+  \label{fig:vierkant10}
 \end{figure}
+
+We kunnen het vierkant met zijde $10$ vullen met $9$ vierkanten van zijde $3$. Er blijven $19$ kleinere vierkantjes van zijde $1$ over. We kunnen dit ook als volgt zien: als we de zijde van grootte $10$ delen door de grootte van de kleinere zijde $3$, dan is de rest $1$ en het quotiënt $3$. We hebben dus
+$$
+10 = 3\cdot 3 + 1.
+$$
+Het gaat uiteraard over vierkanten. Dus om met de oppervlakten te werken moeten we links en rechts kwadrateren, we krijgen dus
+\begin{align*}
+  10^2  &= (3\cdot 3 + 1)^2\\
+  \Leftrightarrow 100   &= (3\cdot 3)^2 + 2\cdot 3\cdot 3\cdot 1 + 1^2\\
+  \Leftrightarrow 100   &= 81 + 19
+\end{align*}
+
+In het linkerlid staat dus de oppervlakte van het groter vierkant. Het rechter lid is opgesplitst in het totale oppervlakte van de kleinere vierkanten plus wat er nog overblijft als rest.
+
+Vul nu zelf de vierkanten met zijde $9$ uit Figuur \ref{fig:vierkant9}. Eerst met kleinere vierkantjes van grootte $1$, dan met kleinere vierkantjes van grootte $2$ en uiteindelijk met kleinere vierkantjes van grootte $3$. Gebruik wat je kent over delen van getallen en rest bij deling om het resultaat te verklaren.
+
+\begin{figure}[ht]
+  \centering
+  \subfloat[in vierkantjes met zijde $1$]{\input{figuren/vierkant9.tex}}
+  \subfloat[in vierkantjes met zijde $2$]{\input{figuren/vierkant9.tex}}
+  \subfloat[in vierkantjes met zijde $3$]{\input{figuren/vierkant9.tex}}
+  \caption{Verdelen van een vierkant met zijde $9$.}
+  \label{fig:vierkant9}
+\end{figure}
+
+We kunnen dit gaan veralgemenen voor een groot vierkant met zijde $a$ en kleinere vierkanten met zijde $d$. Er zal dus steeds gelden
+$$
+a = q\cdot d + r
+$$
+waarbij $q$ het aantal keer is dat we $d$ in $a$ krijgen en $r$ de rest is die dan nog overblijft. Als we dit dan links en rechts kwadrateren, dan krijgen we
+\begin{align*}
+  a^2  &= (q\cdot d + r)^2\\
+  \Leftrightarrow a^2   &= (q\cdot d)^2 + 2\cdot q\cdot d\cdot r + r^2\;.\\
+\end{align*}
+In een groot vierkant zal de oppervlakte dus $a^2$ zijn en het wordt gevuld met $q^2$ kleinere vierkanten van oppervlakte $d^2$. In het totaal blijft een oppervlakte van $2\cdot q\cdot r + r^2$ over. Laten we deze restoppervlakte nu de overschot noemen. Dit kunnen we ontleden in een stukje oppervlakte van $q\cdot r$ dat rechts overblijft, een stukje oppervlakte van $q\cdot r$ dat bovenaan overblijft en een stukje oppervlakte $r^2$ dat rechtsboven overblijft. Duid deze nog aan op Figuur \ref{fig:vierkant10_4x4} waarbij een groot vierkant met zijde $10$ werd opgedeeld in vierkanten met zijde $4$.
+
+\begin{figure}[ht]
+  \centering
+  \input{figuren/vierkant10_4x4.tex}
+  \caption{Rest van een vierkant van grootte 10 verdeeld in vierkantjes van grootte 4.}
+  \label{fig:vierkant10_4x4}
+\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

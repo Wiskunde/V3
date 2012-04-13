@@ -83,10 +83,11 @@
 %\newcommand{\teacher}[1]{}
 
 % Wissel tussen versie van leerkracht en versie voor leerling door antwoorden te verbergen
-% gebruik: \answer{Dit is een antwoord}{2}
-% eerste parameter is het antwoord, tweede parameter is hoeveel ruimte de leerlingen wordt gegeven in cm
-\newcommand{\answer}[2]{{\textcolor{gray}{\emph{#1}}}}
-%\newcommand{\answer}[2]{\vspace*{#2cm}}
+% gebruik: \answer[2cm]{Dit is een antwoord}
+% tussen vierkante haakjes is optioneel de lengte die voorzien moet worden (default = 0cm),
+% de parameter is het antwoord
+\newcommand{\answer}[2][0cm]{{\textcolor{gray}{\emph{#2}}}}
+%\newcommand{\answer}[2][0cm]{\vspace*{#1}}
 
 \graphicspath{{figuren/}}
 

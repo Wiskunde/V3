@@ -39,7 +39,7 @@ Vul nu zelf de vierkanten met zijde $9$ uit Figuur \ref{fig:vierkant9}. Eerst me
 \end{figure}
 
 Verklaring:
-\answer{Elk vierkant waarvan de zijden een natuurlijke (dus geen komma getallen) grootte hebben volledig opgevuld worden met kleinere vierkantjes van grootte $1$. Omdat $9$ niet deelbaar is door $2$ blijven we met een rest zitten. We kunnen deze rest als volgt berekenen: de rest bij deling van $9$ door $2$ is $1$ en het quotiënt is $4$,  we hebben dus $9=4\cdot 2 + 1$, dit links en rechts kwadrateren geeft $9^2=(4\cdot 2 + 1)^2\Leftrightarrow 9^2=(4\cdot 2)^2 + 2\cdot 4\cdot 2 + 1^2 \Leftrightarrow 81 = 64 + 16 + 1 \Leftrightarrow 81 = 64 + 17$. Het vierkant van zijde $9$ vullen met vierkanten van zijde $3$ lukt volledig omdat $3$ een deler is van $9$.}{4} 
+\answer[4cm]{Elk vierkant waarvan de zijden een natuurlijke (dus geen komma getallen) grootte hebben volledig opgevuld worden met kleinere vierkantjes van grootte $1$. Omdat $9$ niet deelbaar is door $2$ blijven we met een rest zitten. We kunnen deze rest als volgt berekenen: de rest bij deling van $9$ door $2$ is $1$ en het quotiënt is $4$,  we hebben dus $9=4\cdot 2 + 1$, dit links en rechts kwadrateren geeft $9^2=(4\cdot 2 + 1)^2\Leftrightarrow 9^2=(4\cdot 2)^2 + 2\cdot 4\cdot 2 + 1^2 \Leftrightarrow 81 = 64 + 16 + 1 \Leftrightarrow 81 = 64 + 17$. Het vierkant van zijde $9$ vullen met vierkanten van zijde $3$ lukt volledig omdat $3$ een deler is van $9$.}
 
 We kunnen dit gaan veralgemenen voor een groot vierkant met zijde $a$ en kleinere vierkanten met zijde $d$. Er zal dus steeds gelden
 $$
@@ -53,7 +53,7 @@ waarbij $q$ het aantal keer is dat we $d$ in $a$ krijgen en $r$ de rest is die d
 In een groot vierkant zal de oppervlakte dus $a^2$ zijn en het wordt gevuld met $q^2$ kleinere vierkanten van oppervlakte $d^2$. In het totaal blijft een oppervlakte van $2\cdot q\cdot r + r^2$ over. Laten we deze restoppervlakte nu de overschot noemen. Dit kunnen we ontleden in een stukje oppervlakte van $q\cdot r$ dat rechts overblijft, een stukje oppervlakte van $q\cdot r$ dat bovenaan overblijft en een stukje oppervlakte $r^2$ dat rechtsboven overblijft.
 
 Duid deze nog aan op Figuur \ref{fig:vierkant10_4x4} waarbij een groot vierkant met zijde $10$ werd opgedeeld in vierkanten met zijde $4$.
-\answer{Het blauwe en rode stukje hebben oppervlakte $q\cdot r$, het groene stukje heeft oppervlakte $r^2$.}{0}
+\answer{Het blauwe en rode stukje hebben oppervlakte $q\cdot r$, het groene stukje heeft oppervlakte $r^2$.}
 
 \begin{figure}[ht]
   \centering
@@ -62,8 +62,19 @@ Duid deze nog aan op Figuur \ref{fig:vierkant10_4x4} waarbij een groot vierkant 
   \label{fig:vierkant10_4x4}
 \end{figure}
 
+\newpage
+\subsection{Perfecte vierkanten}
 
+Het probleem om een vierkant te vullen met kleinere vierkanten wordt heel wat uitdagender en een gans stuk moeilijker als we eisen dat alle vierkanten een andere grootte moeten hebben. Indien een vierkant volledig gevuld wordt met kleinere vierkanten die allemaal een andere grootte hebben, dan spreken we van een {\bf perfect vierkant}. Het aantal kleinere vierkanten dat het grootte vierkant bevat wordt de {\bf orde} van het perfecte vierkant genoemd. Het vierkant met de kleinste orde staat in Figuur \ref{fig:pv21}.
 
+\begin{figure}[ht]
+  \centering
+  \input{figuren/fig_pv21.tex}
+  \caption{Perfect vierkant van orde $21$.}
+  \label{fig:pv21}
+\end{figure}
+
+Het vierkant van de kleinste orde vinden bleek een uitdagend probleem waarop wiskundigen ongeveer 60 jaar gezocht hebben! Alles begon in 1902, toen een zekere {\it Dudeney} een raadseltje publiceerde waarbij gevraagd werd om een vierkant te verdelen in allemaal verschillende vierkanten en één rechthoek. Zijn raadseltje noemde hij {\it De juwelenbox van Mejuffrouw Isabel}.
 
 
 

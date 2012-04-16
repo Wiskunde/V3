@@ -98,6 +98,69 @@ Verklaar waarom ook een perfect vierkant van orde $3$ niet kan bestaan. Maak ook
 
 \answer[5cm]{Neem dat de drie vierkanten zijdes $a < b < c$ hebben. We kunnen de vierkanten zeker niet naast elkaar leggen, want dan hebben we zeker geen vierkant. Neem nu het grootste vierkant, $c$, en leg het linksboven. Het heeft geen zin om rechts bijvoorbeeld $b$ te leggen en er onder dan $a$, want rechtsonder blijft dan een gebied over. Maar ook beide kleinere vierkanten aan één zijde van $a$ te leggen helpt niet, want dan blijft ook geen vierkant meer over.}
 
+\subsubsection{Eén oplossing leidt tot meerdere oplossingen}
+
+Stel dat je nu één perfect vierkant vindt. Kan je dan vanuit die éne oplossing nog een andere oplossing toveren. Met andere woorden. Stel dat je bijvoorbeeld het perfecte vierkant van orde $21$ uit Figuur \ref{fig:pv21} gevonden hebt, kan je dan met behulp van dat perfecte vierkant een ander perfect vierkant construeren, de orde hoeft niet gelijk te zijn.
+
+Het is misschien goed om vast te leggen wanneer twee perfecte vierkanten gelijk zijn. Want op zich zouden we gebruik kunnen maken van de symmetrieën van een vierkant om te zeggen dat we een aantal verschillende perfecte vierkanten vinden.
+
+Het vierkant heeft 8 symmetrieën, geef ze allemaal in Figuur \ref{fig:symmetrie_vierkant}.
+
+\begin{figure}[ht]
+  \centering
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+  
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+
+  \caption{De symmetrieën van het vierkant.}
+  \label{fig:symmetrie_vierkant}
+\end{figure}
+
+\answer{Het vierkant heeft $8$ symmetrieën, vier rotaties en vier spiegelsymmetrieën. De symmetriegroep van het vierkant is de dihedrale groep $D4$.
+\begin{center}
+  \includegraphics[width=14cm]{dih4}
+\end{center}
+}
+
+\clearpage
+
+Hierdoor zou je kunnen beweren dat je al $8$ perfecte vierkanten hebt gevonden, nadat je er één hebt gevonden. Maar we zullen afspreken dat er één speciaal is, diegene die zodanig gedraaid en gespiegeld wordt dat de kleinere vierkanten worden gerangschikt van groot naar klein, linksboven te beginnen en zo naar rechts gaand. We zullen zeggen dat de zeven andere perfecte vierkanten isomorf zijn met het speciale geval, want er bestaat steeds een spiegeling of rotatie zodat we het perfecte vierkant in de speciale vorm krijgen.
+
+Bepaal de bewerkingen (spiegelingen en/of rotaties) die uitgevoerd moeten worden op de volgende figuur om ze in de speciale vorm te krijgen:
+
+\answer{Hierop kan in één keer de spiegeling $M1$ uitgevoerd worden. Alternatief kan ook gewerkt worden met rotaties gecombineerd met spiegelingen.}
+
+\begin{center}
+  \input{figuren/pv21_gespiegeld.tex}
+\end{center}
+
+Dit lukt dus niet om meerdere perfecte vierkanten te vinden. Laten we nu eens iets anders proberen. Als we het perfecte vierkant zodanig zouden vergroten dat er plaats is in het kleinste vierkantje om het originele perfecte vierkant erin te passen. Dan vinden we toch al twee perfecte vierkanten!
+
+Met welke factor moet het perfecte vierkant van orde 21 vergroot worden zodat een perfect vierkant van orde 21 past in het kleinste vierkantje?
+
+\answer[5]{Het kleinste vierkantje heeft grootte $2$ en het totale vierkant heeft grootte $50+35+27=112$. Als we dus alle lengtes vermenigvuldigen met $\frac{112}{2}$ dan past in het nieuwe kleinste vierkantje het originele perfecte vierkant!}
+
+\question{zou er niet beter gesproken worden over homothetie?}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

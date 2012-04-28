@@ -1,5 +1,5 @@
 
-\section{Perfecte Vierkanten}
+\section{Vullen van vierkanten en kubussen}
 
 \subsection{Vierkant vullen met vierkanten}
 
@@ -38,6 +38,9 @@ Vul nu zelf de vierkanten met zijde $9$ uit Figuur \ref{fig:vierkant9}. Eerst me
   \label{fig:vierkant9}
 \end{figure}
 
+Verklaring:
+\answer[4cm]{Elk vierkant waarvan de zijden een natuurlijke (dus geen komma getallen) grootte hebben volledig opgevuld worden met kleinere vierkantjes van grootte $1$. Omdat $9$ niet deelbaar is door $2$ blijven we met een rest zitten. We kunnen deze rest als volgt berekenen: de rest bij deling van $9$ door $2$ is $1$ en het quotiënt is $4$,  we hebben dus $9=4\cdot 2 + 1$, dit links en rechts kwadrateren geeft $9^2=(4\cdot 2 + 1)^2\Leftrightarrow 9^2=(4\cdot 2)^2 + 2\cdot 4\cdot 2 + 1^2 \Leftrightarrow 81 = 64 + 16 + 1 \Leftrightarrow 81 = 64 + 17$. Het vierkant van zijde $9$ vullen met vierkanten van zijde $3$ lukt volledig omdat $3$ een deler is van $9$.}
+
 We kunnen dit gaan veralgemenen voor een groot vierkant met zijde $a$ en kleinere vierkanten met zijde $d$. Er zal dus steeds gelden
 $$
 a = q\cdot d + r
@@ -47,7 +50,10 @@ waarbij $q$ het aantal keer is dat we $d$ in $a$ krijgen en $r$ de rest is die d
   a^2  &= (q\cdot d + r)^2\\
   \Leftrightarrow a^2   &= (q\cdot d)^2 + 2\cdot q\cdot d\cdot r + r^2\;.\\
 \end{align*}
-In een groot vierkant zal de oppervlakte dus $a^2$ zijn en het wordt gevuld met $q^2$ kleinere vierkanten van oppervlakte $d^2$. In het totaal blijft een oppervlakte van $2\cdot q\cdot r + r^2$ over. Laten we deze restoppervlakte nu de overschot noemen. Dit kunnen we ontleden in een stukje oppervlakte van $q\cdot r$ dat rechts overblijft, een stukje oppervlakte van $q\cdot r$ dat bovenaan overblijft en een stukje oppervlakte $r^2$ dat rechtsboven overblijft. Duid deze nog aan op Figuur \ref{fig:vierkant10_4x4} waarbij een groot vierkant met zijde $10$ werd opgedeeld in vierkanten met zijde $4$.
+In een groot vierkant zal de oppervlakte dus $a^2$ zijn en het wordt gevuld met $q^2$ kleinere vierkanten van oppervlakte $d^2$. In het totaal blijft een oppervlakte van $2\cdot q\cdot r + r^2$ over. Laten we deze restoppervlakte nu de overschot noemen. Dit kunnen we ontleden in een stukje oppervlakte van $q\cdot r$ dat rechts overblijft, een stukje oppervlakte van $q\cdot r$ dat bovenaan overblijft en een stukje oppervlakte $r^2$ dat rechtsboven overblijft.
+
+Duid deze nog aan op Figuur \ref{fig:vierkant10_4x4} waarbij een groot vierkant met zijde $10$ werd opgedeeld in vierkanten met zijde $4$.
+\answer{Het blauwe en rode stukje hebben oppervlakte $q\cdot r$, het groene stukje heeft oppervlakte $r^2$.}
 
 \begin{figure}[ht]
   \centering
@@ -55,6 +61,100 @@ In een groot vierkant zal de oppervlakte dus $a^2$ zijn en het wordt gevuld met 
   \caption{Rest van een vierkant van grootte 10 verdeeld in vierkantjes van grootte 4.}
   \label{fig:vierkant10_4x4}
 \end{figure}
+
+\newpage
+\subsection{Perfecte vierkanten}
+
+\subsubsection{Een beetje geschiedenis}
+
+Het probleem om een vierkant te vullen met kleinere vierkanten wordt heel wat uitdagender en een gans stuk moeilijker als we eisen dat alle vierkanten een andere grootte moeten hebben. Indien een vierkant volledig gevuld wordt met kleinere vierkanten die allemaal een andere grootte hebben, dan spreken we van een {\bf perfect vierkant}. Het aantal kleinere vierkanten dat het grootte vierkant bevat wordt de {\bf orde} van het perfecte vierkant genoemd. Het vierkant met de kleinste orde staat in Figuur \ref{fig:pv21}.
+
+\begin{figure}[ht]
+  \centering
+  \input{figuren/fig_pv21.tex}
+  \caption{Perfect vierkant van orde $21$.}
+  \label{fig:pv21}
+\end{figure}
+
+Het vierkant van de kleinste orde vinden bleek een uitdagend probleem waarop wiskundigen ongeveer 60 jaar gezocht hebben! Alles begon meer dan 100 jaar geleden in 1902, toen een zekere {\it Dudeney} een raadseltje publiceerde waarbij gevraagd werd om een vierkant te verdelen in allemaal verschillende vierkanten en één rechthoek. Zijn raadseltje noemde hij {\it De juwelenbox van Mejuffrouw Isabel}.
+
+In 1923 begon de wiskundige {\it Z. Moro\'n} met het onderzoeken hoe vierkanten en rechthoeken op te delen zijn in kleinere vierkanten. Hij heeft nooit zulk een opdeling gepubliceerd, maar zou later toch beweren dat hij al één had gevonden. Wel publiceerde hij in 1925 een artikel waarin hij de opdeling van rechthoeken in kleinere vierkanten gaf.
+
+In de jaren 30 werd aangenomen dat het onmogelijk was om een vierkant op te delen in allemaal kleinere vierkanten. Het bewijs dat een vierkant niet opgedeeld kan worden in verschillende vierkantjes werd gezien als een nog onopgelost probleem. Wel vond men veel rechthoeken die op te delen waren in allemaal kleinere vierkanten van verschillende groottes.
+
+Uiteindelijk vond {\it R.P. Sprague} in 1938 een oplossing! Hij construeerde een perfect vierkant van orde 55. Daarmee gaf hij ook aan dat perfecte vierkanten toch bestaan. Een jaar later vindt {\it R.L. Brooks} al een perfect vierkant van een lagere orde (orde 38). Van dan af aan zoeken wiskundigen naar het perfecte vierkant met de laagste orde.
+
+In 1962 schrijft de informaticus {\it A.J.W. Duijvestijn} zijn doctoraat over de perfecte vierkanten. Hierbij gebruikt hij computers om aan te tonen dat er geen perfecte vierkanten bestaan van orde lager dan $20$. Hij geeft dus enkel een ondergrens. Zijn onderzoek moet nu nog wachten tot de computers snel genoeg zijn! Pas op 22 maart 1978 vindt hij, met behulp van computers, het perfecte vierkant met de laagste orde. Zie het in Figuur \ref{fig:pv21}.
+
+\subsubsection{Zelf een ondergrens vinden}
+
+Om de exacte ondergrens te vinden is blijkbaar de rekenkracht van een computer nodig. Maar voor hele lage orde kunnen we dit door te redeneren.
+
+Verklaar waarom een perfect vierkant van orde $2$ niet kan bestaan. Maak ook een schets:
+
+\answer[4cm]{Twee vierkanten van verschillende groottes samen vormen niet opnieuw een vierkant.}
+
+Verklaar waarom ook een perfect vierkant van orde $3$ niet kan bestaan. Maak ook schetsen:
+
+\answer[5cm]{Neem dat de drie vierkanten zijdes $a < b < c$ hebben. We kunnen de vierkanten zeker niet naast elkaar leggen, want dan hebben we zeker geen vierkant. Neem nu het grootste vierkant, $c$, en leg het linksboven. Het heeft geen zin om rechts bijvoorbeeld $b$ te leggen en er onder dan $a$, want rechtsonder blijft dan een gebied over. Maar ook beide kleinere vierkanten aan één zijde van $a$ te leggen helpt niet, want dan blijft ook geen vierkant meer over.}
+
+\subsubsection{Eén enkele oplossing leidt tot meerdere oplossingen}
+
+Stel dat je nu één perfect vierkant vindt. Kan je dan vanuit die éne oplossing nog een andere oplossing toveren. Met andere woorden. Stel dat je bijvoorbeeld het perfecte vierkant van orde $21$ uit Figuur \ref{fig:pv21} gevonden hebt, kan je dan met behulp van dat perfecte vierkant een ander perfect vierkant construeren, de orde hoeft niet gelijk te zijn.
+
+Het is misschien goed om vast te leggen wanneer twee perfecte vierkanten gelijk zijn. Want op zich zouden we gebruik kunnen maken van de symmetrieën van een vierkant om te zeggen dat we een aantal verschillende perfecte vierkanten vinden.
+
+Het vierkant heeft 8 symmetrieën, geef ze allemaal in Figuur \ref{fig:symmetrie_vierkant}.
+
+\begin{figure}[ht]
+  \centering
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+  
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+  \subfloat[Symmetrie:$\ldots\ldots\ldots$]{\input{figuren/symmetrie_vierkant.tex}}
+
+  \caption{De symmetrieën van het vierkant.}
+  \label{fig:symmetrie_vierkant}
+\end{figure}
+
+\answer{Het vierkant heeft $8$ symmetrieën, vier rotaties en vier spiegelsymmetrieën. De symmetriegroep van het vierkant is de dihedrale groep $D4$.
+\begin{center}
+  \includegraphics[width=14cm]{dih4}
+\end{center}
+}
+
+\clearpage
+
+Hierdoor zou je kunnen beweren dat je al $8$ perfecte vierkanten hebt gevonden, nadat je er één hebt gevonden. Maar we zullen afspreken dat er één speciaal is, diegene die zodanig gedraaid en gespiegeld wordt dat de kleinere vierkanten worden gerangschikt van groot naar klein, linksboven te beginnen en zo naar rechts gaand. We zullen zeggen dat de zeven andere perfecte vierkanten isomorf zijn met het speciale geval, want er bestaat steeds een spiegeling of rotatie zodat we het perfecte vierkant in de speciale vorm krijgen.
+
+Bepaal de bewerkingen (spiegelingen en/of rotaties) die uitgevoerd moeten worden op de volgende figuur om ze in de speciale vorm te krijgen:
+
+\answer{Hierop kan in één keer de spiegeling $M1$ uitgevoerd worden. Alternatief kan ook gewerkt worden met rotaties gecombineerd met spiegelingen.}
+
+\begin{center}
+  \input{figuren/pv21_gespiegeld.tex}
+\end{center}
+
+Dit lukt dus niet om meerdere perfecte vierkanten te vinden. Laten we nu eens iets anders proberen. Als we het perfecte vierkant zodanig zouden vergroten dat er plaats is in het kleinste vierkantje om het originele perfecte vierkant erin te passen. Dan vinden we toch al twee perfecte vierkanten!
+
+Met welke factor moet het perfecte vierkant van orde 21 vergroot worden zodat een perfect vierkant van orde 21 past in het kleinste vierkantje?
+
+\answer[5]{Het kleinste vierkantje heeft grootte $2$ en het totale vierkant heeft grootte $50+35+27=112$. Als we dus alle lengtes vermenigvuldigen met $\frac{112}{2}$ dan past in het nieuwe kleinste vierkantje het originele perfecte vierkant!}
+
+\question{zou er niet beter gesproken worden over homothetie?}
+
+
+
+
+
+
 
 
 

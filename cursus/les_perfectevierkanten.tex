@@ -3,7 +3,7 @@
 
 \subsection{Vierkant vullen met vierkanten}
 
-Nemen we een vierkant met zijde $10$, dan kan dit vierkant gevuld worden met $100$ kleinere vierkantjes van grootte $1$. Dit is duidelijk in Figuur \ref{fig:vierkant10_1x1}. Hetzelfde vierkant kunnen we ook vullen met vierkantjes van grootte $2$, waarbij we nu $25$ kleinere vierkantjes hebben in het grote vierkant. Als we nu echter dit vierkant compleet wensen te vullen met vierkantjes van grootte $3$, dan zien we dat dit niet lukt, zie Figuur \ref{fig:vierkant10_3x3}.
+In hetgeen komt zullen we steeds met natuurlijke getallen werken. We zullen voor geen enkele grootte een komma getal of een breuk nemen. Nemen we een vierkant met zijde $10$, dan kan dit vierkant gevuld worden met $100$ kleinere vierkantjes van grootte $1$. Dit is duidelijk in Figuur \ref{fig:vierkant10_1x1}. Hetzelfde vierkant kunnen we ook vullen met vierkantjes van grootte $2$, waarbij we nu $25$ kleinere vierkantjes hebben in het grote vierkant. Als we nu echter dit vierkant compleet wensen te vullen met vierkantjes van grootte $3$, dan zien we dat dit niet lukt, zie Figuur \ref{fig:vierkant10_3x3}.
 
 \begin{figure}[ht]
   \centering
@@ -168,10 +168,48 @@ Hier geef je een bewijs uit het ongerijmde. Je veronderstelt dat je wel iets kan
   \input{figuren/pv_kleinstevierkant.tex}
 \end{center}
 
+\subsection{Perfecte kubussen}
+
+In de wiskunde veralgemenen we graag onze resultaten naar alle dimensies. In de les van de perfecte vierkanten hebben we steeds in een vlak gewerkt. Daarbinnen hebben we dan in een vierkant gewerkt. Dit is het tweedimensionale geval. Er bestaat dus een simpeler \'e\'endimensionale geval. Het vlak is dan een rechte. Het vierkant is dan een interval op die recht.
+
+\question{zou ik lijnstuk gebruiken in plaats van interval?}
+
+\task{Geef zelf een definitie voor een perfect interval analoog als voor een perfect vierkant.}
+
+\answer[3cm]{Een interval is een {\bf perfect interval} als het volledig gevuld wordt met kleinere intervallen die allemaal een andere lengte hebben.}
+
+\ask{Toon aan hoe je een perfect interval kunt construeren met de kleinere intervallen van lengte $1$, $2$ en $3$. Waarom zullen we hier weinig nieuwe wiskunde in ontdekken.}
+
+\answer[3cm]{Plaats de drie lijnstukken achter elkaar. Dit geeft dan een nieuw interval dat aan de voorgaande definitie van perfect interval voldoet. Hadden we de drie intervallen in een andere volgorde geplaatst, dan was de constructie van een perfect interval ook gelukt. Het is steeds mogelijk om perfecte intervallen te vinden zonder te puzzelen, voeg gewoon een nieuw interval met nieuwe lengte toe en we hebben een nieuw perfect interval.}
+
+Als dan het 1-dimensionale geval weinig uitdagend is, dan is het 3-dimensionale geval het misschien wel. Als we een kubus krijgen, is het dan mogelijk om deze kubus op te splitsen in een eindig aantal kleinere kubussen waarvan er geen twee dezelfde grootte hebben? Het antwoord op deze vraag blijkt neen te zijn!
+
+Het is onmogelijk om dit te bewijzen door alle mogelijke groottes van kubussen te overlopen en te controleren dat het nooit lukt. Simpelweg omdat we dan oneindig veel kubussen zouden moeten controleren. We moeten dus een argument vinden waarom het dan niet lukt. Ook hier zal een bewijs uit het ongerijmde ons dat argument leveren. We moeten dus beginnen met het tegendeel te veronderstellen.
+
+\ask{Wat is het tegendeel van hetgeen we zullen bewijzen?}
+
+\answer[2cm]{We zullen bewijzen dat er geen kubus bestaat die opgesplitst kan worden in een eindig aantal kleinere kubussen waarvan er geen twee dezelfde grootte hebben. Het tegendeel is dan dat er wel zulk een kubus bestaat.}
+
+\ask{Veronderstel nu dat er wel een kubus bestaat die opgesplitst kan worden in een eindig aantal kleinere kubussen waarvan er geen twee dezelfde grootte hebben. Hoe ziet het onderste vlak van deze kubus er dan uit?}
+
+\answer[2cm]{Dit moet dan een perfect vierkant zijn.}
+
+Als we dan enkel de onderste kubussen laten staan, dan krijgen we in het vlak een vierkant met allemaal kubussen van verschillende grootte. Ergens op dat vlak moet dan een kleinste kubus liggen.
+
+\ask{Wat weten we over de ligging van deze kleinste kubus?}
+
+\answer[3cm]{Deze kleinste kubus kan niet aan de zijkant liggen, want alle kubussen liggen op een perfect vierkant en we weten dat het kleinste vierkant van een perfect vierkant niet aan de zijkant kan liggen.}
+
+\ask{Ten opzichte van deze kleinste kubus zijn al zijn buren grotere kubussen. Wat wil dit nu zeggen voor de kubus die boven deze kleinste kubus moet komen?}
+
+\answer[4cm]{Het is niet toegestaan om opnieuw een kubus van deze grootte te gebruiken, een grotere kubus zal niet passen, dus moeten er verschillende kleinere kubussen boven deze kleinste kubus komen.}
+
+Kleinere kubussen moeten volledig het vlak boven deze kleinste kubus opvullen. Dit wil zeggen dat dit vlak van de kubus een perfect vierkant moet zijn gevuld met kubussen. We kunnen nu de zelfde argumentatie gebruiken op de kleinste kubus van dit vlak. Zo moeten we steeds verder gaan. Omdat de groottes van alle kubussen natuurlijke nummers groter dan nul zijn moet dit proces ooit stoppen. We kunnen niet zowel steeds verder gaan en ooit stoppen, we hebben dus een tegenstrijdigheid!
+
+
 \subsection{Meetkundige interpretatie van oplossen van kwadratische vergelijkingen}
 
 \subsection{Meetkundige interpretatie van oplossen van kubische vergelijkingen}
-
 
 
 

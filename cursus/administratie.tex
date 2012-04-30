@@ -1,0 +1,210 @@
+\documentclass[12pt]{article}
+
+\textwidth 16cm \textheight 23cm \evensidemargin 0cm
+\oddsidemargin 0cm \topmargin -2cm
+\parindent 0pt
+\parskip \medskipamount
+
+
+\usepackage[dutch]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[utf8,latin1]{inputenc}
+\usepackage[normalem]{ulem} % strikethrough normal text with \sout{text}
+\usepackage{cancel} % strikethrough in math mode with \cancel{text}
+%\usepackage{gensymb}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage{latexsym}
+%\usepackage[latin1]{inputenc} %letters met accenten mogen in broncode gebruikt worden
+\usepackage{amssymb,amsmath,amsthm} %allerlei wiskundige symbolen => http://www.ams.org/tex/amslatex.html voor read-me's
+%\usepackage[small,bf,hang]{caption}
+\usepackage[table]{xcolor}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+
+\usepackage[pdftex]{hyperref} 
+\hypersetup{setpagesize=false}
+%\hypersetup{bookmarksopen}
+\hypersetup{bookmarksnumbered} %voor de bookmarks in pdf de nrs zetten ook
+\hypersetup{pdfborder=0.1pt} %de rand rond de links smaller maken
+\hypersetup{linktocpage=true} %titels of pgnrs omkaderen in toc
+\hypersetup{colorlinks=true} %kaders rond links of tekst in kleur, kaders gaan weg bij afprinten, kleur blijft
+
+
+\numberwithin{equation}{section} %om de equations labels te geven die met section meegaan, dus niet gwn (1) (2) ... maar (1.1) (1.2) ...
+
+%iets voor modulonotatie
+\makeatletter
+\def\imod#1{\allowbreak\mkern10mu({\operator@font mod}\,\,#1)}
+\makeatother
+
+%Getallenverzamelingen
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\mO}{\mathcal{O}}
+%<= en >= mooier maken
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+
+%speciale wiskunde letters: \mathcal{} of \mathfrak{}
+
+%Nieuwe omgevingen voor definities en stellingen
+\theoremstyle{plain}  \newtheorem{stel}{Stelling}[section]
+\theoremstyle{plain}  \newtheorem{lemma}[stel]{Lemma}
+\theoremstyle{plain}  \newtheorem{gevolg}[stel]{Gevolg}
+\theoremstyle{definition}  \newtheorem{defi}[stel]{Definitie}
+\theoremstyle{definition} \newtheorem{vb}[stel]{Voorbeeld}
+\theoremstyle{definition} \newtheorem{vbn}[stel]{Voorbeelden}
+\theoremstyle{definition}  \newtheorem{opm}[stel]{Opmerking}
+\theoremstyle{plain}  \newtheorem{opdracht}{Opdracht}
+
+\hyphenation{e-ner-zijds}
+\hyphenation{ka-nons-ko-gel}
+\hyphenation{schrij-ven}
+\hyphenation{ka-nons-ko-gels}
+\hyphenation{ont-stond}
+\hyphenation{kwa-dra-tisch}
+
+\usepackage{color}
+\newcommand{\todo}[1]{\textcolor{red}{\##1\#}}
+\newcommand{\question}[1]{\textcolor{blue}{\##1\#}}
+
+% Wissel tussen versie van leerkracht en versie voor leerlingen
+% gebruik: \teacher{Dit is een notitie voor de leerkracht}
+% eerste parameter is de notitie
+\newcommand{\teacher}[1]{\textcolor{gray}{\emph{#1}}}
+%\newcommand{\teacher}[1]{}
+
+% Wissel tussen versie van leerkracht en versie voor leerling door antwoorden te verbergen
+% gebruik: \answer[2cm]{Dit is een antwoord}
+% tussen vierkante haakjes is optioneel de lengte die voorzien moet worden (default = 0cm),
+% de parameter is het antwoord
+\newcommand{\answer}[2][0cm]{{\textcolor{gray}{\emph{#2}}}}
+%\newcommand{\answer}[2][0cm]{\vspace*{#1}}
+
+\graphicspath{{figuren/}}
+
+%\newtheorem{definitie}{Definitie}
+
+\newcommand{\degree}{\ensuremath{^\circ}}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+ \begin{minipage}{7cm}
+\begin{center}
+%\aula 
+%B
+
+
+\includegraphics[width=5cm]{ruglogo.pdf}
+
+
+ {\large
+Universiteit Gent \\
+Faculteit  Wetenschappen \\
+Vakgroep  Wiskunde
+} \end{center}\end{minipage}
+
+\vspace{3cm}
+
+ {\Huge\bf 
+  Vullen van Vlakken en Volumes:\\ Administratie}
+  
+\baselineskip=12pt
+\vspace{1.5cm}
+
+{\large\bf  Lien Lambert }\\
+\vspace{0.5cm}
+{\large \bf Pieter Pareit }\\
+\vspace{0.5cm}
+{\large \bf Jordy Vanpoucke}\\
+
+\baselineskip=12pt
+
+\vspace{2cm}
+
+ 
+\bigskip
+
+{\large Academiejaar 2011-2012}
+
+%\vspace{5cm}
+%\baselineskip=1.2cm
+
+
+
+\end{center}
+
+\vfill
+
+\hspace*{\fill}
+\begin{minipage}{8cm}
+\noindent   Project Vakdidactiek Wiskunde II 
+ \end{minipage}
+
+
+\bigskip
+
+\hspace*{\fill}
+\begin{minipage}{8cm}
+\noindent  Prof. Dr.  F. De Clerck\\
+Praktijkassistent G. Maes
+ \end{minipage}
+
+\newpage
+\tableofcontents 
+\newpage
+
+\section{Doelgroep}
+Leerlingen uit een ASO-richting ...
+
+\section{Voorkennis}
+
+In deze lessenreeks steunen we expliciet op de geziene leerstof:
+
+
+
+Wat is de voorkennis die nodig is??
+
+\section{Globale motivatie}
+Voor deze lessenreeks zijn we vertrokken vanuit het bolstapelprobleem van Kepler. Het viel ons op hoe men in het dagelijkse leven bezig is met het zo optimaal mogelijk stapel van bollen, maar ook van kubussen en dergelijke. In deze lessenreeks wordt dit opgebouwd door te starten met het tweedimensionale probleem, namelijk de vlakvulling. In deze lessenreeks is het de bedoeling dat de leerlingen zelf gaan experimenteren, en hun bevindingen ook hard maken via het bewijzen of uitrekenen ervan.
+
+\section{Eindtermen}
+
+\subsection{Vakoverschrijdende eindtermen}
+
+\subsubsection{Gemeenschappelijke stam}
+
+\subsubsection{Contexten}
+
+\subsection{Vakgebonden eindtermen}
+
+\section{Planning}
+
+\subsection{Les 1: Inleiding}
+
+
+\subsection{Les + : Tweedimensionale problemen}
+
+\subsubsection{Algemeen en zo}
+De leerlingen gaan in groepjes zitten aan een bank en overlopen samen met de leerkracht het bundeltje. Het is vooral belangrijk om stil te staan bij de 'vragen' en 'opdrachten', die ze dan per groepje mogen proberen oplossen.
+
+\subsubsection{Experimenteren}
+
+
+
+\section{Referenties}
+\begin{thebibliography}{1}
+\bibitem{1}\label{1} Hans Meissen en Rob van Oord, \textit{Schuiven met auto's, munten en bollen}, Epsilon Uitgaven, Utrecht, 2001-2002\\
+\end{thebibliography}
+\end{document}

@@ -1,1 +1,47 @@
 \section{Tweedimensionale stapelproblemen}
+
+\subsection{Algemeen}
+In de voorbije lessen hebben we het vooral gehad over complete vlakvullingen, i.h.b. het vullen van vlakken met vierkanten. 
+In dit onderdeel zullen we kijken naar het vullen van vlakken met figuren die het vlak nooit volledig zullen vullen. We zullen het hebben over tweedimensionale stapelproblemen. We zijn namelijk op weg om het bolstapelprobleem van Kepler te bekijken! 
+Bij het stapelen in twee dimensies hebben we minder mogelijkheden dan bij het stapelen in drie dimensies, maar we kunnen er toch heel veel over zeggen. Als we denken aan tweedimensionale stapelingen, dan denken we aan een vlak waarin we voorwerpen stapelen die twee dimensies hebben, lengte en breedte. Deze voorwerpen kunnen heel uiteenlopend zijn. Wij zullen hier cirkels stapelen, maar je kan evengoed ellipsen, achthoeken ... stapelen. Naar analogon met het bolstapelprobleem van Kepler waarbij we met bollen zullen werken bekijken we het geval van de cirkels. 
+
+
+In de eerste les hebben we reeds gezien dat je een oneindig vlak volledig kan vullen met identieke gelijkzijdige driehoeken, vierkanten en zeshoeken. Dit noemen we 100\% efficiëntie. 
+
+\textbf{Vraag:} Hebben we ook 100\% efficiëntie als we een oneindig vlak zouden betegelen met cirkels?
+
+Het antwoord is natuurlijk 'neen'. Maar wat is de efficiëntie dan wel? En in welke configuratie is deze het beste?
+
+\begin{opdracht}
+Probeer de cirkels (munten, flippo's, pokerjetons ...) eens zodanig op een tafel teleggen dat er zo weinig mogelijk ruimte tussen de cirkels overblijft. 
+\end{opdracht}
+
+Het was reeds duidelijk je nooit elk plekje van de tafel kunt bedekken als de cirkels elkaar niet mogen overlappen.
+We zijn in eerste instantie geïntereseerd in rangschikkingen van oneindig veel cirkels op een oneindige grote tafel. Je hoeft dan geen rekening te houden met wat er aan de randen gebeurt. De randen maken alles moeilijker (maar ook interessanter), daar zullen we verderop naar kijken. Eén voor de hand liggende mogelijkheid om de cirkels zo efficiënt mogelijk in het vlak te rangschikken is om ze netjes naast en boven elkaar te leggen, volgens een patroon van vierkantjes. Dat dit niet de best mogelijke oplossing is wordt al snel duidelijkdoor wat met de rijen te schuiven. Je kunt de rijen namelijk iets beter in elkaar laten passen.Iedere cirkel raakt dan aan zes andere cirkels, in plaats van aan vier, zoals in het vierkante geval. De cirkels komen nu in een regelmatig patroon te liggen op een zogenaamd hexagonaal rooster. Het lijkt onmogelijk om de cirkels nog dichter bij elkaar te krijgen. Dat dit inderdaad niet beter kan werd ongeveer honderd jaar geleden bewezen door de Deense getaltheoreticus Thue. Een schets van het bewijs zullen we zo meteen bekijken. Eerst gaan wij zelf op zoek naar wat nu juist de efficiëntie is en hoe je deze moet berekenen.
+
+\subsection{Voronoicellen}
+
+Om te berekenen hoe efficiënt een rangschikking met cirkels is, maken we gebruik van Voronoicellen. De Voronoicel van een cirkel is de verzameling van alle punten die dichter bij het middelpunt van deze cirkel liggen dan bij het middelpunt van een andere cirkel, alle punten dus die het dichtst bij dát middelpunt liggen. 
+
+\textbf{Vraag:} Hoe ziet de Voronoicel eruit bij een vierkante rangschikking? Hoe ziet de Voronoicel eruit bij de hexagonale rangschikking?
+\answer{Bij de vierkante rangschikking is zo'n Voronoicel een vierkant dat strak om de cirkel zit, en voor de hexagonale rangschikking is het een regelmatige zeshoek.}
+
+\textbf{Vraag:} Hoe kan je de efficiëntie berekenen aan de hand van zo'n Voronoicel?
+\answer{Het percentage van het vlak dat wordt bedekt door cirkels is gelijk aan het percentage van de Voronoicel dat door één cirkel wordt bedekt, want voor alle cirkels is de vorm van de Voronoicel hetzelfde en de Voronoicellen betegelen samen het hele vlak.}
+
+\begin{opdracht}
+Bereken voor de vierkante en de hexagonale rangschikking de efficiëntie.
+\end{opdracht}
+\answer{
+\begin{enumerate}
+	\item \textbf{Vierkante rangschikking}:\\
+	Als je cirkels neemt met straal gelijk aan 1, dan heeft het strakke 'omgeschreven' vierkant in de vierkante betegeling een zijde met lengte 2. De oppervlakte van de cirkel hier is $\pi$, de oppervlakte van het vierkant is 4. (Uiteraard konden we andere afmetingen genomen hebben, maar de verhoudingen blijven steeds hetzelfde.) Er is dus $\frac{\pi}{4}=0,78538...$, of ruim 78\% van het totale vlak bedekt door de cirkels.
+	\item \textbf{Hexagonale rangschikking}:\\
+	De zeshoek om een cirkel met straal 1 kan worden opgedeeld in twaalf halve gelijkzijdige driehoekjes met een basis met lengte 1 en een hoogte van $\frac{1}{\sqrt{3}}$. De oppervlakte van de zeshoek is dus $12.\frac{1}{2}.1.\frac{1}{\sqrt{3}}=2\sqrt{3}$. De efficiëntie of bedekkingsgraad is dus $\frac{\pi}{\sqrt{12}}=0.906589$.
+\end{enumerate}}
+
+\subsection{Axel Thue}
+
+
+
+

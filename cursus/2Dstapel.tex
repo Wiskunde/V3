@@ -8,13 +8,13 @@ Bij het stapelen in twee dimensies hebben we minder mogelijkheden dan bij het st
 
 In de eerste les hebben we reeds gezien dat je een oneindig vlak volledig kan vullen met identieke gelijkzijdige driehoeken, vierkanten en zeshoeken. Dit noemen we 100\% efficiëntie. 
 
-\textbf{Vraag:} Hebben we ook 100\% efficiëntie als we een oneindig vlak zouden betegelen met cirkels?
+\ask{ Hebben we ook 100\% efficiëntie als we een oneindig vlak zouden betegelen met cirkels?}
 
 Het antwoord is natuurlijk 'neen'. Maar wat is de efficiëntie dan wel? En in welke configuratie is deze het beste?
 
-\begin{opdracht}
+\task{
 Probeer de cirkels (munten, flippo's, pokerjetons ...) eens zodanig op een tafel te leggen dat er zo weinig mogelijk ruimte tussen de cirkels overblijft. 
-\end{opdracht}
+}
 
 Het was reeds duidelijk je nooit elk plekje van de tafel kunt bedekken als de cirkels elkaar niet mogen overlappen.
 We zijn in eerste instantie geïntereseerd in rangschikkingen van oneindig veel cirkels op een oneindige grote tafel. Je hoeft dan geen rekening te houden met wat er aan de randen gebeurt. De randen maken alles moeilijker (maar ook interessanter), daar zullen we verderop naar kijken. Eén voor de hand liggende mogelijkheid om de cirkels zo efficiënt mogelijk in het vlak te rangschikken is om ze netjes naast en boven elkaar te leggen, volgens een patroon van vierkantjes. Dat dit niet de best mogelijke oplossing is wordt al snel duidelijk door wat met de rijen te schuiven. Je kunt de rijen namelijk iets beter in elkaar laten passen. Iedere cirkel raakt dan aan zes andere cirkels \todo{Vermelden van kissingnumber?}, in plaats van aan vier, zoals in het vierkante geval. De cirkels komen nu in een regelmatig patroon te liggen op een zogenaamd hexagonaal rooster. Het lijkt onmogelijk om de cirkels nog dichter bij elkaar te krijgen. Dat dit inderdaad niet beter kan werd ongeveer honderd jaar geleden bewezen door de Deense getaltheoreticus Thue. Een schets van het bewijs zullen we zo meteen bekijken. Eerst gaan wij zelf op zoek naar wat nu juist de efficiëntie is en hoe je deze moet berekenen.
@@ -23,17 +23,17 @@ We zijn in eerste instantie geïntereseerd in rangschikkingen van oneindig veel c
 
 Om te berekenen hoe efficiënt een rangschikking met cirkels is, maken we gebruik van Voronoicellen. De Voronoicel van een cirkel is de verzameling van alle punten die dichter bij het middelpunt van deze cirkel liggen dan bij het middelpunt van een andere cirkel, alle punten dus die het dichtst bij dát middelpunt liggen. 
 
-\textbf{Vraag:} Hoe ziet de Voronoicel eruit bij een vierkante rangschikking? Hoe ziet de Voronoicel eruit bij de hexagonale rangschikking?
+\ask{Hoe ziet de Voronoicel eruit bij een vierkante rangschikking? Hoe ziet de Voronoicel eruit bij de hexagonale rangschikking?}
 \answer{Bij de vierkante rangschikking is zo'n Voronoicel een vierkant dat strak om de cirkel zit, en voor de hexagonale rangschikking is het een regelmatige zeshoek.}
 
-\textbf{Vraag:} Hoe kan je de efficiëntie berekenen aan de hand van zo'n Voronoicel?
+\ask{ Hoe kan je de efficiëntie berekenen aan de hand van zo'n Voronoicel?}
 \answer{Het percentage van het vlak dat wordt bedekt door cirkels is gelijk aan het percentage van de Voronoicel dat door één cirkel wordt bedekt, want voor alle cirkels is de vorm van de Voronoicel hetzelfde en de Voronoicellen betegelen samen het hele vlak.}
 
-\todo{Foto: zelf trekken van de jetons!!}
 
-\begin{opdracht}
+
+\task{
 Bereken voor de vierkante en de hexagonale rangschikking de efficiëntie.
-\end{opdracht}
+}
 \answer[4cm]{
 \begin{enumerate}
 	\item \textbf{Vierkante rangschikking}:\\
@@ -41,6 +41,17 @@ Bereken voor de vierkante en de hexagonale rangschikking de efficiëntie.
 	\item \textbf{Hexagonale rangschikking}:\\
 	De zeshoek om een cirkel met straal 1 kan worden opgedeeld in twaalf halve gelijkzijdige driehoekjes met een basis met lengte 1 en een hoogte van $\frac{1}{\sqrt{3}}$. De oppervlakte van de zeshoek is dus $12.\frac{1}{2}.1.\frac{1}{\sqrt{3}}=2\sqrt{3}$. De efficiëntie of bedekkingsgraad is dus $\frac{\pi}{\sqrt{12}}=0.906589$.
 \end{enumerate}}
+
+
+\begin{figure}[h]
+  \centering
+  %\subfloat[]{\includegraphics[height=3cm]{jetons_sqr}\label{js}}\qquad
+  %\subfloat[]{\includegraphics[height=3cm]{jetons_hex}\label{jh}}\\
+  \subfloat[]{\includegraphics[height=3cm]{voronoi_sqr}\label{vs}}\qquad
+  \subfloat[]{\includegraphics[height=3cm]{voronoi_hex}\label{vh}}\\
+  \caption{Vierkante en hexagonale rangschikking met pokerjetons en hun voronoicellen}  
+\end{figure}
+
 
 \subsection{Axel Thue}
 De Scandinavische wiskundige Axel Thue (1863-1922) ontwikkelde in 1892 een theorie over het tweedimensionale equivalent voor 'het probleem van Kepler' waarin men zocht naar de dichtste pakkingsmethode voor cirkels in het vlak. Thue betegelde het vlak met identieke gelijkzijdige zeshoeken en tekende in elke zeshoek een cirkel op zo'n manier dat elke cirkel alle zijden van de zeshoek raakte. Hierdoor verkreeg hij een dichtheid van 90.69\%, waarvan hij beweerde dat dit de hoogst mogelijke dichtheid was bij het stapelen in 2 dimensies. 
@@ -56,7 +67,7 @@ Dit geeft ons de verdeling van de ruimte: gebieden buiten de grote cirkels (wit)
 \begin{figure}[h]
   \centering
   \subfloat[]{\includegraphics[height=3cm]{2D1}\label{2D1}}
-  \subfloat[]{\includegraphics[height=3cm]{2D2}\label{2D2}}\\
+  \subfloat[]{\includegraphics[height=3cm]{2D2}\label{2D2}}
   \subfloat[]{\includegraphics[height=3cm]{2D3}\label{2D3}}
   \subfloat[]{\includegraphics[height=3cm]{2D4}\label{2D4}}\\
   \caption{Figuren bij bewijs van Axel Thue}  
@@ -65,6 +76,102 @@ Dit geeft ons de verdeling van de ruimte: gebieden buiten de grote cirkels (wit)
 Uit deze vertaling concluderen we dus dat Thue zijn vlak in 3 gebieden opgedeeld heeft. Hierna zal hij nog berekenen hoeveel oppervlakte er in de drie gebieden wordt ingenomen door de cirkels en uiteindelijk zal hij tot de conclusie komen dat geen enkel gebied een dichtheid heeft van meer dan 90.69\%, waardoor het bewijs voor het tweedimensionale equivalent van het bolstapelprobleem is afgerond.
 
 
-\subsection{}
+\subsection{Dienbladenprobleem}
+\todo{Ik weet niet zo goed als ik moet spreken over compactheid of efficiëntie of optimale compactheid of ... !!!!!! Dit is echter wel heel belangrijk om dit correct te benoemen!!}
 
-Conlusie
+Bij de meeste stapelingen stelt men zich de vraag hoeveel identieke voorwerpen men in een ruimte met vastgelegde grenzen kan stoppen. Wij zullen de vraag omkeren. In ons praktische probleem vragen we ons af wat de meest compacte ruimte is voor een vastgelegd aantal identieke voorwerpen.
+We kunnen dit probleem als volgt bekijken: een fabrikant wil dienbladen voor een bepaalde aantal glazen of blikjes. Hij wil dus weten hoe groot zo'n dienblad moet zijn zodat er precies 1,2,3 ... glazen of blikjes op passen. Omdat de fabrikant ruimdenkend is, wil hij niet enkel de traditionele cirkelvormige dienbladen uitproberen, maar ook rechthoekige of zeshoekige dienbladen. 
+
+\task{Bepaal nu voor welke hoeveelheid glazen of blikjes we welk soort dienblad willen maken en wat juist de efficiëntie is, m.a.w. hoeveel procent van het dienblad dat gevuld zal zijn. Schrijf dit in onderstaande tabel.}
+
+
+\begin{table}[h]
+\begin{tabular}{l||c|c|c|c}
+Aantal / vorm & cirkelvormig & driehoekig & rechthoekig& zeshoekig\\\hline\hline
+1&&&&\\\hline
+2&&&&\\\hline
+3&&&&\\\hline
+4&&&&\\\hline
+5&&&&\\\hline
+6&&&&\\\hline
+7&&&&\\\hline
+8&&&&\\\hline
+9&&&&\\\hline
+10&&&&\\\hline
+11&&&&\\\hline
+12&&&&\\\hline
+13&&&&\\\hline
+...&&&&\\
+\end{tabular}
+\caption{De efficiëntie van de dienbladen bij een bepaalde hoeveelheid glazen of blikjes}
+\label{}
+\end{table}
+
+\todo{Dit stuk aan passen voor leerlingen en leerkrachten!!}
+Het is nu de bedoeling dat jullie \todo{de leerlingen?} deze tabel gaan proberen in vullen door zelf te gaan experimenteren. Het probleem van de glazen kunnen we gaan voorstellen met munten en de dienbladen gewoon als een veelhoek.
+Eerst en vooral hebben we de geogebra-applet \todo{Hoe moeten we hiernaar verwijzen?}.
+ Hier kunnen de leerlingen zelf met fictieve munten en verstelbare dienbladen gaan uitproberen, waarbij de efficiëntie gewoon voor hen wordt uitgerekend. Het is wel de nodig dat de leerlingen telkens aanduiden voor welke hoeveelheid munten ze de efficiëntie aan het bepalen zijn. Dit is vooral de bedoeling voor het cirkelvormig en zeshoekig dienblad. Ook kan dit gedaan worden voor het rechthoekig en/of driehoekig dienblad.
+ 
+Voor deze laatste kunnen de leerlingen dit ook op een andere manier gaan uitzoeken. 
+De munten zijn dan bijvoorbeeld pokerjetons of echte geldstukken. Het driehoekig dienblad kunnen we als volgt construeren Neem een rechthoekig stuk dik karton en knip daar vanuit de rand een gelijkzijdige driehoek uit weg (zoals op de figuur) \todo{Pieter, zou jij zo een karton willen maken en daar dan gewoon enkele pokerjetons in willen leggen en een foto van trekken (de pokerjetons nog niet in de optimale configuratie leggen, maar gewoon willekeurig)?}. In het driehoekigegat in het karton leg je een paar munten of jetons. Schuif nu de jetons met een liniaal in de richting van het bovenste punt. Houd de liniaal zó dat de munten telkens in een gelijkzijdige driehoek zitten. De munten zitten zo in een gelijkzijdige driehoek die je zo klein mogelijk probeert te maken. Soms moet je de munten met je vingers een beetje helpen om ze op een goede plek te krijgen. Probeer de munten in een zo klein mogelijke driehoek te krijgen. 
+Om de efficiëntie te berekenen zullen de leerlingen de oppervlaktes moeten berekenen.
+
+Ook voor het rechthoekig dienblad kunnen we gebruik maken van karton. Als je twee keer een rechte hoek uitknipt, dan kan je hiermee een rechthoek maken. Ook gebruikmaken van 4 linialen (en een geodriehoek) kan lukken.
+
+\todo{Voor de leerkrachten:}
+Bij deze opdracht is het ook de bedoeling dat de leerlingen effectief de efficiëntie in sommige gevallen exact gaan uitrekenen door berekeningen. Het is aan de leerkracht om op voorhand te zeggen dat de leerlingen ofwel voor bijvoorbeeld 3 gevallen dit moeten uitrekenen, ofwel bijvoorbeeld voor de specifieke gevallen 'een driehoekig dienblad met 3 munten' en 'een zeshoekig dienblad met 7 munten'.
+
+\todo{Voor de leerlingen:}
+Het is ook de bedoeling dat jullie voor enkele gevallen de efficiëntie ook exact gaan uitwerken d.m.v. berekeningen en een goede figuur.
+
+Vooraf is het dan misschien handig om eerst enkele formules op te frissen:
+
+\begin{itemize}
+  \item Oppervlakte cirkel met straal $r$: $\pi.r^2$
+	\item Oppervlakte driehoek met basis $b$ en hoogte $h$: $\frac{b.h}{2}$
+	\item Oppervlakte rechthoek met lengte $l$ en breedte $b$: $l.b.$
+	\item Oppervlakte regelmatige $n$-hoek met zijde $z$: $\frac{1}{2}.n.z^2.\sin(\frac{2\pi}{n})$
+	\item Oppervlakte regelmatige zeshoek met zijde $z$: $\frac{3}{2}.z^2.\sqrt{3}$
+	\item \ask{Hoogte in gelijkzijdige driehoek met zijde $b$ :  ...}
+	\item[] \answer{$\sqrt{b^2-(\frac{b^2}{2})^2}$}	
+\end{itemize}
+
+In de volgende sectie zullen wij enkele gevallen effectief uitrekenen.
+
+\subsubsection{Berekeningen voor enkele specifiek gevallen}
+
+\begin{vb}[1 munt bij driehoekig dienblad]
+
+\end{vb}
+Enzovoort (zie Jordy zijn bestand, daar werk ik nog aan ...)
+
+\subsubsection{Conclusie}
+
+Als we alle gegevens in de overzichtstabel hebben gezet, zouden we (ongeveer) volgend resultaat moeten krijgen, waarbij de grootste waarden in een kleurtje staan \todo{Hoe doe je dit in LaTeX om in een tabel een vakje te kleuren??}:
+
+
+\begin{table}[h]
+\begin{tabular}{l||c|c|c|c}
+Aantal / vorm & cirkelvormig & driehoekig & rechthoekig& zeshoekig\\\hline\hline
+1& 100\% & 60,46\%&90,69\% & 78,54\%\\\hline
+2& 50\%& 48,60\% & 52,09\% & 78,54\%\\\hline
+3&64,62\%& 72,90\% & 68,02\% & 78,54\%\\\hline
+4&&&&\\\hline
+5&68,52\%& 65,11\% & 62,14\% & 78,54\%\\\hline
+6&&&&\\\hline
+7&77,78\%& 63,71\% & 85,05\% & 78,54\%\\\hline
+8&&&&\\\hline
+9&&&&\\\hline
+10&&&&\\\hline
+11& 71,45\%& 64,40\% & 64,79 \% & 79,06\%\\\hline
+12&&&&\\\hline
+13&72,45\%& 71,77 \% & 70,20 \% & 78,54\%\\\hline
+...&&&&
+\end{tabular}
+\caption{De efficiëntie van de dienbladen bij een bepaalde hoeveelheid glazen of blikjes}
+\label{}
+\end{table}
+
+
+Zoals we in de overzichtslijst kunnen zien, zijn de rechthoekige dienbladen gemiddeld genomen het efficiëntst. Op de tweede plaats komen de cirkelvormige en de zeshoekige dienbladen. In de realiteit merken we dat men in de restaurants en in de cafés bijna altijd cirkelvormige en rechthoekige dienbladen gebruikt. Waarschijnlijk zullen de uitbaters de compactheden van hun dienbladen niet berekend hebben, maar de fabrikanten van de dienbladen wel. Het is dus ook logisch dat de uitbaters dienbladen gebruiken die het meest efficiënt zijn. De rechthoekige dienbladen hebben inderdaad de grootste compactheid. Zeshoekige dienbladen zal men in de praktijk niet gebruiken, want ondanks dat er wel zeshoekige dienbladen zijn die een hoge compactheid hebben, zijn er ook veel zeshoekige dienbladen die een relatief kleine compactheid hebben. De cirkelvormige dienbladen zijn dan weer beter en misschien wel het best van alle dienbladen. Want ondanks dat zij nooit echt de hoogste compactheid hebben, zijn ze toch redelijk efficiënt te noemen. De compactheden kennen immers geen grote pieken en dalen en blijven gemiddeld genomen rond de 70\% draaien, wat een mooie waarde is. 
+Onze laatste vaststelling is dat de driehoekige dienbladen nooit een grote compactheid hebben met het logische gevolg dat we dus ook geen driehoekige dienbladen tegenkomen in de dagelijkse wereld. 

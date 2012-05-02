@@ -39,7 +39,7 @@ Om te berekenen hoe efficiënt een schikking met cirkels is, maken we gebruik van
 	\item \textbf{Vierkante rangschikking}:\\
 	\answer[2cm]{Als je cirkels neemt met straal gelijk aan 1, dan heeft het strakke 'omgeschreven' vierkant in de vierkante betegeling een zijde met lengte 2. De oppervlakte van de cirkel hier is $\pi$, de oppervlakte van het vierkant is 4. (Uiteraard konden we andere afmetingen genomen hebben, maar de verhoudingen blijven steeds hetzelfde.) Er is dus $\frac{\pi}{4}=0,78538...$, of ruim 78\% van het totale vlak bedekt door de cirkels.}
 	\item \textbf{Hexagonale rangschikking}:\\
-	\answer[2cm]{De zeshoek om een cirkel met straal 1 kan worden opgedeeld in twaalf halve gelijkzijdige driehoekjes met een basis met lengte 1 en een hoogte van $\frac{1}{\sqrt{3}}$. De oppervlakte van de zeshoek is dus $12.\frac{1}{2}.1.\frac{1}{\sqrt{3}}=2\sqrt{3}$. De efficiëntie of bedekkingsgraad is dus $\frac{\pi}{\sqrt{12}}=0.906589$.}
+	\answer[2cm]{De zeshoek om een cirkel met straal 1 kan worden opgedeeld in twaalf halve gelijkzijdige driehoekjes met een basis met lengte 1 en een hoogte van $\frac{1}{\sqrt{3}}$. De oppervlakte van de zeshoek is dus $12.\frac{1}{2}.1.\frac{1}{\sqrt{3}}=2\sqrt{3}$. De efficiëntie of bedekkingsgraad is dus $\frac{\pi}{\sqrt{12}}=0.90689$.}
 \end{enumerate}
 
 
@@ -52,7 +52,7 @@ Om te berekenen hoe efficiënt een schikking met cirkels is, maken we gebruik van
 
 
 \subsection{Axel Thue}
-De Scandinavische wiskundige Axel Thue (1863-1922) ontwikkelde in 1892 een theorie over het tweedimensionale equivalent voor 'het probleem van Kepler' waarin men zocht naar de dichtste pakkingsmethode voor cirkels in het vlak. Thue betegelde het vlak met identieke gelijkzijdige zeshoeken en tekende in elke zeshoek een cirkel op zo'n manier dat elke cirkel alle zijden van de zeshoek raakte. Hierdoor verkreeg hij een dichtheid van 90.69\% \question{90.69\% is anders dan hetgeen daarnet berekend (0.9066), iets mis?}, waarvan hij beweerde dat dit de hoogst mogelijke dichtheid was bij het stapelen in 2 dimensies. 
+De Scandinavische wiskundige Axel Thue (1863-1922) ontwikkelde in 1892 een theorie over het tweedimensionale equivalent voor 'het probleem van Kepler' waarin men zocht naar de dichtste pakkingsmethode voor cirkels in het vlak. Thue betegelde het vlak met identieke gelijkzijdige zeshoeken en tekende in elke zeshoek een cirkel op zo'n manier dat elke cirkel alle zijden van de zeshoek raakte. Hierdoor verkreeg hij een dichtheid van 90.69\%, waarvan hij beweerde dat dit de hoogst mogelijke dichtheid was bij het stapelen in 2 dimensies. 
 Om dit te bewijzen tekende Thue een begrensd aantal cirkels met straal 1 die elkaar niet overlapten. Daarna verdeelde hij willekeurig het tweedimensionale vlak in bepaalde gebieden waarbij hij aantoonde dat de dichtheid in elk gebied maximum 90.69\% is. Hierdoor bestond er geen tweedimensionale pakking waarbij de dichtheid groter is dan 90.69\% en op die manier bewees Thue zijn vermoeden dat de hexagonale pakking de dichtste pakkingsmethode was in twee dimensies.
 Het volledige bewijs zullen we hier niet meer bespreken, maar we zullen wel even kijken hoe Thue het vlak waarin de cirkels liggen heeft opgedeeld in verschillende gebieden. Hiervoor zullen we een korte vertaling geven van een deel van het oorspronkelijke Engelstalige bewijs dat geschreven is door Axel Thue.
 
@@ -75,13 +75,10 @@ Uit deze vertaling concluderen we dus dat Thue zijn vlak in 3 gebieden opgedeeld
 
 
 \subsection{Dienbladenprobleem}
-\todo{Ik weet niet zo goed als ik moet spreken over compactheid of efficiëntie of optimale compactheid of gewoon compactheid of ... !!!!!! Dit is echter wel heel belangrijk om dit correct te benoemen!!
-\\PP: ik zou alles terugleiden op 'efficiëntie'}
-
 Bij de meeste stapelingen stelt men zich de vraag hoeveel identieke voorwerpen men in een ruimte met vastgelegde grenzen kan stoppen. Wij zullen de vraag omkeren. In ons praktische probleem vragen we ons af wat de meest compacte ruimte is voor een vastgelegd aantal identieke voorwerpen.
 We kunnen dit probleem als volgt bekijken: een fabrikant wil dienbladen voor een bepaalde aantal glazen of blikjes. Hij wil dus weten hoe groot zo'n dienblad moet zijn zodat er precies 1,2,3 ... glazen of blikjes op passen. Omdat de fabrikant ruimdenkend is, wil hij niet enkel de traditionele cirkelvormige dienbladen uitproberen, maar ook rechthoekige of zeshoekige dienbladen. 
 
-\task{Bepaal nu voor welke hoeveelheid glazen of blikjes we welk soort dienblad willen maken en wat juist de efficiëntie is, m.a.w. hoeveel procent van het dienblad dat gevuld zal zijn. Schrijf dit in onderstaande tabel. \todo{OF} ...juist de (optimale???) compactheid. Deze compactheid is dus hoeveel oppervlakte van het dienblad de munten innemen, uitgedrukt in percentage, en deze wordt berekend door de oppervlakte van de munten te delen door de oppervlakte van het dienblad en dit te vermenigvuldigen met 100.}
+\task{Bepaal nu voor welke hoeveelheid glazen of blikjes we welk soort dienblad willen maken en wat juist de efficiëntie is, m.a.w. hoeveel procent van het dienblad dat gevuld zal zijn. Schrijf dit in onderstaande tabel.}
 
 
 \begin{table}[h]
@@ -145,55 +142,68 @@ In de volgende sectie zullen wij enkele gevallen effectief uitrekenen.
 \subsubsection{Berekeningen voor enkele specifiek gevallen}
 
 Wij zullen voor de berekeningen gebruik maken van de afmetingen van een jeton met een straal van 2 cm. Deze afmetingen zijn ook zo bij de geogebra-applets \todo{Dit aanpassen}.
-De oppervlakte van 1 jeton is $4*\pi\approx 12,5663$. Omdat we voornamelijk geïnteresseerd zijn in de optimale compactheid van een dienblad en waarbij hier een resultaat van ... \todo{voorbeeld zoeken van absurd resultaat} geen betekenis heeft, zullen we steeds de afmetingen afronden op 4 cijfers na de komma en de percentage tot op de honderdtallen.
+De oppervlakte van 1 jeton is $4*\pi\approx 12,5664$. Omdat we voornamelijk geïnteresseerd zijn in de optimale compactheid van een dienblad en waarbij hier een resultaat van ... \todo{voorbeeld zoeken van absurd resultaat} geen betekenis heeft, zullen we steeds de afmetingen afronden op 4 cijfers na de komma en de percentage tot op de honderdtallen.
+We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de oppervlakte van het dienblad en de efficiëntie. Dit laatste is de hoeveel van de oppervlakte van het dienblad die de munten innemen, uitgedrukt in percentage, en deze wordt berekend door de oppervlakte van de munten te delen door de oppervlakte van het dienblad en dit te vermenigvuldigen met 100.
 
 
 \begin{vb}[Dienbladen met 1 munt]
 
 \begin{figure}[h]
-\includegraphics[width=10cm]{1munt}
+\includegraphics[width=10cm]{1munten}
 \caption{De dienbladen voor 1 munt}
 \label{1munt}
 \end{figure}
 
 \begin{itemize}
 	\item \textbf{Cirkelvormig dienblad:} \\
-	Wanneer we slechts 1 munt hebben, is een cirkelvormig dienblad het efficiënst, omdat er dan geen vrije ruimte meer overblijft. Eén munt neemt dus 100\% van de oppervlakte van het cirkelvormig dienblad in.
+	Wanneer we slechts 1 munt hebben, is een cirkelvormig dienblad het efficiënst, omdat er dan geen vrije ruimte meer overblijft. Eén munt neemt dus 100\% van de oppervlakte van het cirkelvormig dienblad in. We kunnen dit als volgt samenvatten:
+	
+	\begin{itemize}
+	\item Oppervlakte dienblad = 12,5664 cm$^2$
+	\item Efficiëntie = 100\%
+\end{itemize}
 	
 	\item \textbf{Driehoekig dienblad:}\\
-	Bij een driehoekig dienblad is de lengte van de basis gelijk aan $2.2.\tan(\pi/6)=4\sqrt{3}\approx 6,9282$. De hoogte is $\sqrt{b^2-(\frac{b}{2})^2}= 6$
-	De oppervlakte van de gelijkzijdige driehoek is dus $20,7846$ cm$^2$. Hieruit volgt dat 1 munt 60,46 \% van de oppervlakte van het driehoekig dienblad inneemt.
-	
-	
+	Bij een driehoekig dienblad is de lengte van de basis gelijk aan $2.2.\tan(\pi/6)=4\sqrt{3}\approx 6,9282$. De hoogte is $\sqrt{b^2-(\frac{b}{2})^2}= 6$. Daaruit volgt dat:
+	\begin{itemize}
+	\item Oppervlakte dienblad = $20,7846$ cm$^2$
+	\item Efficiëntie = 60,46 \%
+\end{itemize}	
+
 	\item \textbf{Rechthoekig dienblad:}\\
-	De oppervlakte van de meest compacte rechthoek voor 1 jeton is niet moeilijk te vinden. Aangezien we zien dat de lengte en de breedte beide gelijk zijn aan de diamter van de munt, weten we dat de oppervlakte van de rechthoek gelijk is aan $4^2=16$. Hieruit volt dat 1 munt 78,54\% van de oppervlakte van het rechthoekig dienblad inneemt.
+	De oppervlakte van de meest compacte rechthoek voor 1 jeton is niet moeilijk te vinden. Aangezien we zien dat de lengte en de breedte beide gelijk zijn aan de diamter van de munt, weten we dat:
 	
+	\begin{itemize}
+	\item Oppervlakte dienblad = $16$ cm$^2$
+	\item Efficiëntie = 78,54\%
+\end{itemize}
 	
 	\item \textbf{Zeshoekig dienblad:}\\
-	Voor de oppervlakte van de gelijkzijdige zeshoek te berekenen, moeten we de straal van deze zeshoek berekenen (of zijde, die daaraan gelijk is). Deze is gelijk aan de straal van de jeton gedeeld door $\cos(\pi/6)$. Dus in de formule $\frac{3}{2}.z^2.\sqrt{3}$ is $z=2,3094$ en vinden we dus dat de oppervlakte van de zeshoek gelijk is aan 13,8564 cm. De munt neemt dus 90,69\% van de oppervlakte van het zeshoekig dienblad in.
+	Voor de oppervlakte van de gelijkzijdige zeshoek te berekenen, moeten we de straal van deze zeshoek berekenen (of zijde, die daaraan gelijk is). Deze is gelijk aan de straal van de jeton gedeeld door $\cos(\pi/6)$. Dus in de formule $\frac{3}{2}.z^2.\sqrt{3}$ is $z=2,3094$ en vinden we dus dat de oppervlakte van de zeshoek gelijk is aan 13,8564 cm$^2$. 
+	
+	\begin{itemize}
+	\item Oppervlakte dienblad = 13,8564 cm$^2$
+	\item Efficiëntie = 90,69\%
 \end{itemize}
-
-
-
+\end{itemize}
 
 \end{vb}
 
-
 \begin{vb}[Dienbladen met 2 munten]
-De oppervlakte van 2 munten is dus steeds $8*\pi\approx 25,1327$.
+De oppervlakte van 2 munten is dus steeds $8.\pi\approx 25,1327$.
 We zullen ook vanaf nu de berekeningen iets compacter schrijven.
 
 \begin{itemize}
   \item \textbf{Cirkelvormig dienblad:}\\
   Om de oppervlakte te berekenen hebben we de straal van de grote cirkel nodig. Die is twee maal de straal van de munten en dit is $4$.  Hieruit volgt
   \begin{itemize}
-	  \item Oppervlakte dienblad = $16\pi\approx 50,2655$
-	  \item Compactheid = 50\%
+	  \item Oppervlakte dienblad = $16\pi\approx 50,2655$ cm$^2$
+	  \item Efficiëntie = 50\%
   \end{itemize}
   
 	\item \textbf{Driehoekig dienblad:}\\
 	De configuratie op de figuur geeft dezelfde als de configuratie met een munt in de rakende in de tophoek (je kan dit inzien door de figuur te draaien).
-	De grootte van basis van de driehoek is gelijk aan de grootte van de projectie van het lijnstuk FI (op de figuur) en de afstand IJ. Deze laatste is twee keer de straal van de jetons, dus gelijk aan 4, omdat de cirkels elkaar juist raken. De projectie van FI heeft grootte $2\sqrt{3}$ zoals bij de berekeningen van het voorbeeld met 1 munt. De grootte van de basis is dus gelijk aan 4+4$\sqrt{3}\approx 10,9282$. Met deze basis weten we dat de hoogte van de driehoek 9,4641 is. Hieruit vinden we :
+	De grootte van basis van de driehoek is gelijk aan twee keer de grootte van de projectie van het lijnstuk $[AB]$ (op de figuur), dus twee keer de grootte van $[AC]$, en de lengte van $[BD]$. Deze laatste is twee keer de straal van de jetons, dus gelijk aan 4, omdat de cirkels elkaar juist raken. De grootte van $[AC]$ heeft grootte $2\sqrt{3}$ zoals bij de berekeningen van het voorbeeld met 1 munt. De grootte van de basis is dus gelijk aan 4+4$\sqrt{3}\approx 10,9282$. Met deze basis weten we dat de hoogte van de driehoek 9,4641 is. Hieruit vinden we :
 	
 	\begin{itemize}
 	\item Oppervlakte dienblad = 51,7128 cm$^2$.
@@ -209,6 +219,7 @@ We zullen ook vanaf nu de berekeningen iets compacter schrijven.
 \end{itemize}
 	
 	\item \textbf{Zeshoekig dienblad:}\\
+	\todo{pfff, dat is hier een moeilijk ...}
 	Om de straal van ons zeshoekig dienblad te berekenen hebben we een 'kleine' omweg genomen. In de driehoek $GIJ$ geldt dat de lengte van de zijde $JI$ gelijk is aan $\sqrt{R^2+R^2-2.R.R.\cos(150°)}=3,3859$ cm, waarbij we gebruik maken van de cosinusregel met $R$ de straal van de munten. Het lijnstuk $LI$ is even groot, waaruit volgt dat de driehoek $IJL$ gelijkbenig is. Hierbij weten we ook dat de hoek $L\hat{I}J$ $30°$ is, waardoor de hoek $I\hat{L}J$ $75°$ is. Hieruit volgt dat de hoek $A\hat{L}I$ 
 	\begin{itemize}
 	\item Oppervlakte dienblad = 

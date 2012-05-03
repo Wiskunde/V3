@@ -130,7 +130,7 @@ Vooraf is het dan misschien handig om eerst enkele formules op te frissen:
 	\item Oppervlakte rechthoek met lengte $l$ en breedte $b$: $l.b.$
 	\item Oppervlakte regelmatige $n$-hoek met zijde $z$: $\frac{1}{2}.n.z^2.\sin(\frac{2\pi}{n})$
 	\item Oppervlakte regelmatige zeshoek met zijde $z$: $\frac{3}{2}.z^2.\sqrt{3}$
-	\item \ask{Hoogte in gelijkzijdige driehoek met zijde $b$:} \answer{$\sqrt{b^2-(\frac{b^2}{2})^2}$}	
+	\item \ask{Hoogte in gelijkzijdige driehoek met zijde $b$:} \answer{$\sqrt{b^2-(\frac{b}{2})^2}$}	
 \end{itemize}
 
 \teacher{Indien de formule voor de regelmatige zeshoek niet gekend is, is het goed dit samen eerst met de leerlingen te bepalen.}
@@ -141,14 +141,27 @@ In de volgende sectie zullen wij enkele gevallen effectief uitrekenen.
 
 \subsubsection{Berekeningen voor enkele specifiek gevallen}
 
+\question{Hey Pieter, als je dit naleest, wil jij vooral ook letten op het feit dat ik consequent de hoeken in graden schrijf en dat er bij de afstanden en oppervlaktes steeds cm en cm$^2$ bij staan? Ik ga nu eerst verdertypen en daarna het zelf doen, maar het zou kunnen zijn dat jij het eerder nalees dan ik :p ... Merci :) Aja, en ook overal efficiëntie ipv compactheid ofzo.
+De lay-out is hier ook nog niets waard, maar dit zou ik pas op het einde in orde maken als alle andere todo's en zo weggewerkt zijn ...}
+
 Wij zullen voor de berekeningen gebruik maken van de afmetingen van een jeton met een straal van 2 cm. Deze afmetingen zijn ook zo bij de geogebra-applets \todo{Dit aanpassen}.
-De oppervlakte van 1 jeton is $4*\pi\approx 12,5664$. Omdat we voornamelijk geïnteresseerd zijn in de optimale compactheid van een dienblad en waarbij hier een resultaat van ... \todo{voorbeeld zoeken van absurd resultaat} geen betekenis heeft, zullen we steeds de afmetingen afronden op 4 cijfers na de komma en de percentage tot op de honderdtallen.
+De oppervlakte van 1 jeton is $4*\pi\approx 12,5664$. We zijn voornamelijk geïnteresseerd in de efficiëntie van een dienblad. Het is echter zo dat een resultaat van $\frac{\pi}{3\sqrt{3}}\%$ niet zoveel zegt. Als we schrijven dat de efficiëntie $60,46\%$ is, hebben we een beter beeld en we zullen dus steeds de afmetingen steeds als decimale getallen schrijven die we afronden op 4 cijfers na de komma en de percentage decimale getallen, afgerond tot op de honderdtallen.
 We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de oppervlakte van het dienblad en de efficiëntie. Dit laatste is de hoeveel van de oppervlakte van het dienblad die de munten innemen, uitgedrukt in percentage, en deze wordt berekend door de oppervlakte van de munten te delen door de oppervlakte van het dienblad en dit te vermenigvuldigen met 100.
 
 
 \begin{vb}[Dienbladen met 1 munt]
 
+\todo{Ik zou supergraag dit op een nieuwe lijn krijgen, maar het lukt me niet}
+\begin{itemize}
+\item[] 
+\begin{itemize}
+	\item Oppervlakte munten =$4\pi\approx 12,5664 $cm$^2$
+\end{itemize}
+\end{itemize}
+
+
 \begin{figure}[h]
+\centering
 \includegraphics[width=10cm]{1munten}
 \caption{De dienbladen voor 1 munt}
 \label{1munt}
@@ -164,7 +177,7 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 \end{itemize}
 	
 	\item \textbf{Driehoekig dienblad:}\\
-	Bij een driehoekig dienblad is de lengte van de basis gelijk aan $2.2.\tan(\pi/6)=4\sqrt{3}\approx 6,9282$. De hoogte is $\sqrt{b^2-(\frac{b}{2})^2}= 6$. Daaruit volgt dat:
+	Bij een driehoekig dienblad is de lengte van de basis gelijk aan $2.2.\tan(\pi/6)=4\sqrt{3}\approx 6,9282$ cm. De hoogte is $\sqrt{b^2-(\frac{b}{2})^2}= 6$ cm. Daaruit volgt dat:
 	\begin{itemize}
 	\item Oppervlakte dienblad = $20,7846$ cm$^2$
 	\item Efficiëntie = 60,46 \%
@@ -190,12 +203,24 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 \end{vb}
 
 \begin{vb}[Dienbladen met 2 munten]
-De oppervlakte van 2 munten is dus steeds $8.\pi\approx 25,1327$.
-We zullen ook vanaf nu de berekeningen iets compacter schrijven.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{2munten}
+\caption{De dienbladen voor 2 munten}
+\label{2munt}
+\end{figure}
+
 
 \begin{itemize}
+\item[] 
+\begin{itemize}
+	\item Oppervlakte munten =  $8\pi\approx 25,1327$ cm$^2$
+\end{itemize}
+\end{itemize}
+\begin{itemize}
   \item \textbf{Cirkelvormig dienblad:}\\
-  Om de oppervlakte te berekenen hebben we de straal van de grote cirkel nodig. Die is twee maal de straal van de munten en dit is $4$.  Hieruit volgt
+  Om de oppervlakte te berekenen hebben we de straal van de grote cirkel nodig. Die is twee maal de straal van de munten en dit is $4$ cm.  Hieruit volgt
   \begin{itemize}
 	  \item Oppervlakte dienblad = $16\pi\approx 50,2655$ cm$^2$
 	  \item Efficiëntie = 50\%
@@ -203,48 +228,66 @@ We zullen ook vanaf nu de berekeningen iets compacter schrijven.
   
 	\item \textbf{Driehoekig dienblad:}\\
 	De configuratie op de figuur geeft dezelfde als de configuratie met een munt in de rakende in de tophoek (je kan dit inzien door de figuur te draaien).
-	De grootte van basis van de driehoek is gelijk aan twee keer de grootte van de projectie van het lijnstuk $[AB]$ (op de figuur), dus twee keer de grootte van $[AC]$, en de lengte van $[BD]$. Deze laatste is twee keer de straal van de jetons, dus gelijk aan 4, omdat de cirkels elkaar juist raken. De grootte van $[AC]$ heeft grootte $2\sqrt{3}$ zoals bij de berekeningen van het voorbeeld met 1 munt. De grootte van de basis is dus gelijk aan 4+4$\sqrt{3}\approx 10,9282$. Met deze basis weten we dat de hoogte van de driehoek 9,4641 is. Hieruit vinden we :
+	De grootte van basis van de driehoek is gelijk aan twee keer de grootte van de projectie van het lijnstuk $[AB]$ (op de figuur), dus twee keer de grootte van $[AC]$, en de lengte van $[BD]$. Deze laatste is twee keer de straal van de jetons, dus gelijk aan 4 cm, omdat de cirkels elkaar juist raken. De grootte van $[AC]$ heeft grootte $2\sqrt{3}$ cm zoals bij de berekeningen van het voorbeeld met 1 munt. De grootte van de basis is dus gelijk aan 4+4$\sqrt{3}\approx 10,9282$ cm. Met deze basis weten we dat de hoogte van de driehoek 9,4641 cm is. Hieruit vinden we :
 	
 	\begin{itemize}
 	\item Oppervlakte dienblad = 51,7128 cm$^2$.
-	\item oppervlakte dienblad = 48,60\%
+	\item Efficiëntie = 48,60\%
 \end{itemize}
 	
 	
 	\item \textbf{Rechthoekig dienblad:}\\
 	De rechthoek die de 2 munten omvat heeft een lengte van 4 keer de straal van de munten en de breedte is gewoon de diameter. Zo vinden we dus :
 	\begin{itemize}
-	\item Oppervlakte dienblad = 32
-	\item Compactheid dienblad = 78,54\%
+	\item Oppervlakte dienblad = 32 cm$^2$
+	\item Efficiëntie = 78,54\%
 \end{itemize}
 	
 	\item \textbf{Zeshoekig dienblad:}\\
-	\todo{pfff, dat is hier een moeilijk ...}
-	Om de straal van ons zeshoekig dienblad te berekenen hebben we een 'kleine' omweg genomen. In de driehoek $GIJ$ geldt dat de lengte van de zijde $JI$ gelijk is aan $\sqrt{R^2+R^2-2.R.R.\cos(150°)}=3,3859$ cm, waarbij we gebruik maken van de cosinusregel met $R$ de straal van de munten. Het lijnstuk $LI$ is even groot, waaruit volgt dat de driehoek $IJL$ gelijkbenig is. Hierbij weten we ook dat de hoek $L\hat{I}J$ $30°$ is, waardoor de hoek $I\hat{L}J$ $75°$ is. Hieruit volgt dat de hoek $A\hat{L}I$ 
+	\todo{Een oplossing duizend keer makkelijk dan die in het bestand van Jordy, maar wel met dezelfde uikomst. Maar controleer het toch nog maar eens goed.}
+	Om de oppervlakte van de zeshoek te weten willen we graag de straal (= de zijde) van de zeshoek. Deze kunnen we vinden door het berekenen van de lengte va $[AI]$ en $[IH]$. Dit laatste is gewoon de straal van 2 cm. $|AI|$ kunnen we vinden als we $I$ loodrecht gaan projecteren op $AB$. $|GI|$ is dan ook de straal en we weten dat in deze driehoek de hoek $G\hat{A}I=60°$. Hieruit halen we dat $|AI|=\frac{|GI|}{\sin(60°)}=2,3094$ cm en dus de grootte van de straal is 4,3094 cm.
 	\begin{itemize}
-	\item Oppervlakte dienblad = 
-	\item Compactheid dienblad =
+	\item Oppervlakte dienblad = 48,2487 cm$^2$
+	\item Efficiëntie = 52,09\%
 \end{itemize}
 \end{itemize}
 
-\todo{figuur}
+
 \end{vb}
 
 
 \begin{vb}[Dienblad met 3 munten]
-De oppervlakte van 3 munten is gelijk aan $12\pi\approx 37,70$ cm$^2$.
+
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=18cm]{3munten}
+\caption{De dienbladen voor 3 munten}
+\label{3munt}
+\end{figure}
+
+
+\begin{itemize}
+	\item 
+	\begin{itemize}
+	\item Oppervlakte 3 munten= $12\pi\approx 37,70$ cm$^2$
+\end{itemize}
+\end{itemize}
+
 
 \begin{itemize}
   \item \textbf{Cirkelvormig dienblad:}\\
-  De straal van de cirkel is deze keer gelijk aan de som van de lengtes van twee lijnstukken, HA en AD. De lengte van HA is gelijk aan de straal van de munten. De lengte van AD vinden we in de driehoek ABC. Doordat deze driehoek gelijkzijdig is, geldt dat de hoogtelijnen elkaar in 1 punt snijden, het hoogtepunt. En dit punt verdeelt elke hoogtelijn van de driehoek in twee delen waarvan het ene deel twee keer zo groot is als het ander. Met andere woorden, de lengte van AD is twee keer de lengte van DE. Doordat de lengte van AE=$\sqrt{|AB|^2-|BE|^2}=\sqrt{16-4}=\sqrt{12}\approx 3,4641$ cm, is de lengte van AD gelijk aan 2,31cm. Hieruit volgt dat de straal van het cirkelvormig dienblad een lengte van 4,31 cm heeft, waaruit volgt dat :
+  De straal van de cirkel is deze keer gelijk aan de som van de lengtes van twee lijnstukken, $|HA|$ en $|AD|$. De lengte van $[HA]$ is gelijk aan de straal van de munten. De lengte van $[AD]$ vinden we in de driehoek $ABC$. Doordat deze driehoek gelijkzijdig is, geldt dat de hoogtelijnen elkaar in 1 punt snijden, het hoogtepunt. En dit punt verdeelt elke hoogtelijn van de driehoek in twee delen waarvan het ene deel twee keer zo groot is als het ander. Met andere woorden, de lengte van $[AD]$ is twee keer de lengte van $[DE]$. Doordat $|AE|=\sqrt{|AB|^2-|BE|^2}=\sqrt{16-4}=\sqrt{12}\approx 3,4641$ cm, is de lengte van $[AD]$ gelijk aan 2,3094cm. Hieruit volgt dat de straal van het cirkelvormig dienblad een lengte van 4,3094 cm heeft. Het is ook niet verwonderlijk dat dit dezelfde straal geeft als de zeshoek in vorig voorbeeld. \\
+ We vinden dus volgende resultaten:
+   
   
   \begin{itemize}
 	\item Oppervlakte dienblad = 58,36 cm$^2$.
-	\item Compactheid dienblad = 64,62 \%
+	\item Efficiëntie= 64,62 \%
 \end{itemize}
      
 	\item \textbf{Driehoekig dienblad:}\\
-	Aangezien het driehoekige dienblad bij drie munten hetzelfde is als dat bij twee munten hoeven we de berekeningen niet opnieuw te doen. We weten dus dat:
+	Aangezien het driehoekige dienblad bij drie munten hetzelfde is als dat bij twee munten hoeven we de berekeningen voor de oppervlakte van het dienblad niet opnieuw te doen. We weten dus dat:
 	
 	\begin{itemize}
 	\item Oppervlakte dienblad = 14,80 cm$^2$.
@@ -252,26 +295,39 @@ De oppervlakte van 3 munten is gelijk aan $12\pi\approx 37,70$ cm$^2$.
 \end{itemize}
 	
 	\item \textbf{Rechthoekig dienblad:}\\
+	Zoals je ziet zijn er twee figuren van rechthoeken opgenomen in dit voorbeeld. Hierin is duidelijk te zien welke rechthoekig dienblad het meest efficiënt is (namelijk die waar de drie glazen naast elkaar staan). Deze efficiëntie kunnen we eigenlijk al overnemen van de vorige voorbeelden, omdat je als het waren 3 vierkante dienbladen van 1 munt naast elkaar plakt. Als we echter toch even de eenvoudige berekeningen hernemen, bekomen we dat de lengte van het rechthoekig dienblad 6 keer de straal is van de munten en de breedte de diameter. Voor zo een rechthoek geldt dus:
+	
+	\begin{itemize}
+	\item Oppervlakte dienblad = 45 cm$^2$
+	\item Efficiëntie = 78,54\%
+\end{itemize} 
+	
+	
 	\item \textbf{Zeshoekig dienblad:}\\
-	Om de straal van de zeshoek ABCDEF te verkrijgen berekenen we eerst de lengte van het rode lijnstuk. Dit rode lijnstuk is in twee gelijke delen verdeeld (FH en HB). Deze delen hebben een lengte die gelijk is aan de hoogte van de meest compacte gelijkzijdige driehoek bij 1 munt min 1 keer de straal van de munt (Dit kan je zien door bijvoorbeeld de driehoek die vertrekt in top B te beschouwen met de meest linkse cirkel). Dus $|HB|=|FH|=$
+	Om de straal van de zeshoek $ABCDEF$ te verkrijgen berekenen we eerst de lengte van het groene lijnstuk. Dit groene lijnstuk $[FB]$ is in twee gelijke delen verdeeld ($|FH|$ en $|HB|$). Deze delen hebben een lengte die gelijk is aan de hoogte van de meest compacte gelijkzijdige driehoek bij 1 munt min 1 keer de straal van de munt (Dit kan je zien door bijvoorbeeld de driehoek die vertrekt in top B te beschouwen met de meest linkse cirkel). Dus $|HB|=|FH|=4$cm. De lengte van het groene lijnstuk heeft dus een lengte van 8 cm. De lengte van de straal in de zeshoek kunnen we nu eenvoudig verkrijgen in de rechthoekige driehoek $AFH$. Daarin geldt namelijk $\cos(30°)=\frac{4}{z}$ met $z$ de zijde van de zeshoek. Deze $z$ is dus gelijk aan 4,6188 cm. Zo kunnen we besluiten dat 
+	\begin{itemize}
+	\item Oppervlakte dienblad = 55,4256 cm$^2$
+	\item Efficiëntie = 68,02\%
+\end{itemize}
+	
 	
 \end{itemize}
 \end{vb}
 
-\begin{vb}
+\begin{vb}[Dienblad met 11 munten]
 
 \begin{itemize}
-  \item \textbf{Cirkelvormig dienblad:}\\
+  \item \textbf{Rechthoekig dienblad:}\\
   Om de oppervlakte te berekenen 
    \begin{itemize}
 	\item Oppervlakte dienblad = 
 \end{itemize}
   
-	\item \textbf{Driehoekig dienblad:}\\
-	\item \textbf{Rechthoekig dienblad:}\\
-	\item \textbf{Zeshoekig dienblad:}\\
 \end{itemize}
 \end{vb}
+
+
+
 \subsubsection{Conclusie}
 
 Als we alle gegevens in de overzichtstabel hebben gezet, zouden we (ongeveer) volgend resultaat moeten krijgen, waarbij de grootste waarden in een kleurtje staan \todo{Hoe doe je dit in LaTeX om in een tabel een vakje te kleuren??}:
@@ -301,5 +357,5 @@ Aantal / vorm & cirkelvormig & driehoekig & rechthoekig& zeshoekig\\\hline\hline
 \end{table}
 
 
-Zoals we in de overzichtslijst kunnen zien, zijn de rechthoekige dienbladen gemiddeld genomen het efficiëntst. Op de tweede plaats komen de cirkelvormige en de zeshoekige dienbladen. In de realiteit merken we dat men in de restaurants en in de cafés bijna altijd cirkelvormige en rechthoekige dienbladen gebruikt. Waarschijnlijk zullen de uitbaters de compactheden van hun dienbladen niet berekend hebben, maar de fabrikanten van de dienbladen wel. Het is dus ook logisch dat de uitbaters dienbladen gebruiken die het meest efficiënt zijn. De rechthoekige dienbladen hebben inderdaad de grootste compactheid. Zeshoekige dienbladen zal men in de praktijk niet gebruiken, want ondanks dat er wel zeshoekige dienbladen zijn die een hoge compactheid hebben, zijn er ook veel zeshoekige dienbladen die een relatief kleine compactheid hebben. De cirkelvormige dienbladen zijn dan weer beter en misschien wel het best van alle dienbladen. Want ondanks dat zij nooit echt de hoogste compactheid hebben, zijn ze toch redelijk efficiënt te noemen. De compactheden kennen immers geen grote pieken en dalen en blijven gemiddeld genomen rond de 70\% draaien, wat een mooie waarde is. 
-Onze laatste vaststelling is dat de driehoekige dienbladen nooit een grote compactheid hebben met het logische gevolg dat we dus ook geen driehoekige dienbladen tegenkomen in de dagelijkse wereld. 
+Zoals we in de overzichtslijst kunnen zien, zijn de rechthoekige dienbladen gemiddeld genomen het efficiëntst. Op de tweede plaats komen de cirkelvormige en de zeshoekige dienbladen. In de realiteit merken we dat men in de restaurants en in de cafés bijna altijd cirkelvormige en rechthoekige dienbladen gebruikt. Waarschijnlijk zullen de uitbaters de compactheden van hun dienbladen niet berekend hebben, maar de fabrikanten van de dienbladen wel. Het is dus ook logisch dat de uitbaters dienbladen gebruiken die het meest efficiënt zijn. De rechthoekige dienbladen hebben inderdaad de grootste efficiëntie. Dit komt echter voornamelijk omdat we gewerkt hebben met lange smalle dienbladen waarbij alle glazen achter elkaar staan. Hadden we echter gewerkt met vierkanten, zouden we waarschijnlijk niet zo een hoge efficiëntie hebben gehad. Zeshoekige dienbladen zal men in de praktijk minder gebruiken, want ondanks dat er wel zeshoekige dienbladen zijn die een hoge compactheid hebben, zijn er ook veel zeshoekige dienbladen die een relatief kleine compactheid hebben. De cirkelvormige dienbladen zijn dan weer beter en misschien wel het best van alle dienbladen. Want ondanks dat zij nooit echt de hoogste compactheid hebben, zijn ze toch redelijk efficiënt te noemen. De waardne van de efficiënties kennen immers geen grote pieken en dalen en blijven gemiddeld genomen rond de 70\% draaien, wat een mooie waarde is. 
+Onze laatste vaststelling is dat de driehoekige dienbladen nooit een grote efficiëntie hebben met het logische gevolg dat we dus ook zo goed als geen driehoekige dienbladen tegenkomen in de dagelijkse wereld. 

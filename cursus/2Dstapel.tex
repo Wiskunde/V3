@@ -361,7 +361,28 @@ Beschouw volgende figuur\todo{Maken!!}.
 %\caption{Figuur voor het bewijs dat deze configuratie het meest efficiënt is }
 %\label{bewijs}
 %\end{figure}
+We hebben, zoals je op de figuur kan zien, de kleine driehoek opgedeeld in drie gebieden, die allemaal de vorm van een vlieger hebben. Als scheiding tussen de drie vliegers zien we lijnen staan die bestaan uit een doorgetrokken lijn en een stippellijn. Dit is gedaan om aan te geven in welk gebiedje de punten óp de scheidingslijn moeten liggen, namelijk aan de kant van de doorgetrokken lijn. Zoals we eerder zeiden is het mooie van deze opdeling dat we vier middelpunten van de vier grotere cirkels hebben, en slechts drie gebiedjes waar die middelpunten in moeten liggen. In één van de gebieden zullen dus twee middelpunten moeten liggen. 
 
+\task{Bereken hoeveel de grootte van de twee diagonalen van de vlieger zijn, m.a.w. bereken $|EJ|$ en $|GH|$.}
+\answer{Het is onmiddellijk duidelijk dat $|EJ|=2r$. De afstand van $G$ naar $H$ vinden we door in de driehoek $GHJ$ te kijken. Je kan deze gelijkbenige driehoek in twee verdelen door de hoogtelijn te tekenen uit het hoekpunt $J$. Hieruit volgt dat $\sin(60°)=\frac{|PH|}{r}$, met $P$ het voetpunt zoals op de figuur. We vinden dus dat de lengte van de kleine diagonaal van deze vlieger gelijk is aan $\sqrt{3}r$. \todo{figuur maken!!}
+%\begin{figure}%
+%\includegraphics[width=\columnwidth]{filename}
+%\caption{}%
+%\label{}%
+%\end{figure}
+}
+Uit deze berekeningen halen we dat twee middelpunten in een vlieger nooit verder uit elkaar kunnen liggen dan $2r$. In de verbeterede configuratie met grotere cirkels moeten de middelpunten $2R$ uit elkaar liggen. $R$ mag dus niet groter zijn dan $r$, zodat we dus inzien dat grotere cirkels dan deze die we al hadden, niet in deze driehoek kunnen.
+
+We weten dat de oplossing met $R=r$ bestaat, aangezien we deze reeds zelf geconstrueerd hebben. 
+
+\ask{Zouden er nog andere configuraties met vier munten zijn, die in dit driehoekig dienblad passen?}{1}
+\answer{Neen, er is maar één oplossing. Het is namelijk zo dat van de twee middelpunten van de cirkels die in hetzelfde vliegergebied moeten liggen, er één in een hoekpunt moet liggen en de ander precies in het midden van de kleine driehoek, want alleen dan is hun afstand gelijk aan $2r$. Daarna blijven alleen dan de andere twee hoekpunten van de kleine driehoek over als middelpunt voor de laatste twee cirkels.}
+
+We weten nu dat deze configuratie ook effectief de meest optimale compactheid geeft. Laten we dan ten slotte ook effectief uitrekenen wat die efficiëntie ook is.
+
+\task{Bereken de efficiëntie van vier gelijke munten met straal $r$ bij een driehoekig dienblad.}
+\answer{ De oppervlakte van de vier cirkels is $4\pi r^2$. Om de oppervlakte van de driehoek te bepalen hebben we de basis en de hoogte van de grote driehoek nodig.
+De basis vinden we door deze op te splitsen. Het eerste stuk $|BK|$ is gelijk aan $\frac{r}{tan(30°)}=r\sqrt{3}$. We weten ook dat $|KL|=|EH|=\cos(30°)2r=r\sqrt{3}$. De twee andere delen van $[BC]$ vinden we analoog en zo bekomen we dus een basis van grootte $4r\sqrt{3}$. De hoogte van de grootte driehoek is $\sqrt{b^2-(\frac{b}{2})^2}= 6r$. De oppervlakte van het driehoekig dienblad is dus $12\sqrt{3}r^2 $. De efficiëntie halen we hier gemakkelijk uit door het delen van de twee oppervlaktes. Zo bekomen we dat er $\frac{4\pi}{12\sqrt{3}}.100\approx 60,46\%$ van de oppervlakte van het dienblad is gevuld met munten bij deze optimale configuratie.}
 
 \subsubsection{Berekeningen voor enkele specifieke gevallen}
 

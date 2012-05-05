@@ -51,9 +51,11 @@ Ook de formule met de sommen moet zeker mogelijk zijn om gevonden te worden.
 
 \task{Test met de knikkers als je volgende vragen een positief antwoord kunnen hebben of vermoedelijk fout zijn...
 \begin{itemize}
-	\item Kan je van twee vierkante piramides een nieuwe vierkante piramide maken? 
-	\item Kan je van twee driehoekige piramides een nieuwe driehoekige piramide maken?
-	\item Kan je van een combinatie van driehoekige en vierkante piramides een vierkante piramide maken?\\
+	\item Kan je van een driehoekige stapel van een bepaalde hoogte een vierkante piramide maken, zonder dat je kogels overhoudt?
+	\item Kan je van twee stapels knikkers in vierkante piramides een nieuwe vierkante piramide maken? 
+	\item Kan je van twee stapels knikkers in driehoekige piramides een nieuwe driehoekige piramide maken?
+	\item Kan je van twee stapels knikkers in driehoekige piramides een nieuwe vierkante piramide maken?
+	\item Kan je van een combinatie van een driehoekige en vierkante piramides een andere combinatie van een driehoekige en vierkante piramide maken?\\
 Opmerking: piramides van één verdiep hoog worden niet meegerekend.
 \end{itemize}
 }
@@ -156,6 +158,7 @@ d(n) &= \frac{1.2}{2} + \frac{2.3}{2}+\frac{3.4}{2} + \cdots + \frac{n(n+1)}{2}=
 Met deze formule kun je dus eenvoudig uitrekenen voor hoeveel kanonskogels er in een stapel van een bepaalde hoogte gaan. Voor een hoogte van $n=4$ lagen krijg je inderdaad 20 kogels, zoals we al eerder zagen. 
 
 \ask{Hoeveel kanonskogels heb je nodig voor 100 lagen?}
+
 \answer{Voor 100 lagen hebben we deze keer 171700 kanonskogels nodig.}
 
 \task{
@@ -189,44 +192,67 @@ Omdat $d(1)=1=1+d$ is $d=0$ en krijgen we het gezochte resultaat.
 }
 
 \subsubsection{Combinaties van bepaalde piramides}
-We weten nu hoeveel kogels er nodig zijn om een 'driehoekige', 'vierkante' of 'zeshoekige' piramide van kogels te stapelen. Is het nu mogelijk om van een driehoekige stapel van een bepaalde hoogte een vierkante piramide te maken, zonder dat je kogels overhoudt? Als je kijkt naar het lijstje, dat we vroeger reeds maakten, met de aantallen die nodig zijn voor een driehoekige, vierkante en zeshoekige piramide, dan zie je dat dit nooit lijkt te kunnen (behalve natuurlijk voor een stapel van één kogel hoog).\\
-De aantallen in de driehoekige stapel lijken niet voor te komen in de rij van de vierkante piramides. De tabel kun je nog veel groter maken, maar als er nog steeds geen gelijke getallen voorkomen weet je niet zeker of het nooit gebeurt. Misschien gebeurt het namelijk toch een keer voor een heel er ggrote stapel. Twee Nederlandse wiskundigen (Frits Beukers en JaapTop) hebben in 1982 bewezen dat het inderdaad nooit gebeurt, maar het bewijs is te moeilijk om er hier op in te gaan.\\
-Het is wel mogelijk om uit twee opeenvolgende driehoekige piramides precies één vierkante piramide te maken. Een driehoekige piramide van 4 lagen hoog en een van 5 hoog bestaan samen bijvoorbeeld uit 20+35=55 kogels, precies genoeg voor een vierkante piramide van 5 lagen hoog.
+We weten nu hoeveel kogels er nodig zijn om een \textquoteleft driehoekige' of \textquoteleft vierkante' piramide van kogels te stapelen. We gaan nu op zoek naar de antwoorden op de vragen over het combineren van bepaalde stapels knikkers in de vorm van piramides.
+
+\ask{Is het nu mogelijk om van een driehoekige stapel van een bepaalde hoogte een vierkante piramide te maken, zonder dat je kogels overhoudt?} 
+
+Als je kijkt naar het lijstje, dat we vroeger reeds maakten, met de aantallen die nodig zijn voor een driehoekige, vierkante en zeshoekige piramide, dan zie je dat dit nooit lijkt te kunnen, behalve natuurlijk voor een stapel van één kogel hoog.
+De aantallen in de driehoekige stapel lijken niet voor te komen in de rij van de vierkante piramides. De tabel kun je nog veel groter maken, maar als er nog steeds geen gelijke getallen voorkomen weet je niet zeker of het nooit gebeurt. Misschien gebeurt het namelijk toch een keer voor een heel er grote stapel. Twee Nederlandse wiskundigen (Frits Beukers en Jaap Top) hebben in 1982 bewezen dat het inderdaad nooit gebeurt, maar het bewijs is te moeilijk om er hier op in te gaan.
+
+We stelden ons ook volgende vraag.
+\ask{Kan je van twee stapels knikkers in driehoekige piramides een nieuwe vierkante piramide maken?}
+\answer{Dit is inderdaad mogelijk.}
+
+\ask{Kan je hiervan een voorbeeld geven?}
+
+\answer{Een driehoekige piramide van 3 lagen en een van 4 lagen bestaan samen bijvoorbeeld uit $10+20=30$ kogels, precies genoeg voor een vierkante piramide van 4 lagen hoog.}
+
 Aan de hand van de verkregen formules kan je aantonen dat dit altijd waar is.
-Als je het aantal kogels in een vierkante stapel nog steeds stelt als $v(n)= \frac{1}{3}n^3+\frac{1}{2}n^2+\frac{1}{6}n $ en $d(n) =\frac{1}{6}n^3 + \frac{1}{2}n^2+\frac{1}{3}n$, dan vinden we dat 
+
+\task{Als je het aantal kogels in een vierkante stapel nog steeds stelt als $v(n)= \frac{1}{3}n^3+\frac{1}{2}n^2+\frac{1}{6}n $ en in een driehoekige stapel als $d(n) =\frac{1}{6}n^3 + \frac{1}{2}n^2+\frac{1}{3}n$, controleer dan dat effectief \[d(n-1)-d(n)=v(n).\]}
+
+\answer{
+Als we dit met de formules uitschrijven, krijgen we inderdaad
 \begin{align*} 
 d(n-1) + d(n)&= \frac{1}{6}(n-1)^3 + \frac{1}{2}(n-1)^2+\frac{1}{3}(n-1)+ \frac{1}{6}n^3 + \frac{1}{2}n^2+\frac{1}{3}n\\
 &= (\frac{1}{6}n^3 - \frac{1}{2}n^2+\frac{1}{2}n-\frac{1}{6})+(\frac{1}{2}n^2-n+\frac{1}{2})+(\frac{1}{3}n-\frac{1}{3})+(\frac{1}{6}n^3 + \frac{1}{2}n^2+\frac{1}{3}n)\\
-&= \frac{1}{3}n^3 + \frac{1}{2}n^2+\frac{1}{6}n= v(n) 
-\end{align*}
+&= \frac{1}{3}n^3 + \frac{1}{2}n^2+\frac{1}{6}n= v(n). 
+\end{align*}}
 
-Een vierkante piramide van 5 lagen en een driehoekige piramide van 6 lagen bevatten samen 111 kogels. Een vierkante piramide van 6 lagen bevatten samen ook 111 kogels.  Hier zit een algemeen patroon achter. Uit $v(n)=d(n-1)+d(n)$ halen we dat 
-$$ v(n)+d(n+1)=d(n-1) + d(n) + d(n+1) = d(n-1) + v(n+1).$$
+Ten slotte kunnen we ook onderstaande vraag positief beantwoorden.
+
+\ask{Kan je van een combinatie van een driehoekige en vierkante piramides een andere combinatie van een driehoekige en vierkante piramide maken?}
+\task{Geef een voorbeeld van zo een combinatie.}
+\answer{Een vierkante piramide van 5 lagen en een driehoekige piramide van 4 lagen bevatten samen 65 kogels. Een vierkante piramide van 5 lagen en een driehoekige piramide van 3 lagen bevatten samen ook 65 kogels.}  
+
+\task{Hier zit een algemeen patroon achter. Schrijf deze formule op en probeer deze te bewijzen a.d.h.v. de formule uit vorige opdracht.}
+\answer{Uit $v(n)=d(n-1)+d(n)$ halen we dat 
+\[ v(n)+d(n+1)=d(n-1) + d(n) + d(n+1) = d(n-1) + v(n+1).\]}
+
+%Snifsnif, dit moet weg :s ...
+%\subsection{De hoogte van een stapel kanonskogels}
+%We hebben het tot nu toe gehad over het aantal bollen in een piramide, maar hoe zit het met de hoogte? Hoe hoog is bijvoorbeeld een driehoekige piramide van 4 lagen knikkers? Is deze dezelfde als een piramide met een vierkant grondvlak?
+
+%Voor het gemak noemen we de straal van de bollen of kanonskogels of knikkers $r$ en $n$ is opnieuw het aantal lagen. Om de hoogte van de stapel te bepalen is het handig om je te verplaatsen in de positie van de middelpunten van de bollen. 
+%Je weet dat de hoogte van de grond tot het middelpunt van de bollen op de onderste laag $r$ is. Ook de hoogte van het bovenste middelpunt tot de top van de piramide is $r$. Als we nu de hoogte weten tussen de middelpunten van twee opeenvolgende lagen, dan hebben we de hoogte gevonden. Het is namelijk zo dat deze hoogtes $h$ dezelfde zijn. De hoogte van de piramide is dan $2r+h$.
+
+%Het komt er nu dus op neer bij de verschillende stapels te zoeken wat de hoogte nu juist is.
+
+%\subsubsection{De hoogte van een stapel met vierkant grondvlak}
+
+%Om de hoogte te bepalen tussen twee opeenvolgende lagen van middelpunt, is het handig om te kijken naar de piramide van 2 lagen. In ons geval is dat dus een piramide van 5 bollen. Kijken we nu naar de middelpunten van deze bollen, dan zien we dat deze opnieuw een piramide vormen. Dit komt omdat de bovenste bol raakt aan de andere vier bollen en daardoor is de afstand van twee middelpunten steeds $2r$. Als we de hoogte weten van deze piramide, dan hebben we het gevonden. 
+
+%\todo{Hier zouden allemaal mooie figuren moeten komen het het aanschouwelijk te maken.
+%We kunnen ook gebruikmaken van isomobollen en satestokken die dan de bollen verbinden.}
+
+%De hoogte van de kleine piramide vinden we door twee keer de stelling van pythagoras toe te passen. We bekomen $h=\sqrt{2}r$ als hoogteverschil tussen twee middelpunten. Op die manier vinden we de volgende hoogte van een stapel met vierkant grondvlak en $n$ lagen van bollen met straal $r$:
+%$$ r(\sqrt{2}(n-1)+2).$$ 
 
 
-\subsection{De hoogte van een stapel kanonskogels}
-We hebben het tot nu toe gehad over het aantal bollen in een piramide, maar hoe zit het met de hoogte? Hoe hoog is bijvoorbeeld een driehoekige piramide van 4 lagen knikkers? Is deze dezelfde als een piramide met een vierkant grondvlak?
-
-Voor het gemak noemen we de straal van de bollen of kanonskogels of knikkers $r$ en $n$ is opnieuw het aantal lagen. Om de hoogte van de stapel te bepalen is het handig om je te verplaatsen in de positie van de middelpunten van de bollen. 
-Je weet dat de hoogte van de grond tot het middelpunt van de bollen op de onderste laag $r$ is. Ook de hoogte van het bovenste middelpunt tot de top van de piramide is $r$. Als we nu de hoogte weten tussen de middelpunten van twee opeenvolgende lagen, dan hebben we de hoogte gevonden. Het is namelijk zo dat deze hoogtes $h$ dezelfde zijn. De hoogte van de piramide is dan $2r+h$.
-
-Het komt er nu dus op neer bij de verschillende stapels te zoeken wat de hoogte nu juist is.
-
-\subsubsection{De hoogte van een stapel met vierkant grondvlak}
-
-Om de hoogte te bepalen tussen twee opeenvolgende lagen van middelpunt, is het handig om te kijken naar de piramide van 2 lagen. In ons geval is dat dus een piramide van 5 bollen. Kijken we nu naar de middelpunten van deze bollen, dan zien we dat deze opnieuw een piramide vormen. Dit komt omdat de bovenste bol raakt aan de andere vier bollen en daardoor is de afstand van twee middelpunten steeds $2r$. Als we de hoogte weten van deze piramide, dan hebben we het gevonden. 
-
-\todo{Hier zouden allemaal mooie figuren moeten komen het het aanschouwelijk te maken.
-We kunnen ook gebruikmaken van isomobollen en satestokken die dan de bollen verbinden.}
-
-De hoogte van de kleine piramide vinden we door twee keer de stelling van pythagoras toe te passen. We bekomen $h=\sqrt{2}r$ als hoogteverschil tussen twee middelpunten. Op die manier vinden we de volgende hoogte van een stapel met vierkant grondvlak en $n$ lagen van bollen met straal $r$:
-$$ r(\sqrt{2}(n-1)+2).$$ 
-
-
-\subsubsection{De hoogte van een stapel met driehoekig grondvlak}
-Zo ook kunnen we nu de hoogte berekenen van een stapel met een regelmatige driehoek als grondvlak. In figuur %\ref{tetra} 
-zie je hoe de middelpunten van de bollen een stapel van tetraëders (regelmatige viervlakken) vormen. Dit komt omdat een bol raakt aan de drie bollen onder zich. Het verbinden van het middelpunt met de 3 andere middelpunten geeft inderdaad een viervlak met zijde $2r$. 
-Op de figuur zien we dat we voor de hoogte van de stapel eerst $r$ omhoog moeten naar een middelpunt van de onderste laag, vervolgens 3 keer de hoogte van een tetraëder en ten slotten nog één straal omhoog en we zitten boven op de bovenste bal. De hoogte van de stapel met vier lagen ballen is dus $2r+3h$ waarbij $h$ de hoogte van een viervlak is. Voor $n$ lagen met bollen moeten we $n-1$ lagen tetraëders omhoog.
+%\subsubsection{De hoogte van een stapel met driehoekig grondvlak}
+%Zo ook kunnen we nu de hoogte berekenen van een stapel met een regelmatige driehoek als grondvlak. In figuur %\ref{tetra} 
+%zie je hoe de middelpunten van de bollen een stapel van tetraëders (regelmatige viervlakken) vormen. Dit komt omdat een bol raakt aan de drie bollen onder zich. Het verbinden van het middelpunt met de 3 andere middelpunten geeft inderdaad een viervlak met zijde $2r$. 
+%Op de figuur zien we dat we voor de hoogte van de stapel eerst $r$ omhoog moeten naar een middelpunt van de onderste laag, vervolgens 3 keer de hoogte van een tetraëder en ten slotten nog één straal omhoog en we zitten boven op de bovenste bal. De hoogte van de stapel met vier lagen ballen is dus $2r+3h$ waarbij $h$ de hoogte van een viervlak is. Voor $n$ lagen met bollen moeten we $n-1$ lagen tetraëders omhoog.
 
 %\begin{figure}[h]
 %\includegraphics[width=\columnwidth]{tetra}
@@ -234,9 +260,9 @@ Op de figuur zien we dat we voor de hoogte van de stapel eerst $r$ omhoog moeten
 %\label{tetra}
 %\end{figure}
 
-Nu moeten we dus enkel nog op zoek gaan naar de hoogte van zo een tetraëder.
-Beschouw figuur %\label{tetra2}
-De hoogte $h$ van de tetraëder is de lengte van z'n hoogtelijn $TP$. Dat is de lijn die je krijgt door de tetraëder op de tafel te zetten en vanuit het hoogste punt een lijn loodrecht naar beneden te trekken. Het onderste punt $P$ ligt precies midden in de onderste gelijkzijdige driehoek, even ver van alledrie de hoekpunten af. De driehoek $\Delta HMP$ heeft hoeken $30\degree$, $60\degree$ en $90\degree$. Aangezien $r= |HM|= |HP|. \cos(30\degree)=r.\frac{\sqrt{3}}{2}$ vinden we dat $$ |HP|=x= \frac{2}{\sqrt{3}}r.$$
+%Nu moeten we dus enkel nog op zoek gaan naar de hoogte van zo een tetraëder.
+%Beschouw figuur %\label{tetra2}
+%De hoogte $h$ van de tetraëder is de lengte van z'n hoogtelijn $TP$. Dat is de lijn die je krijgt door de tetraëder op de tafel te zetten en vanuit het hoogste punt een lijn loodrecht naar beneden te trekken. Het onderste punt $P$ ligt precies midden in de onderste gelijkzijdige driehoek, even ver van alledrie de hoekpunten af. De driehoek $\Delta HMP$ heeft hoeken $30\degree$, $60\degree$ en $90\degree$. Aangezien $r= |HM|= |HP|. \cos(30\degree)=r.\frac{\sqrt{3}}{2}$ vinden we dat $$ |HP|=x= \frac{2}{\sqrt{3}}r.$$
 
 %\begin{figure}[h]
 %\includegraphics[width=\columnwidth]{tetra2}
@@ -244,58 +270,125 @@ De hoogte $h$ van de tetraëder is de lengte van z'n hoogtelijn $TP$. Dat is de l
 %\label{tetra2}
 %\end{figure}
 
-Pas nu de stelling van Pythagoras toe op de driehoek door het geprojecteerde punt $P$, een hoekpunt $H$ van de onderste driehoek en het topje $T$ van de tetraëder, dan
-vind je: $(2r)^2=x^2+h^2$. Samen met de formule voor $x$ vinden we dat de hoogte van een tetraëder met zijden van lengte $2r$ gegeven wordt door $$h=\frac{2}{3}r\sqrt{6}.$$
+%Pas nu de stelling van Pythagoras toe op de driehoek door het geprojecteerde punt $P$, een hoekpunt $H$ van de onderste driehoek en het topje $T$ van de tetraëder, dan
+%vind je: $(2r)^2=x^2+h^2$. Samen met de formule voor $x$ vinden we dat de hoogte van een tetraëder met zijden van lengte $2r$ gegeven wordt door $$h=\frac{2}{3}r\sqrt{6}.$$
 
-De hoogte van een driehoekige piramide van $n$ lagen bollen met een straal van $r$ is dus: $$2r(\frac{\sqrt{6}}{3}(n-1)+1).$$
+%De hoogte van een driehoekige piramide van $n$ lagen bollen met een straal van $r$ is dus: $$2r(\frac{\sqrt{6}}{3}(n-1)+1).$$
 
 
-\emph{Als de leerlingen in het begin hebben mogen uitproberen met knikkers, kan ook een vraag geweest zijn hoe hoog dat de piramide is van 5 lagen knikkers bij de piramide met een vierkant en met een driehoekig grondvlak. Dit kunnen ze nu ook als opdracht krijgen om effectief uit te rekenen en kijken hoever ze er vanaf zaten.}
-\begin{opdracht}
-Wat is de hoogte van een stapel knikkers gestapeld als een piramide met een vierkant grondvlak van 5 lagen? En hoe hoog is de stapel als het een driehoekig grondvlak zou zijn?
-\end{opdracht}
+%\emph{Als de leerlingen in het begin hebben mogen uitproberen met knikkers, kan ook een vraag geweest zijn hoe hoog dat de piramide is van 5 lagen knikkers bij de piramide met een vierkant en met een driehoekig grondvlak. Dit kunnen ze nu ook als opdracht krijgen om effectief uit te rekenen en kijken hoever ze er vanaf zaten.}
+%\begin{opdracht}
+%Wat is de hoogte van een stapel knikkers gestapeld als een piramide met een vierkant grondvlak van 5 lagen? En hoe hoog is de stapel als het een driehoekig grondvlak zou zijn?
+%\end{opdracht}
 
-\todo{Uitgangspunt cursus}
-\emph{Je kan de leerlingen nog verschillende van deze kleine rekenoefeningetjes geven om te checken desnoods, maar het belangrijskte is dat ze inzien dat er een verschil zit en dat ze zien dat de piramide met $n$ lagen bij een vierkante piramide hoger is dan een piramide met driehoekig grondvlak maar met evenveel lagen. Dit geeft reeds een aanwijzing dat, net zoals in het vlak, de vierkante vulling minder efficiënt is als de honingraatvulling. Dit is dan ook een mooie overgang naar het bolstapelprobleem van Kepler...}
+%\todo{Uitgangspunt cursus}
+%\emph{Je kan de leerlingen nog verschillende van deze kleine rekenoefeningetjes geven om te checken desnoods, maar het belangrijskte is dat ze inzien dat er een verschil zit en dat ze zien dat de piramide met $n$ lagen bij een vierkante piramide hoger is dan een piramide met driehoekig grondvlak maar met evenveel lagen. Dit geeft reeds een aanwijzing dat, net zoals in het vlak, de vierkante vulling minder efficiënt is als de honingraatvulling. Dit is dan ook een mooie overgang naar het bolstapelprobleem van Kepler...}
 
-\todo{De volgende opdracht is een opdracht die ik gewoon overtyp van uit het Zebra-boekje. Zulke opdrachten kan je echter in veelvoud uitvinden ;) ...}
-\begin{opdracht}
-Hoeveel tennisballen met een diameter van 6,5 cm heb je nodig om een driehoekige pirmaide te maken die even hoog is als jezelf? Wegen de ballen samen meer of minder dan jij? Een tennisbal weegt 57 gram.
-\end{opdracht}
+%\todo{De volgende opdracht is een opdracht die ik gewoon overtyp van uit het Zebra-boekje. Zulke opdrachten kan je echter in veelvoud uitvinden ;) ...}
+%\begin{opdracht}
+%Hoeveel tennisballen met een diameter van 6,5 cm heb je nodig om een driehoekige pirmaide te maken die even hoog is als jezelf? Wegen de ballen samen meer of minder dan jij? Een tennisbal weegt 57 gram.
+%\end{opdracht}
 
-\subsubsection{De hoogte van een stapel met zeshoekig grondvlak}
-Wil ik eventueel wel eens proberen (mss meer op het einde) ...
 
 \subsection{Het bolstapelprobleem van Kepler}
-Je kon al lezen dat Thomas Harriot (1560-1621) door Sir Walter Raleigh aan het probleem van de piramidestapels werd gezet. Hij was in die tijd als amateur-astronoom bezig met het waarnemen van zonnevlekken en kometen, maar daarnaast was hij ook een bekende wiskundige en dankzij de kennis die hij als wiskundige had, kon hij het probleem van Raleigh in een wip oplossen. Maar nadat hij de oplossing geleverd had, bleef het kanonskogelprobleem in zijn hoofd rondspoken en hij raakte over dit onderwerp in correspondentie met Kepler.
+\subsubsection{Het ontstaan}
+\subsubsection*{Thomas Harriot}
+Je kon al lezen dat Thomas Harriot (1560-1621) door Sir Walter Raleigh (1554-1618) aan het probleem van de piramidestapels werd gezet. Hij was in die tijd als amateur-astronoom bezig met het waarnemen van zonnevlekken en kometen, maar daarnaast was hij ook een bekende wiskundige en dankzij de kennis die hij als wiskundige had, kon hij het probleem van Raleigh in een wip oplossen. Maar nadat hij de oplossing geleverd had, bleef het kanonskogelprobleem in zijn hoofd rondspoken en hij raakte over dit onderwerp in correspondentie met Kepler.
 
 Kepler, die we straks verder zullen bespreken, had al een tijdje een levendige correspondentie met Harriot over het lichtbrekingsverschijnsel. Hij was dan ook niet verbaasd toen hij een briefje kreeg van Harriot. Maar toen hij las dat het over het stapelen van bolvormige voorwerpen ging, werd zijn nieuwsgierigheid aangewakkerd. Niet veel later kwam plots de gedachte bij hem op, om aan de hand van bolstapelingen de structuur van sneeuwkristallen te verklaren. En zo verhuisde het bolstapelprobleem definitief van de gedachten van Thomas Harriot naar die van Johannes Kepler.
 
-%Uit het Zebraboekje
-In 1609 beschreef Kepler voor het eerst de dichtste bolstapeling, in een boekje over sneeuwkristallen. Zoals we al gezien hebben krijg je deze stapeling door eerst in het vlak een dichtste stapeling te maken van één laag: een hexagonaal patroon, waarbij iedere bol raakt aan zes buren. Dan maak je nog zo'n laag en die leg je er iets verschoven op, zó dat de bollen net in de kuiltjes van de laag eronder rusten. Bij elke volgende laag zijn er trouwens twee keuzes te maken die niet equivalent zijn. Als we de positie van de middelpunten van de bollen in de eerste laag met $A$ aangeven en van de tweede met $B$ ...
+\subsubsection*{Johannes Kepler}
+Kepler (1571-1630) was een beroemde Duitse sterrenkundige die vooral bekendheid kreeg, toen hij aan de hand van de bewegingen van de planeten een beschrijving maakte van hun ellipsvormige banen. Vanaf 1609 onderzocht hij tien jaar lang hoe de afstand van een planeet tot de centrale ster, de omlooptijd en de omloopssnelheid van die planeet beïnvloedde. Dit zou een halve eeuw later opgenomen worden in de zwaartekrachtwetten van Newton. Maar Kepler was niet alleen een beroemde astronoom, hij leverde ook een belangrijke bijdrage tot de wiskunde.
 
-In de volgende les gaan we wat dieper in op het probleem, op het wetenschappelijk onderzoek er rond dat ook na Kepler op veel interesse kon rekenen ...
+In 1611 schreef Johannes Kepler, dankzij de plotselinge inspiratie die hij kreeg door een briefje van Harriot, een boekje met de titel \textquoteleft De zeshoekige sneeuwvlok'. Daarin beschreef hij verschillende methoden om identieke bolvormige voorwerpen in drie dimensies te pakken en hieruit kwam hij tot de conclusie dat de "face-centred cubic packing" de meest efficiënte pakkingsmethode was, waarbij het minst open ruimte tussen de identieke bolvormige voorwerpen overbleef. In het citaat dat hierop volgt beschrijft Kepler zelf wat de "face-centred cubic packing" is.
 
-\todo{
-Voor het vervolg de cursus van Jordy en het Zebraboekje gebruiken om dit stuk af te ronden.
-Eventueel ook de praktische proef met het water lijkt me wel leuk om voeling te krijgen ...
+\begin{quote} "Op de tweede manier wordt niet alleen ieder partikel geraakt door zijn vier buren in hetzelfde vlak, maar ook door vier in het vlak erboven en vier eronder, zodat hij in totaal door twaalf wordt geraakt, en onder druk worden bolvormige partikels romboïdaal(=ruitvormig) ... De pakking zal de dichtst mogelijke zijn, zodat met geen andere rangschikking meer partikels in hetzelfde vat kunnen worden gepakt."  
+\end{quote}
+
+Nadat Kepler echter dit vermoeden geleverd had, vond hij het niet meer nodig om hiervoor een bewijs te leveren. En hierdoor bezorgde hij de wiskundigen een probleem dat hen veel bloed, zweet en tranen zou kosten. Maar na bijna 400 jaar zwoegen, zou 'het probleem van Kepler' uiteindelijk bewezen worden. Aangezien het zo lang duurde voordat men tot een bewijs kwam, is het zeker de moeite waard om eens te kijken wat er tijdens die 400 jaren met het probleem van Kepler gebeurde. We zullen dan ook eerst een schets geven van de evolutie van het bolstapelprobleem, vooraleer het bewijs zelf aan te snijden.
+
+\subsubsection*{Kissing number}
+
+Maar voordat we aan de evolutie van het probleem zal beginnen, willen we eerst nog iets vertellen over het getal 12, aangezien voor dit getal een belangrijke rol is weggelegd. 
+Het is niet toevallig dat bij de dichtste bolstapeling die Kepler beschrijft, elke bol geraakt wordt door 12 andere identieke bollen. Het getal twaalf is namelijk het kissing number bij drie dimensies. 
+
+\ask{Wat zou bedoelt worden met 'kissing numbers'?}
+\answer{Een 'kissing number' is gedefinieerd als het aantal niet-overlappende eenheidssferen dat aan een gegeven eenheidssfeer raakt.}
+Andere namen hiervoor zijn bijvoorbeeld 'Newton number' of 'contact number'
+
+\ask{Wat is het 'Kissing number' in één dimensie? En in twee dimensies? Teken de situatie}
+\answer{In één dimensie is het 'kissing number' 2, in twee dimensies 6.\todo{Figuren!!!}}
+
+In het tweedimensionale geval hadden we reeds te maken met dit kissing getal toen we het hadden over het hexagonaal patroon waarbij er dus 6 cirkels de middeltste cirkel raakten.
+
+Over 'kussende getallen', zoals de vertaling luidt, is echter niet zoveel bekend. Men heeft slechts voor vier verschillende dimensies bewezen wat dit effectief getal is en voor de andere dimensies heeft men enkel vermoedens. 
+
+Als we overgaan naar drie dimensies, blijkt dat het kissing number daar dus twaalf is. Concreet wil dit zeggen dat we rond een bolvormig voorwerp slechts 12 andere identieke bolvormige voorwerpen kunnen construeren, waarbij alle twaalf de bollen raken aan deze eerste bol. Wanneer we naar hogere dimensies gaan, wordt onze kennis echter vager. Enkel voor 8 en 24 dimensies is het 'kissing number' gekend. Deze zijn respectievelijk voor 8 dimensies 240 en voor 24 dimensies 196560. Voor de andere dimensies bestaan er boven en ondergrenzen, maar uiteraard is het moeilijk om te vatten hoe we dit ons moeten voorstellen. Voor het bolstapelprobleem is het echter voldoende om te weten wat het 'kissing number' is van drie dimensies.
+
+\subsubsection{Evolutie}
+
+\subsubsection*{De eerste vooruitgang}
+Al gauw bleek dat het probleem van Kepler niet zomaar een klein probleempje was dat men in een sneltempo zou kunnen oplossen. Net als bij de laatste stelling van Fermat, bleek het een reusachtig werk om Keplers vermoeden rond het bolstapelen te bewijzen. Dit kwam voornamelijk omdat het bewijs een oneindig aantal mogelijkheden moest omvatten en omdat de wiskundigen dus rekening moesten houden met een enorme reeks verschillende willekeurige bolstapelingen. Zo duurde het dan ook lang voordat men een eerst stap kon zetten in de richting van 'het' bewijs. Maar uiteindelijk na 200 jaar kon Karl Friedrich Gauss een eerste kleinigheid over het vermoeden van Kepler aantonen.
+Gauss (1777-1855) was een Duitse wiskundige die zich net als Kepler en Harriot bezighield met astronomie. Gauss er als eerste in slaagde om iets over het vermoeden van Kepler te bewijzen. Hij toonde namelijk aan dat bolstapelingen niet beter konden zijn dan de face-centered cubic packing, wanneer de middelpunten van de gestapelde bollen volgens een vast rooster werden verbonden. (zie figuur 1) \todo{figuur}
+
+
+Het bewijs voor dit vermoeden bevatte geen berekeningen en was eigenlijk heel kort. Gauss zag dat wanneer 2 bollen elkaar raakten, het rooster ervoor zou zorgen dat een hele rij opeenvolgende bollen elkaar zou raken, waardoor evenwijdige rijen bollen zouden ontstaan. Wanneer deze rijen elkaar raakten, zouden zij het minst ruimte overlaten, als de middelpunten van drie bollen een gelijkzijdige driehoek vormden en zo verkreeg hij een oneindig aantal identieke vlakken met bollen die op de dichtste manier gestapeld waren. Uiteindelijk plaatste hij deze identieke vlakken boven elkaar op zo'n manier dat elke bol in een vlak raakte aan 3 bollen in het vlak erboven en 3 bollen in het vlak er onder. Hiermee verkreeg hij het dichtste bolstapelmodel in drie dimensies volgens een rooster en bewees hij dat de "face-centered cubic packing" de dichtste pakkingsmethode was volgens een rooster. Maar hij toonde hiermee niet aan dat de "face-centered cubic packing" de dichtste pakkingsmethode was van álle soorten pakkingsmethodes. Op dit bewijs was het nog eens bijna 200 jaar wachten, maar in tussentijd werden wel nog andere dingen in verband met 'het probleem van Kepler' bewezen.
+
+\subsubsection*{Voronoi-cellen %en Delaunay-sterren
 }
 
+In sectie \ref{axel} hebben we het reeds gehad over de Scandinavische wiskundige Axel Thue (1863-1922) die in 1892 een theorie over het tweedimensionale equivalent voor \textquoteleft het probleem van Kepler' waarin men zocht naar de dichtste pakkingsmethode voor cirkels in het vlak. Thue betegelde het vlak met identieke gelijkzijdige zeshoeken en tekende in elke zeshoek een cirkel op zo'n manier dat elke cirkel alle zijden van de zeshoek raakte. Hier werkte hij dus met de zogenaamde Voronoicellen.
 
-\subsection{Uitbreiding}
+Algemeen genomen is dit, zoals je ondertussen wel weet, een ruimtelijk gebied rond een bepaald punt A, waarbinnen alle punten dichter bij A liggen dan bij elk ander gegeven punt B, C, D... Dit wil zeggen dat een willekeurig genomen punt in een Voronoi-cel dichter ligt bij het centrum dat in deze cel ligt dan bij een centrum uit om het even welke andere Voronoi-cel.
+Bij drie dimensies is het construeren van een Voronoicel niet zo eenvoudig. Elke bol heeft een complex omhulsel waarbinnen elk punt dichter ligt tot het eigen bolcentrum dan tot om het even welk ander bolcentrum.
+Bij de "face-centered cubic packing" is de Voronoi-cel een ruitvormige dodecaëder (een regelmatig twaalfvlak). Het vermoeden van Kepler kan dan bijgevolg ook aangetoond worden als men kan bewijzen dat deze ruitvormige dodecaëder de kleinste Voronoi-cel is bij het bolstapelen.
 
-\todo{Dit zou ik weglaten, maar ik ga het bekijken als ik morgen of overmorgen het 3D stuk aanpak!!}
-
-Het bolstapelprobleem zoals hierboven uitgelegd is zeker iets dat vele toepassingen heeft.
-Driedimensionale stapelproblemen komen in vele verschillende vormen voor. Als we denken aan containerschepen dan komen we al ogenblikkelijk terecht bij het stapelen van goederen. De bedrijven willen natuurlijk zoveel mogelijk goederen in hun containers krijgen en daarvoor hebben ze wiskundigen nodig die kunnen berekenen welke stapeling de meest compacte is. Ook in de voedingssector komen driedimensionale stapelproblemen frequent voor. Het meest bekende voorbeeld is het stapelen van sinaasappels, maar de fruit- en groentetelers willen natuurlijk ook hun kiwi's, mango's, meloenen, kolen... zo compact mogelijk stapelen. Hierbij stellen we ons de vraag of er voorwerpen zijn (buiten kubussen en balken) die we compacter kunnen stapelen dan bollen. Met andere woorden, we zoeken voorwerpen die we kunnen stapelen en waarbij de dichtheid van de stapeling groter is dan 74.048\%.
-
-Ons vermoeden is dat die voorwerpen misschien wel ellipsoïden kunnen zijn. Ellipsoïden zijn voorwerpen die gevormd worden door een ellips om zijn langste as te wentelen. Wanneer we nu identieke ellipsoïden stapelen hopen we dat de dichtheid groter is dan bij de bolstapeling.
-
-Om dit praktisch uit te voeren, maken we gebruik van ellipsoïden die we in de herfst in de natuur kunnen terugvinden, namelijk eikels (van de zomereik).
-Eikels hebben meestal wel niet dezelfde afmetingen.
-\ask{Hoe zouden we dit probleem kunnen incalculeren?}
-\answer{Voor onze berekeningen zullen we bij elke eikel afzonderlijk de afmetingen met een schuifmaat meten. Deze afmetingen zullen we in lijsten stoppen, waarna we van elke eikel het volume berekenen. Uiteindelijk kijken we hoe groot het totale volume is dat de eikels innemen in het voorwerp waarna we de dichtheid van de stapeling berekenen.} 
-Bij ons praktisch probleem zullen we de eikels op verschillende manieren in een balkvormige doos stapelen. Ons doel is om te kijken of we deze ellipsoïden compacter kunnen stapelen dan sinaasappels bij de bolstapeling.
+Deze begrippen spelen een belangrijke rol in het uiteindelijke bewijs van Kepler. Ze zorgen er immers voor dat het reusachtige werk, om de dichtheid van elke bolstapeling te bepalen, wordt beperkt tot een specifieke berekening die uitgevoerd kan worden met de computer. Men zal niet langer zoeken naar de hoeveelheid ruimte die bollen innemen in een stapeling. In de plaats daarvan zal men zoeken naar de kleinst mogelijke Voronoi-cel.
 
 
+\subsubsection*{L. Fejes Tóth}
+De persoon die als eerste suggereerde om Voronoi-cellen te gebruiken in het bewijs voor het bolstapelprobleem was Lászlo Fejes Tóth. Deze Hongaarse wiskundige toonde hiernaast ook aan dat je het vermoeden van Kepler voor oneindig veel bollen kon bewijzen door het voor 50 bollen te bewijzen. Daarnaast ontdekte hij dat er maar 5000 mogelijke stapelingen meer meededen in de strijd om de compactste stapeling. 
+Tóth wist dat je aan de hand van Voronoi-cellen kon bewijzen welke van de 5000 stapelingen de grootste dichtheid had. Maar hij ondervond uit zijn onderzoeken dat de grenzen van deze cellen niet voldoende waren, waardoor er een correctieterm moest ingevoerd worden. Tóth was de eerste wiskundige die een voorstel deed voor zo'n correctieterm (1953). Alleen bleef toen nog onduidelijk of Tóth in zijn berekening met correctieterm alle mogelijke stapelingen had vervat. Het werd wel duidelijk dat Keplers probleem kon opgelost worden met een optimalisatieprogramma met een eindig aantal variabelen en dat dit met de computer zou moeten opgelost worden. Jammer genoeg had men in 1953 nog niet de computers van tegenwoordig, waardoor het nog even wachten was op het uiteindelijke 'bewijs' voor 'het probleem van Kepler'. 
+
+
+\subsubsection*{Een verlaging van de bovengrens}
+In tussentijd probeerden de wiskundigen wel om het vermoeden van Kepler op een andere manier te bewijzen. Zij deden dit door te kijken welke dichtheid er maximaal bereikt kan worden. Indien het hen zou lukken om deze bovengrens te verlagen tot 74.05\%  kon men Kepler bij verstek gelijk geven, aangezien de dichtheid die hij verkreeg 74.048048\dots\% was. Daardoor zou de grens tussen de dichtheid bij de face-centered cubic packing en de bovengrens zo klein zijn dat er geen betere pakking meer kon bestaan dan de fcc-pakking.
+Maar het verlagen van de bovengrens bleek moeilijker dan men dacht. In 1958 behaalde C.A.Rogers een waarde van 77.964\%. Enkele decennia later verkreeg Lindsey in 1986 een bovengrens van 77.844\% en slechts twee jaar later vond Muder een grens van 77.836\%. Maar hierbij bleef toch nog steeds een interval van 3.75\% waardoor het mogelijk bleef dat Kepler ongelijk had. De meest recente bovengrens verkreeg Muder in 1993, maar die was nog steeds 77.3055\% wat niet zoveel beter was dan de vorige bovengrens. 
+We kunnen dus concluderen dat het verlagen van de bovengrens niet echt efficiënt was. Daarom gaan we er dan ook niet meer verder op in. 
+
+
+
+
+\subsubsection*{Wu-Yi Hsiang}
+Wu-Yi Hsiang is een wiskundige van de universiteit van Californië, die plots in de zomer van 1988 in de krant verscheen met zijn  bewijs voor het vermoeden van Kepler. Jammer genoeg bleek na een eerste controle dat het bewijs vol blunders zat, waardoor Hsiang zijn werk moest herbekijken. Een jaar later publiceerde hij dan zijn gereviseerde bewijs, maar opnieuw bleken er nog hiaten aanwezig te zijn, waardoor het bewijs nog steeds ongeldig was. Hierna volgde er een lange strijd tussen Hsiang en zijn critici, waarbij argumenten en tegenargumenten voor het bewijs elkaar opvolgden. Maar jammer voor Hsiang aanvaardde de wiskundige gemeenschap het bewijs niet. Ook Thomas Hales die uiteindelijk zelf het bewijs zal leveren vond het bewijs van Hsiang nonsens. Zo blijkt immers uit één van de brieven van Hales aan Hsiang, waarin hij schrijft: 
+\begin{quotation}"Eén aanname in uw tweede verhandeling treft me als fundamenteler en toch veel moeilijker te bewijzen dan de andere ... U stelt dat 'de beste (dat is: volumeminimaliserende) manier om een tweede laag toe te voegen is zoveel mogelijk gaten af te dekken...' Uw redenering lijkt me zwaar en doorslaggevend op die aanname te steunen, en desondanks zie ik nergens een zweem van bewijs."
+\end{quotation}
+In 1996 gaf een zekere Doug Muder een samenvatting van de toenmalige situatie rond het bewijs voor het vermoeden van Kepler. Hierin kwam hij tot verschillende conclusies. Ten eerste zei hij dat het geschrift van Hsiang hoogstens een schets is van het vermoeden van Kepler. Ten tweede ontdekte hij dat zelfs deze schets tekortkomingen bevat, doordat enkele wiskundigen meerdere tegenvoorbeelden voor cruciale stappen in het bewijs van Hsiang  gevonden hebben. Als conclusie vindt hij dat het werk rond het Kepler-vermoeden moet voortgezet worden alsof Hsiangs geschrift nooit heeft bestaan.
+
+
+\subsubsection{Het bewijs voor 'het probleem van Kepler'}
+
+\subsubsection*{Thomas Hales en Samuel Ferguson}
+Op 9 augustus 1998 kwam het einde voor het bewijs eindelijk in zicht. Thomas Hales, werkzaam aan de universiteit van Pittsburgh, Pennsylvania, stuurde toen een e-mail naar zijn collega's met het opluchtende nieuws dat hij het vermoeden van Kepler bewezen had.
+\begin{quotation} "I have started to distribute copies of a series of papers giving a solution to the Kepler conjecture, the oldest problem in discrete geometry." 
+\end{quotation} 
+Hales toonde Keplers vermoeden aan in een reeks van artikelen die samen het complete bewijs vormen. In totaal gaat dit over 7 artikelen van Hales en een proefschrift van zijn promovendus, Samuel Ferguson, samen ongeveer 250 pagina's met daarbij 3 gigabytes aan computercode.
+Om Keplers vermoeden te bewijzen, steunde Hales op een werk van L. Fejes Tóth, waarin staat dat men slechts 5000 stapelingen moet controleren om het vermoeden van Kepler te bewijzen. Hales verdeelde deze 5000 stapelingen in 5 categorieën waarvan hij er vier zelf bewees. De laatste categorie liet hij over aan Samuel Ferguson.
+
+
+\subsubsection{Twijfels achteraf}
+Ondanks dat alles dus achter de rug bleek te zijn, bleven sommige wiskundigen twijfelen aan de bewijsmethode van Hales. Zij mopperden dat deze brute aanpak met de computer niet echt \textquoteleft interessant' is, omdat men er niets van leert. Er zijn immers geen interessante denkstappen die men kan gebruiken voor andere onderzoeken.
+Om de twijfelaars toch te overtuigen werd het gigantische computerprogramma van Hales gecontroleerd door twaalf mensen onder leiding van Gábor Fejes Tóth, de zoon van de wiskundige op wie Hales zich baseerde. Na ongeveer 5 jaar kwamen de referees tot de slotsom dat het bewijs zeker voor 99\% klopte.
+Maar er bleef toch nog een kleine marge open die twijfel bleef zaaien, waardoor men het bewijs van Hales en Ferguson publiceerde met een kleine kanttekening.
+
+Omdat dit een tegenvaller was voor Hales, startte hij zelf een nieuw project om zijn bewijs formeel te controleren. Hierbij gebruikte hij opnieuw een computer om zijn computerprogramma door te lichten. Hales denkt dat dit project binnen de 20 jaar zal afgerond zijn. Als reactie op Hales zoekactie F*P*K (Formal Proof of the Kepler conjecture) ging ook het project Flyspeck (vliegenpoepje) van start.
+Collega-wiskundigen spraken hun angst uit dat Hales teveel gebruik maakt van computers. Volgens hen zal de groeiende rol van de computers leiden tot wiskunde die onvatbaar zal zijn voor de mensen. Toch is Hales' bewijs niet de eerste wiskundige krachtmeting van de computer, want ook het vierkleurenprobleem, het probleem dat men minimaal 4 kleuren nodig heeft om elke willekeurige landkaart zo in te kleuren dat er geen twee gebieden met dezelfde kleur aan elkaar grenzen, is opgelost door een computerprogramma.
+
+\subsubsection{Conclusie}
+Een eerste punt dat naar voor komt als je de evolutie van het bewijs van Kepler bekijkt, is het feit dat het bolstapelprobleem toch moeilijker is dan het lijkt. Ondanks dat men dus al decennia lang wist dat de face-centred cubic packing de meest compacte stapeling is, kon men dit vermoeden niet bewijzen. Het vermoeden van Kepler bleef dus eeuwen zonder bewijs. Het grootste probleem was het feit dat er enorm veel mogelijke stapelingen zijn, waarvan men niet wist welke nu de meest compacte was. Gelukkige kon Thomas Hales uiteindelijk de wiskundige gemeenschap verlossen met zijn bewijs.
+Of toch niet? Want doordat Hales dit probleem met de computer bewezen heeft, laaide opnieuw de discussie op over de rol van de computer in bewijsvoeringen. De ene wiskundige vindt het goed dat er computers gebruikt worden, maar de andere denkt dat we op die manier te veel gehecht gaan geraken aan technologische hulpmiddelen, waardoor wiskundigen geen bewijzen meer zullen kunnen opstellen op de traditionele manuele manier. 
+\ask{Wat vinden jullie van een bewijs met de computer?}
+\question{Is deze vraag misschien te moeilijk voor kinderen van het middelbaar??}
+
+Ondanks het bestaan van computers en alsmaar meer kennis blijven er echter nog veel problemen onopgelost. Er zijn nog veel nieuwe interessante dingen te ontdekken en uitdagingen aan te gaan. Daardoor blijft de wiskunde nog zeer actueel en levendig.
 

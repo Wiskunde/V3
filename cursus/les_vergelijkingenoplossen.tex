@@ -17,6 +17,8 @@ Een {\bf vierkantsvergelijking} is een vergelijking van de vorm $ax^2 + bx + c =
 
 \answer[1cm]{}
 
+\subsubsection{Een eenvoudig geval}
+
 Een heel eenvoudige vierkantsvergelijking is
 $$
 x^2+2x+1=0\;.
@@ -54,6 +56,8 @@ Nu zou het mogelijk moeten zijn om de figuren te verschuiven en te roteren zodan
 
 Je kan analoog redeneren om de oplossingen te zoeken van elke vergelijking van de vorm $a^2x^2+2abx+b^2=0$. We zullen nu een methode zien waarbij we kwadratische vergelijkingen van de algemene vorm $ax^2+2bx+c=0$ kunnen oplossen.
 
+\subsubsection{Een iets moeilijkere vergelijking}
+
 We beginnen opnieuw met een vergelijking die mag opgelost worden met \'e\'en van de gekende methoden. Neem als vergelijking
 $$
 x^2+4x-5=0\;.
@@ -88,14 +92,57 @@ We zien dat we in de figuur het vierkant $x^2$ te groot hebben getekend ten opzi
 
 \answer[4cm]{We berekenen het quoti\"ent van $x^2+4x-5$ en $x-1$. We zien dat dit $x+5$ is. De andere oplossing voor $x$ is dus $-5$. Omdat negatieve getallen geen lengte voor kunnen stellen kan hiermee dan ook geen vierkant geconstrueerd worden.}
 
+\subsubsection{Een algemene methode}
 
+Bekijk nu eens de volgende vergelijking
+$$
+x^2-8x-20 = 0\;.
+$$
 
+\ask{Is het mogelijk om dezelfde techniek als voordien toe te passen? Waarom niet?}
 
+\answer[3cm]{Neen. We kunnen geen rechthoeken construeren want de co\"effici\"ent bij de term van de eerste graad is negatief.}
 
+Volg nu mee om deze vergelijking toch op te lossen.
 
+\task{Teken een vierkant met zijde $x$.}
 
+\answer[4cm]{
+\begin{center}
+\input{figuren/vgl_10x10}
+\end{center}
+}
 
+Dit vierkant zal dus een oppervlakte van $x^2$ hebben.
 
+\task{Teken nu in het vierkant van daarnet twee rechthoeken van 4 bij x. Deze moeten \uline{binnen in} het vierkant zelf getekend worden, bijvoorbeeld \'e\'en bovenaan, en \'e\'en rechts.}
+
+\answer[4cm]{
+\begin{center}
+\input{figuren/vgl_10x10_4x10_10x4}
+\end{center}
+}
+
+\ask{De twee rechthoeken overlappen elkaar. Wat is de oppervlakte van het overlappend stukje?}
+
+\answer[1cm]{$4\cdot 4=16$.}
+
+Linksonder blijft dan nog een stukje met oppervlakte $(x-4)^2$ over. Uit de figuur weten we dat dit gelijk is aan $x^2 -4x -4x$ plus het overlappend deel met oppervlakte $16$. En uit de vergelijking weet je dat $x^2 -4x -4x=20$ is.
+
+\task{Stel beide manieren om de oppervlakte van het kleine vierkantje linksonder te berekenen aan elkaar gelijk en haal er zo een oplossing voor $x$ uit.}
+
+\answer[3cm]{
+\begin{align*}
+  (x-4)^2 &= x^2 -4x -4x + 16\\
+          &= 20 +16\\
+          &= 36\\
+\end{align*}
+We kunnen nu de positieve wortel nemen want afstanden zijn positief, we krijgen dan:
+$$ x-4 = 6\;.$$
+We vinden dus een oplossing $x=10$. De andere oplossing kan bepaald worden door de tweedegraadsveelterm $x^2-8x-20$ te delen door $x-10$.
+} 
+
+Zo zie je maar. Een probleem uit de algebra kan gerust opgelost worden met een beetje meetkunde!
 
 
 

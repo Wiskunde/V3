@@ -1,6 +1,6 @@
 \section{Driedimensionale stapelproblemen}
 In de voorbije lessen, hielden we ons bezig om cirkels op een zo optimaal mogelijke manier te stapelen in een driehoek, rechthoek, cirkel ...
-Als we dit probleem veralgemenen naar het driedimensionaalgeval, dan krijgen we het zogenaamde probleem van Kepler.
+Als we dit probleem veralgemenen naar het driedimensionaalgeval, dan krijgen we het zogenaamde probleem van Kepler, waarbij we dus zoeken naar de dichtste bolstapeling.
 
 \subsection{Kanonskogels stapelen}
 
@@ -293,11 +293,29 @@ Ten slotte kunnen we ook onderstaande vraag positief beantwoorden.
 \subsection{Het bolstapelprobleem van Kepler}
 \subsubsection{Het ontstaan}
 \subsubsection*{Thomas Harriot}
+\begin{wrapfigure}{r}{3cm}
+\vspace{-10mm}
+ \begin{center}
+ \includegraphics[width=3cm]{harriot}
+ \end{center}
+ \vspace{-5mm}
+  \caption{Thomas Harriot}
+\end{wrapfigure}
 Je kon al lezen dat Thomas Harriot (1560-1621) door Sir Walter Raleigh (1554-1618) aan het probleem van de piramidestapels werd gezet. Hij was in die tijd als amateur-astronoom bezig met het waarnemen van zonnevlekken en kometen, maar daarnaast was hij ook een bekende wiskundige en dankzij de kennis die hij als wiskundige had, kon hij het probleem van Raleigh in een wip oplossen. Maar nadat hij de oplossing geleverd had, bleef het kanonskogelprobleem in zijn hoofd rondspoken en hij raakte over dit onderwerp in correspondentie met Kepler.
 
 Kepler, die we straks verder zullen bespreken, had al een tijdje een levendige correspondentie met Harriot over het lichtbrekingsverschijnsel. Hij was dan ook niet verbaasd toen hij een briefje kreeg van Harriot. Maar toen hij las dat het over het stapelen van bolvormige voorwerpen ging, werd zijn nieuwsgierigheid aangewakkerd. Niet veel later kwam plots de gedachte bij hem op, om aan de hand van bolstapelingen de structuur van sneeuwkristallen te verklaren. En zo verhuisde het bolstapelprobleem definitief van de gedachten van Thomas Harriot naar die van Johannes Kepler.
 
 \subsubsection*{Johannes Kepler}
+
+\begin{wrapfigure}{l}{3cm}
+\vspace{-10mm}
+ \begin{center}
+ \includegraphics[width=3cm]{kepler}
+ \end{center}
+ \vspace{-5mm}
+  \caption{Johannes Kepler}
+\end{wrapfigure}
+
 Kepler (1571-1630) was een beroemde Duitse sterrenkundige die vooral bekendheid kreeg, toen hij aan de hand van de bewegingen van de planeten een beschrijving maakte van hun ellipsvormige banen. Vanaf 1609 onderzocht hij tien jaar lang hoe de afstand van een planeet tot de centrale ster, de omlooptijd en de omloopssnelheid van die planeet beïnvloedde. Dit zou een halve eeuw later opgenomen worden in de zwaartekrachtwetten van Newton. Maar Kepler was niet alleen een beroemde astronoom, hij leverde ook een belangrijke bijdrage tot de wiskunde.
 
 In 1611 schreef Johannes Kepler, dankzij de plotselinge inspiratie die hij kreeg door een briefje van Harriot, een boekje met de titel \textquoteleft De zeshoekige sneeuwvlok'. Daarin beschreef hij verschillende methoden om identieke bolvormige voorwerpen in drie dimensies te pakken en hieruit kwam hij tot de conclusie dat de "face-centred cubic packing" de meest efficiënte pakkingsmethode was, waarbij het minst open ruimte tussen de identieke bolvormige voorwerpen overbleef. In het citaat dat hierop volgt beschrijft Kepler zelf wat de "face-centred cubic packing" is.
@@ -317,7 +335,15 @@ Het is niet toevallig dat bij de dichtste bolstapeling die Kepler beschrijft, el
 Andere namen hiervoor zijn bijvoorbeeld 'Newton number' of 'contact number'
 
 \ask{Wat is het 'Kissing number' in één dimensie? En in twee dimensies? Teken de situatie}
-\answer{In één dimensie is het 'kissing number' 2, in twee dimensies 6.\todo{Figuren!!!}}
+\answer{In één dimensie is het 'kissing number' 2, in twee dimensies 6.}
+\begin{figure}[h]
+  \centering
+  \subfloat[]{\includegraphics[width= 4 cm]{kissing1}}\qquad
+  \subfloat[]{\includegraphics[width= 4 cm]{kissing2}}\qquad
+  \subfloat[]{\includegraphics[width=4 cm]{kissing}}
+  \caption{Illustraties van kissing number 2, 6 en 12}  
+\end{figure}
+
 
 In het tweedimensionale geval hadden we reeds te maken met dit kissing getal toen we het hadden over het hexagonaal patroon waarbij er dus 6 cirkels de middeltste cirkel raakten.
 
@@ -329,31 +355,37 @@ Als we overgaan naar drie dimensies, blijkt dat het kissing number daar dus twaa
 
 \subsubsection*{De eerste vooruitgang}
 Al gauw bleek dat het probleem van Kepler niet zomaar een klein probleempje was dat men in een sneltempo zou kunnen oplossen. Net als bij de laatste stelling van Fermat, bleek het een reusachtig werk om Keplers vermoeden rond het bolstapelen te bewijzen. Dit kwam voornamelijk omdat het bewijs een oneindig aantal mogelijkheden moest omvatten en omdat de wiskundigen dus rekening moesten houden met een enorme reeks verschillende willekeurige bolstapelingen. Zo duurde het dan ook lang voordat men een eerst stap kon zetten in de richting van 'het' bewijs. Maar uiteindelijk na 200 jaar kon Karl Friedrich Gauss een eerste kleinigheid over het vermoeden van Kepler aantonen.
-Gauss (1777-1855) was een Duitse wiskundige die zich net als Kepler en Harriot bezighield met astronomie. Gauss er als eerste in slaagde om iets over het vermoeden van Kepler te bewijzen. Hij toonde namelijk aan dat bolstapelingen niet beter konden zijn dan de face-centered cubic packing, wanneer de middelpunten van de gestapelde bollen volgens een vast rooster werden verbonden. (zie figuur 1) \todo{figuur}
+Gauss (1777-1855) was een Duitse wiskundige die zich net als Kepler en Harriot bezighield met astronomie. Gauss er als eerste in slaagde om iets over het vermoeden van Kepler te bewijzen. Hij toonde namelijk aan dat bolstapelingen niet beter konden zijn dan de face-centered cubic packing, wanneer de middelpunten van de gestapelde bollen volgens een vast rooster werden verbonden. Je maakt eerst een laag volgens het gekende hexagonaal patroon en vervolgens leg je er een laag in die je iets verschuift, zodanig dat de bollen net in de kuiltjes van de laag eronder rusten. Bij de volgende laag heb je twee keuzes die niet equivalent zijn. Als we de psoitie van de middelpunten van de bollen in de eerste laaag met $A$ aangeven op de figuur en van de tweede met $B$, dan kan de derde laag precies boven de eerste laag liggen, dus zoals $A$, of op een ander positie, namelijk de $C$ op de figuur. De volgorde met herhaaldelijk $ABC$ wordt die face-centered packing genoemd. Het patroon $AB$ is dan weer dan \textquoteleft Hexagonal Close Packing'. 
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=10cm]{fcc}
+\caption{Lagen $A$, $B$ en $C$ van de bolsapel}
+\end{figure}
 
 
-Het bewijs voor dit vermoeden bevatte geen berekeningen en was eigenlijk heel kort. Gauss zag dat wanneer 2 bollen elkaar raakten, het rooster ervoor zou zorgen dat een hele rij opeenvolgende bollen elkaar zou raken, waardoor evenwijdige rijen bollen zouden ontstaan. Wanneer deze rijen elkaar raakten, zouden zij het minst ruimte overlaten, als de middelpunten van drie bollen een gelijkzijdige driehoek vormden en zo verkreeg hij een oneindig aantal identieke vlakken met bollen die op de dichtste manier gestapeld waren. Uiteindelijk plaatste hij deze identieke vlakken boven elkaar op zo'n manier dat elke bol in een vlak raakte aan 3 bollen in het vlak erboven en 3 bollen in het vlak er onder. Hiermee verkreeg hij het dichtste bolstapelmodel in drie dimensies volgens een rooster en bewees hij dat de "face-centered cubic packing" de dichtste pakkingsmethode was volgens een rooster. Maar hij toonde hiermee niet aan dat de "face-centered cubic packing" de dichtste pakkingsmethode was van álle soorten pakkingsmethodes. Op dit bewijs was het nog eens bijna 200 jaar wachten, maar in tussentijd werden wel nog andere dingen in verband met 'het probleem van Kepler' bewezen.
+Het bewijs voor dit vermoeden bevatte geen berekeningen en was eigenlijk heel kort. Gauss zag dat wanneer 2 bollen elkaar raakten, het rooster ervoor zou zorgen dat een hele rij opeenvolgende bollen elkaar zou raken, waardoor evenwijdige rijen bollen zouden ontstaan. Wanneer deze rijen elkaar raakten, zouden zij het minst ruimte overlaten, als de middelpunten van drie bollen een gelijkzijdige driehoek vormden en zo verkreeg hij een oneindig aantal identieke vlakken met bollen die op de dichtste manier gestapeld waren. Uiteindelijk plaatste hij deze identieke vlakken boven elkaar op zo'n manier dat elke bol in een vlak raakte aan 3 bollen in het vlak erboven en 3 bollen in het vlak er onder. Hiermee verkreeg hij het dichtste bolstapelmodel in drie dimensies volgens een rooster en bewees hij dat de \textquoteleft face-centered cubic packing' de dichtste pakkingsmethode was volgens een rooster. Maar hij toonde hiermee niet aan dat de \textquoteleft face-centered cubic packing' de dichtste pakkingsmethode was van álle soorten pakkingsmethodes. Op dit bewijs was het nog eens bijna 200 jaar wachten, maar in tussentijd werden wel nog andere dingen in verband met 'het probleem van Kepler' bewezen.
 
-\subsubsection*{Voronoi-cellen %en Delaunay-sterren
+\subsubsection*{Voronoicellen %en Delaunay-sterren
 }
 
 In sectie \ref{axel} hebben we het reeds gehad over de Scandinavische wiskundige Axel Thue (1863-1922) die in 1892 een theorie over het tweedimensionale equivalent voor \textquoteleft het probleem van Kepler' waarin men zocht naar de dichtste pakkingsmethode voor cirkels in het vlak. Thue betegelde het vlak met identieke gelijkzijdige zeshoeken en tekende in elke zeshoek een cirkel op zo'n manier dat elke cirkel alle zijden van de zeshoek raakte. Hier werkte hij dus met de zogenaamde Voronoicellen.
 
-Algemeen genomen is dit, zoals je ondertussen wel weet, een ruimtelijk gebied rond een bepaald punt A, waarbinnen alle punten dichter bij A liggen dan bij elk ander gegeven punt B, C, D... Dit wil zeggen dat een willekeurig genomen punt in een Voronoi-cel dichter ligt bij het centrum dat in deze cel ligt dan bij een centrum uit om het even welke andere Voronoi-cel.
+Algemeen genomen is dit, zoals je ondertussen wel weet, een ruimtelijk gebied rond een bepaald punt $A$, waarbinnen alle punten dichter bij A liggen dan bij elk ander gegeven punt $B, C, D...$ Dit wil zeggen dat een willekeurig genomen punt in een Voronoicel dichter ligt bij het centrum dat in deze cel ligt dan bij een centrum uit om het even welke andere Voronoicel.
 Bij drie dimensies is het construeren van een Voronoicel niet zo eenvoudig. Elke bol heeft een complex omhulsel waarbinnen elk punt dichter ligt tot het eigen bolcentrum dan tot om het even welk ander bolcentrum.
-Bij de "face-centered cubic packing" is de Voronoi-cel een ruitvormige dodecaëder (een regelmatig twaalfvlak). Het vermoeden van Kepler kan dan bijgevolg ook aangetoond worden als men kan bewijzen dat deze ruitvormige dodecaëder de kleinste Voronoi-cel is bij het bolstapelen.
+Bij de \textquoteleft face-centered cubic packing' is de Voronoicel een ruitvormige dodecaëder (een regelmatig twaalfvlak). Het vermoeden van Kepler kan dan bijgevolg ook aangetoond worden als men kan bewijzen dat deze ruitvormige dodecaëder de kleinste Voronoicel is bij het bolstapelen.
 
-Deze begrippen spelen een belangrijke rol in het uiteindelijke bewijs van Kepler. Ze zorgen er immers voor dat het reusachtige werk, om de dichtheid van elke bolstapeling te bepalen, wordt beperkt tot een specifieke berekening die uitgevoerd kan worden met de computer. Men zal niet langer zoeken naar de hoeveelheid ruimte die bollen innemen in een stapeling. In de plaats daarvan zal men zoeken naar de kleinst mogelijke Voronoi-cel.
+Deze begrippen spelen een belangrijke rol in het uiteindelijke bewijs van Kepler. Ze zorgen er immers voor dat het reusachtige werk, om de dichtheid van elke bolstapeling te bepalen, wordt beperkt tot een specifieke berekening die uitgevoerd kan worden met de computer. Men zal niet langer zoeken naar de hoeveelheid ruimte die bollen innemen in een stapeling. In de plaats daarvan zal men zoeken naar de kleinst mogelijke Voronoicel.
 
 
-\subsubsection*{L. Fejes Tóth}
-De persoon die als eerste suggereerde om Voronoi-cellen te gebruiken in het bewijs voor het bolstapelprobleem was Lászlo Fejes Tóth. Deze Hongaarse wiskundige toonde hiernaast ook aan dat je het vermoeden van Kepler voor oneindig veel bollen kon bewijzen door het voor 50 bollen te bewijzen. Daarnaast ontdekte hij dat er maar 5000 mogelijke stapelingen meer meededen in de strijd om de compactste stapeling. 
-Tóth wist dat je aan de hand van Voronoi-cellen kon bewijzen welke van de 5000 stapelingen de grootste dichtheid had. Maar hij ondervond uit zijn onderzoeken dat de grenzen van deze cellen niet voldoende waren, waardoor er een correctieterm moest ingevoerd worden. Tóth was de eerste wiskundige die een voorstel deed voor zo'n correctieterm (1953). Alleen bleef toen nog onduidelijk of Tóth in zijn berekening met correctieterm alle mogelijke stapelingen had vervat. Het werd wel duidelijk dat Keplers probleem kon opgelost worden met een optimalisatieprogramma met een eindig aantal variabelen en dat dit met de computer zou moeten opgelost worden. Jammer genoeg had men in 1953 nog niet de computers van tegenwoordig, waardoor het nog even wachten was op het uiteindelijke 'bewijs' voor 'het probleem van Kepler'. 
+\subsubsection*{Lászlo Fejes Tóth}
+De persoon die als eerste suggereerde om Voronoicellen te gebruiken in het bewijs voor het bolstapelprobleem was Lászlo Fejes Tóth. Deze Hongaarse wiskundige toonde hiernaast ook aan dat je het vermoeden van Kepler voor oneindig veel bollen kon bewijzen door het voor 50 bollen te bewijzen. Daarnaast ontdekte hij dat er maar 5000 mogelijke stapelingen meer meededen in de strijd om de compactste stapeling. 
+Tóth wist dat je aan de hand van Voronoicellen kon bewijzen welke van de 5000 stapelingen de grootste dichtheid had. Maar hij ondervond uit zijn onderzoeken dat de grenzen van deze cellen niet voldoende waren, waardoor er een correctieterm moest ingevoerd worden. Tóth was de eerste wiskundige die een voorstel deed voor zo'n correctieterm (1953). Alleen bleef toen nog onduidelijk of Tóth in zijn berekening met correctieterm alle mogelijke stapelingen had vervat. Het werd wel duidelijk dat Keplers probleem kon opgelost worden met een optimalisatieprogramma met een eindig aantal variabelen en dat dit met de computer zou moeten opgelost worden. Jammer genoeg had men in 1953 nog niet de computers van tegenwoordig, waardoor het nog even wachten was op het uiteindelijke 'bewijs' voor 'het probleem van Kepler'. 
 
 
 \subsubsection*{Een verlaging van de bovengrens}
-In tussentijd probeerden de wiskundigen wel om het vermoeden van Kepler op een andere manier te bewijzen. Zij deden dit door te kijken welke dichtheid er maximaal bereikt kan worden. Indien het hen zou lukken om deze bovengrens te verlagen tot 74.05\%  kon men Kepler bij verstek gelijk geven, aangezien de dichtheid die hij verkreeg 74.048048\dots\% was. Daardoor zou de grens tussen de dichtheid bij de face-centered cubic packing en de bovengrens zo klein zijn dat er geen betere pakking meer kon bestaan dan de fcc-pakking.
-Maar het verlagen van de bovengrens bleek moeilijker dan men dacht. In 1958 behaalde C.A.Rogers een waarde van 77.964\%. Enkele decennia later verkreeg Lindsey in 1986 een bovengrens van 77.844\% en slechts twee jaar later vond Muder een grens van 77.836\%. Maar hierbij bleef toch nog steeds een interval van 3.75\% waardoor het mogelijk bleef dat Kepler ongelijk had. De meest recente bovengrens verkreeg Muder in 1993, maar die was nog steeds 77.3055\% wat niet zoveel beter was dan de vorige bovengrens. 
+In tussentijd probeerden de wiskundigen wel om het vermoeden van Kepler op een andere manier te bewijzen. Zij deden dit door te kijken welke dichtheid er maximaal bereikt kan worden. Indien het hen zou lukken om deze bovengrens te verlagen tot 74.05\%  kon men Kepler bij verstek gelijk geven, aangezien de dichtheid die hij verkreeg \[\frac{\pi}{\sqrt{18}}\approx 0,74048048\dots\%\] was. Daardoor zou de grens tussen de dichtheid bij de face-centered cubic packing en de bovengrens zo klein zijn dat er geen betere pakking meer kon bestaan dan de face-centered cubic pakking.
+Maar het verlagen van de bovengrens bleek moeilijker dan men dacht. In 1958 behaalde C.A.Rogers een waarde van 77.964\%. Enkele decennia later verkreeg Lindsey in 1986 een bovengrens van 77.844\% en slechts twee jaar later vond Muder een grens van 77.836\%. De meest recente bovengrens verkreeg Muder in 1993, maar die was nog steeds 77.3055\% wat niet zoveel beter was dan de vorige bovengrens en nog steeds ver van hetgeen Kepler vermoedde. 
 We kunnen dus concluderen dat het verlagen van de bovengrens niet echt efficiënt was. Daarom gaan we er dan ook niet meer verder op in. 
 
 
@@ -366,13 +398,24 @@ Wu-Yi Hsiang is een wiskundige van de universiteit van Californië, die plots in 
 In 1996 gaf een zekere Doug Muder een samenvatting van de toenmalige situatie rond het bewijs voor het vermoeden van Kepler. Hierin kwam hij tot verschillende conclusies. Ten eerste zei hij dat het geschrift van Hsiang hoogstens een schets is van het vermoeden van Kepler. Ten tweede ontdekte hij dat zelfs deze schets tekortkomingen bevat, doordat enkele wiskundigen meerdere tegenvoorbeelden voor cruciale stappen in het bewijs van Hsiang  gevonden hebben. Als conclusie vindt hij dat het werk rond het Kepler-vermoeden moet voortgezet worden alsof Hsiangs geschrift nooit heeft bestaan.
 
 
-\subsubsection{Het bewijs voor 'het probleem van Kepler'}
+\subsubsection{Het bewijs voor \textquoteleft het probleem van Kepler'}
 
 \subsubsection*{Thomas Hales en Samuel Ferguson}
+
+
+\begin{wrapfigure}{l}{3cm}
+\vspace{-10mm}
+ \begin{center}
+ \includegraphics[width=3cm]{hales}
+ \end{center}
+ \vspace{-5mm}
+  \caption{Thomas Hales}
+\end{wrapfigure}
+\todo{De figuur is nog raar in dit geheel.}
 Op 9 augustus 1998 kwam het einde voor het bewijs eindelijk in zicht. Thomas Hales, werkzaam aan de universiteit van Pittsburgh, Pennsylvania, stuurde toen een e-mail naar zijn collega's met het opluchtende nieuws dat hij het vermoeden van Kepler bewezen had.
 \begin{quotation} "I have started to distribute copies of a series of papers giving a solution to the Kepler conjecture, the oldest problem in discrete geometry." 
 \end{quotation} 
-Hales toonde Keplers vermoeden aan in een reeks van artikelen die samen het complete bewijs vormen. In totaal gaat dit over 7 artikelen van Hales en een proefschrift van zijn promovendus, Samuel Ferguson, samen ongeveer 250 pagina's met daarbij 3 gigabytes aan computercode.
+Hales toonde Keplers vermoeden aan in een reeks van artikelen die samen het complete bewijs vormen. In totaal gaat dit over 7 artikelen van Hales en een proefschrift van zijn doctoraatstudent, Samuel Ferguson, samen ongeveer 250 pagina's met daarbij 3 gigabytes aan computercode.
 Om Keplers vermoeden te bewijzen, steunde Hales op een werk van L. Fejes Tóth, waarin staat dat men slechts 5000 stapelingen moet controleren om het vermoeden van Kepler te bewijzen. Hales verdeelde deze 5000 stapelingen in 5 categorieën waarvan hij er vier zelf bewees. De laatste categorie liet hij over aan Samuel Ferguson.
 
 
@@ -381,12 +424,13 @@ Ondanks dat alles dus achter de rug bleek te zijn, bleven sommige wiskundigen tw
 Om de twijfelaars toch te overtuigen werd het gigantische computerprogramma van Hales gecontroleerd door twaalf mensen onder leiding van Gábor Fejes Tóth, de zoon van de wiskundige op wie Hales zich baseerde. Na ongeveer 5 jaar kwamen de referees tot de slotsom dat het bewijs zeker voor 99\% klopte.
 Maar er bleef toch nog een kleine marge open die twijfel bleef zaaien, waardoor men het bewijs van Hales en Ferguson publiceerde met een kleine kanttekening.
 
-Omdat dit een tegenvaller was voor Hales, startte hij zelf een nieuw project om zijn bewijs formeel te controleren. Hierbij gebruikte hij opnieuw een computer om zijn computerprogramma door te lichten. Hales denkt dat dit project binnen de 20 jaar zal afgerond zijn. Als reactie op Hales zoekactie F*P*K (Formal Proof of the Kepler conjecture) ging ook het project Flyspeck (vliegenpoepje) van start.
+Omdat dit een tegenvaller was voor Hales, startte hij zelf een nieuw project om zijn bewijs formeel te controleren. Hierbij gebruikte hij opnieuw een computer om zijn computerprogramma door te lichten. Hales denkt dat dit project binnen de 20 jaar zal afgerond zijn. Als reactie op Hales zoekactie F*P*K (Formal Proof of the Kepler conjecture) ging ook het project Flyspeck van start.
 Collega-wiskundigen spraken hun angst uit dat Hales teveel gebruik maakt van computers. Volgens hen zal de groeiende rol van de computers leiden tot wiskunde die onvatbaar zal zijn voor de mensen. Toch is Hales' bewijs niet de eerste wiskundige krachtmeting van de computer, want ook het vierkleurenprobleem, het probleem dat men minimaal 4 kleuren nodig heeft om elke willekeurige landkaart zo in te kleuren dat er geen twee gebieden met dezelfde kleur aan elkaar grenzen, is opgelost door een computerprogramma.
 
 \subsubsection{Conclusie}
 Een eerste punt dat naar voor komt als je de evolutie van het bewijs van Kepler bekijkt, is het feit dat het bolstapelprobleem toch moeilijker is dan het lijkt. Ondanks dat men dus al decennia lang wist dat de face-centred cubic packing de meest compacte stapeling is, kon men dit vermoeden niet bewijzen. Het vermoeden van Kepler bleef dus eeuwen zonder bewijs. Het grootste probleem was het feit dat er enorm veel mogelijke stapelingen zijn, waarvan men niet wist welke nu de meest compacte was. Gelukkige kon Thomas Hales uiteindelijk de wiskundige gemeenschap verlossen met zijn bewijs.
 Of toch niet? Want doordat Hales dit probleem met de computer bewezen heeft, laaide opnieuw de discussie op over de rol van de computer in bewijsvoeringen. De ene wiskundige vindt het goed dat er computers gebruikt worden, maar de andere denkt dat we op die manier te veel gehecht gaan geraken aan technologische hulpmiddelen, waardoor wiskundigen geen bewijzen meer zullen kunnen opstellen op de traditionele manuele manier. 
+
 \ask{Wat vinden jullie van een bewijs met de computer?}
 \question{Is deze vraag misschien te moeilijk voor kinderen van het middelbaar??}
 

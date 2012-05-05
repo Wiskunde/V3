@@ -19,7 +19,7 @@ Het antwoord is natuurlijk 'neen'. Maar wat is de efficiëntie dan wel? En in wel
 
 Het was reeds duidelijk je nooit elk plekje van de tafel kunt bedekken als de cirkels elkaar niet mogen overlappen.
 
-We zijn in eerste instantie geïnteresseerd in rangschikkingen van oneindig veel cirkels op een oneindige grote tafel. Je hoeft dan geen rekening te houden met wat er aan de randen gebeurt. De randen maken alles moeilijker (maar ook interessanter, iets waar we later nog op zullen terug komen). Eén voor de hand liggende mogelijkheid om de cirkels zo efficiënt mogelijk in het vlak te rangschikken is om ze netjes naast en boven elkaar te leggen, volgens een patroon van vierkantjes. Dat dit niet de best mogelijke oplossing is wordt al snel duidelijk door wat met de rijen te schuiven. Je kunt de rijen namelijk iets beter in elkaar laten passen. Iedere cirkel raakt dan aan zes andere cirkels \todo{Vermelden van kissingnumber?}, in plaats van aan vier, zoals in het vierkante geval. De cirkels komen nu in een regelmatig patroon te liggen op een zogenaamd hexagonaal rooster. Het lijkt onmogelijk om de cirkels nog dichter bij elkaar te krijgen. Dat dit inderdaad niet beter kan werd ongeveer honderd jaar geleden bewezen door de Deense getaltheoreticus Thue. Een schets van het bewijs zullen we zo meteen bekijken. Eerst gaan wij zelf op zoek naar wat nu juist de efficiëntie is en hoe je deze moet berekenen.
+We zijn in eerste instantie geïnteresseerd in rangschikkingen van oneindig veel cirkels op een oneindige grote tafel. Je hoeft dan geen rekening te houden met wat er aan de randen gebeurt. De randen maken alles moeilijker (maar ook interessanter, iets waar we later nog op zullen terug komen). Eén voor de hand liggende mogelijkheid om de cirkels zo efficiënt mogelijk in het vlak te rangschikken is om ze netjes naast en boven elkaar te leggen, volgens een patroon van vierkantjes. Dat dit niet de best mogelijke oplossing is wordt al snel duidelijk door wat met de rijen te schuiven. Je kunt de rijen namelijk iets beter in elkaar laten passen. Iedere cirkel raakt dan aan zes andere cirkels, in plaats van aan vier, zoals in het vierkante geval. De cirkels komen nu in een regelmatig patroon te liggen op een zogenaamd hexagonaal rooster. Het lijkt onmogelijk om de cirkels nog dichter bij elkaar te krijgen. Dat dit inderdaad niet beter kan werd ongeveer honderd jaar geleden bewezen door de Deense getaltheoreticus Thue. Een schets van het bewijs zullen we zo meteen bekijken. Eerst gaan wij zelf op zoek naar wat nu juist de efficiëntie is en hoe je deze moet berekenen.
 
 \subsection{Voronoicellen}
 
@@ -51,7 +51,7 @@ Om te berekenen hoe efficiënt een schikking met cirkels is, maken we gebruik van
 \end{figure}
 
 
-\subsection{Axel Thue}
+\subsection{Axel Thue}\label{axel}
 De Scandinavische wiskundige Axel Thue (1863-1922) ontwikkelde in 1892 een theorie over het tweedimensionale equivalent voor 'het probleem van Kepler' waarin men zocht naar de dichtste pakkingsmethode voor cirkels in het vlak. Thue betegelde het vlak met identieke gelijkzijdige zeshoeken en tekende in elke zeshoek een cirkel op zo'n manier dat elke cirkel alle zijden van de zeshoek raakte. Hierdoor verkreeg hij een dichtheid van 90.69\%, waarvan hij beweerde dat dit de hoogst mogelijke dichtheid was bij het stapelen in 2 dimensies. 
 Om dit te bewijzen tekende Thue een begrensd aantal cirkels met straal 1 die elkaar niet overlapten. Daarna verdeelde hij willekeurig het tweedimensionale vlak in bepaalde gebieden waarbij hij aantoonde dat de dichtheid in elk gebied maximum 90.69\% is. Hierdoor bestond er geen tweedimensionale pakking waarbij de dichtheid groter is dan 90.69\% en op die manier bewees Thue zijn vermoeden dat de hexagonale pakking de dichtste pakkingsmethode was in twee dimensies.
 Het volledige bewijs zullen we hier niet meer bespreken, maar we zullen wel even kijken hoe Thue het vlak waarin de cirkels liggen heeft opgedeeld in verschillende gebieden. Hiervoor zullen we een korte vertaling geven van een deel van het oorspronkelijke Engelstalige bewijs dat geschreven is door Axel Thue.
@@ -110,11 +110,16 @@ Het is nu de bedoeling dat jullie deze tabel gaan proberen in vullen door zelf t
 
 \teacher{Eerst en vooral hebben we de geogebra-applet. Hier kunnen de leerlingen zelf met fictieve munten en verstelbare dienbladen gaan uitproberen, waarbij de efficiëntie gewoon voor hen wordt uitgerekend. Het is wel  nodig dat de leerlingen telkens aanduiden voor welke hoeveelheid munten ze de efficiëntie aan het bepalen zijn. Dit is vooral de bedoeling voor het cirkelvormig en zeshoekig dienblad. Ook kan dit gedaan worden voor het rechthoekig en/of driehoekig dienblad.}
 
-\task{Neem een rechthoekig stuk karton en knip hierug een gelijkzijdige driehoek weg. Plaats dan munten of pokerjetons in het lege gebied. Schuif nu de jetons met een liniaal in de richting van het bovenste hoekpunt. Houd de liniaal zó dat de munten telkens in een gelijkzijdige driehoek zitten. De munten zitten zo in een gelijkzijdige driehoek die je zo klein mogelijk probeert te maken. Soms moet je de munten met je vingers een beetje helpen om ze op een goede plek te krijgen. Probeer de munten in een zo klein mogelijke driehoek te krijgen. Nu bereken je de efficiëntie van je opstelling.}
+\task{Neem een rechthoekig stuk karton en knip hieruit een gelijkzijdige driehoek weg. Plaats dan munten of poker jetons in het lege gebied, zie Figuur \ref{fig:gelijkzijdige_driehoek_met_jetons}. Schuif nu de jetons met een liniaal in de richting van het bovenste hoekpunt. Houd de liniaal zó dat de munten telkens in een gelijkzijdige driehoek zitten. De munten zitten zo in een gelijkzijdige driehoek die je zo klein mogelijk probeert te maken. Soms moet je de munten met je vingers een beetje helpen om ze op een goede plek te krijgen. Probeer de munten in een zo klein mogelijke driehoek te krijgen. Nu bereken je de efficiëntie van je opstelling.}
 
-\teacher{Om de efficiëntie te berekenen zullen de leerlingen de oppervlakte van de gelijkbenige driehoek die wordt bekomen met de liniaal moeten delen met de oppervlakte van alle jetons.}
+\teacher{Om de efficiëntie te berekenen zullen de leerlingen de oppervlakte van de gelijkbenige driehoek die wordt bekomen met de liniaal moeten delen door de oppervlakte van alle jetons.}
 
-\todo{Pieter, zou jij zo een karton willen maken en daar dan gewoon enkele pokerjetons in willen leggen en een foto van trekken (de pokerjetons nog niet in de optimale configuratie leggen, maar gewoon willekeurig)?}.
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.6\textwidth]{gelijkzijdige_driehoek_met_jetons}
+  \caption{Jetons in een gelijkzijdige driehoek.}  
+  \label{fig:gelijkzijdige_driehoek_met_jetons}
+\end{figure}
 
 \task{Ook voor het rechthoekig dienblad gebruik je een stuk karton. Als je twee keer een rechte hoek uitknipt, dan kan je hiermee een rechthoek maken. Ook gebruikmaken van 4 linialen (en een geodriehoek) kan lukken. Leg dan binnen dit rechthoekig dienblad een aantal jetons en bereken de efficiëntie die je bekomt.}
 
@@ -137,25 +142,22 @@ Vooraf is het dan misschien handig om eerst enkele formules op te frissen:
 
 In de volgende sectie zullen wij enkele gevallen effectief uitrekenen.
 
-\todo{PP: hier ben ik gekomen met lezen, to be continued..}
-
 \subsubsection{Berekeningen voor dienbladen met 1, 2 of 3 munten}
 
-\question{Hey Pieter, als je dit naleest, wil jij vooral ook letten op het feit dat ik consequent de hoeken in graden schrijf en dat er bij de afstanden en oppervlaktes steeds cm en cm$^2$ bij staan? Ik ga nu eerst verdertypen en daarna het zelf doen, maar het zou kunnen zijn dat jij het eerder nalees dan ik :p ... Merci :) Aja, en ook overal efficiëntie ipv compactheid ofzo.
-De lay-out is hier ook nog niets waard, maar dit zou ik pas op het einde in orde maken als alle andere todo's en zo weggewerkt zijn ...}
+%\question{Hey Pieter, als je dit naleest, wil jij vooral ook letten op het feit dat ik consequent de hoeken in graden schrijf en dat er bij de afstanden en oppervlaktes steeds cm en cm$^2$ bij staan? Ik ga nu eerst verdertypen en daarna het zelf doen, maar het zou kunnen zijn dat jij het eerder nalees dan ik :p ... Merci :) Aja, en ook overal efficiëntie ipv compactheid ofzo.
+%De lay-out is hier ook nog niets waard, maar dit zou ik pas op het einde in orde maken als alle andere todo's en zo weggewerkt zijn ...}
 
-Wij zullen voor de berekeningen gebruik maken van de afmetingen van een jeton met een straal van 2 cm. Deze afmetingen zijn ook zo bij de geogebra-applets \todo{Dit aanpassen}.
-De oppervlakte van 1 jeton is $4*\pi\approx 12,5664$. We zijn voornamelijk geïnteresseerd in de efficiëntie van een dienblad. Het is echter zo dat een resultaat van $\frac{\pi}{3\sqrt{3}}\%$ niet zoveel zegt. Als we schrijven dat de efficiëntie $60,46\%$ is, hebben we een beter beeld en we zullen dus steeds de afmetingen steeds als decimale getallen schrijven die we afronden op 4 cijfers na de komma en de percentage decimale getallen, afgerond tot op de honderdtallen.
-We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de oppervlakte van het dienblad en de efficiëntie. Dit laatste is de hoeveel van de oppervlakte van het dienblad die de munten innemen, uitgedrukt in percentage, en deze wordt berekend door de oppervlakte van de munten te delen door de oppervlakte van het dienblad en dit te vermenigvuldigen met 100.
+Wij zullen voor de berekeningen gebruik maken van de afmetingen van een jeton met een straal van $2 \cm$. Deze afmetingen zijn ook zo bij de geogebra-applets \todo{Dit aanpassen}.
+De oppervlakte van 1 jeton is $4*\pi\approx 12,5664 \cm^2$. We zijn voornamelijk geïnteresseerd in de efficiëntie van een dienblad. Dit is de hoeveel oppervlakte van het dienblad die de munten innemen, uitgedrukt in percentage. De efficiëntie kunnen we berekenen door de oppervlakte van de munten te delen door de oppervlakte van het dienblad en dit te vermenigvuldigen met 100. Het is echter zo dat een resultaat van $\frac{\pi}{3\sqrt{3}}$ niet zoveel zegt. Als we schrijven dat de efficiëntie $60,46\%$ is, hebben we een beter beeld en we zullen dus steeds de afmetingen steeds als decimale getallen schrijven die we afronden op 4 cijfers na de komma en de percentage decimale getallen, afgerond tot op de honderdtallen.
 
+We zullen dus bij elk voorbeeld de oppervlakte van de jetons, de oppervlakte van het dienblad en de efficiëntie berekenen.
 
 \begin{vb}[Dienbladen met 1 munt]
-
-\todo{Ik zou supergraag dit op een nieuwe lijn krijgen, maar het lukt me niet}
+\mbox{} % forceer latex om een nieuwe lijn te plaatsen
 \begin{itemize}
 \item[] 
 \begin{itemize}
-	\item Oppervlakte munten =$4\pi\approx 12,5664 $cm$^2$
+	\item Oppervlakte jetons = $4\pi\approx 12,5664 \cm^2$
 \end{itemize}
 \end{itemize}
 
@@ -163,16 +165,17 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 \begin{figure}[h]
 \centering
 \includegraphics[width=10cm]{1munten}
+\\\todo{vier aparte figuren die telkens bij het relevant vb staan}
 \caption{De dienbladen voor 1 munt}
 \label{1munt}
 \end{figure}
 
 \begin{itemize}
 	\item \textbf{Cirkelvormig dienblad:} \\
-	Wanneer we slechts 1 munt hebben, is een cirkelvormig dienblad het efficiënst, omdat er dan geen vrije ruimte meer overblijft. Eén munt neemt dus 100\% van de oppervlakte van het cirkelvormig dienblad in. We kunnen dit als volgt samenvatten:
+	Wanneer we slechts 1 munt hebben, is een cirkelvormig dienblad het efficiëntst, omdat er dan geen vrije ruimte meer overblijft. Eén munt neemt dus 100\% van de oppervlakte van het cirkelvormig dienblad in. We kunnen dit als volgt samenvatten:
 	
 	\begin{itemize}
-	\item Oppervlakte dienblad = 12,5664 cm$^2$
+	\item Oppervlakte dienblad $= 12,5664 \cm^2$
 	\item Efficiëntie = 100\%
 \end{itemize}
 	
@@ -192,10 +195,10 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 \end{itemize}
 	
 	\item \textbf{Zeshoekig dienblad:}\\
-	Voor de oppervlakte van de gelijkzijdige zeshoek te berekenen, moeten we de straal van deze zeshoek berekenen (of zijde, die daaraan gelijk is). Deze is gelijk aan de straal van de jeton gedeeld door $\cos(\pi/6)$. Dus in de formule $\frac{3}{2}.z^2.\sqrt{3}$ is $z=2,3094$ en vinden we dus dat de oppervlakte van de zeshoek gelijk is aan 13,8564 cm$^2$. 
+	Om de oppervlakte van de gelijkzijdige zeshoek te berekenen, moeten we de straal van deze zeshoek berekenen (of zijde, die daaraan gelijk is). Deze is gelijk aan de straal van de jeton gedeeld door $\cos(\frac{\pi}{6})$. Dus in de formule $\frac{3}{2}.z^2.\sqrt{3}$ is $z=2,3094$ en vinden we dus dat de oppervlakte van de zeshoek gelijk is aan 13,8564 cm$^2$. 
 	
 	\begin{itemize}
-	\item Oppervlakte dienblad = 13,8564 cm$^2$
+	\item Oppervlakte dienblad $= 13,8564 \cm^2$
 	\item Efficiëntie = 90,69\%
 \end{itemize}
 \end{itemize}
@@ -203,7 +206,7 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 \end{vb}
 
 \begin{vb}[Dienbladen met 2 munten]
-
+\mbox{}
 \begin{figure}[h]
 \centering
 \includegraphics[width=10cm]{2munten}
@@ -215,23 +218,23 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 \begin{itemize}
 \item[] 
 \begin{itemize}
-	\item Oppervlakte munten =  $8\pi\approx 25,1327$ cm$^2$
+	\item Oppervlakte munten =  $8\pi\approx 25,1327 \cm^2$
 \end{itemize}
 \end{itemize}
 \begin{itemize}
   \item \textbf{Cirkelvormig dienblad:}\\
-  Om de oppervlakte te berekenen hebben we de straal van de grote cirkel nodig. Die is twee maal de straal van de munten en dit is $4$ cm.  Hieruit volgt
+  Om de oppervlakte te berekenen hebben we de straal van de grote cirkel nodig. Die is twee maal de straal van de munten en dit is $4$ cm.  Hieruit volgt onmiddellijk dat maar de helft van het dienblad kan gevuld worden. We berekenen nog de oppervlakte:
   \begin{itemize}
-	  \item Oppervlakte dienblad = $16\pi\approx 50,2655$ cm$^2$
+	  \item Oppervlakte dienblad = $16\pi\approx 50,2655 \cm^2$
 	  \item Efficiëntie = 50\%
   \end{itemize}
   
 	\item \textbf{Driehoekig dienblad:}\\
 	De configuratie op de figuur geeft dezelfde als de configuratie met een munt in de rakende in de tophoek (je kan dit inzien door de figuur te draaien).
-	De grootte van basis van de driehoek is gelijk aan twee keer de grootte van de projectie van het lijnstuk $[AB]$ (op de figuur), dus twee keer de grootte van $[AC]$, en de lengte van $[BD]$. Deze laatste is twee keer de straal van de jetons, dus gelijk aan 4 cm, omdat de cirkels elkaar juist raken. De grootte van $[AC]$ heeft grootte $2\sqrt{3}$ cm zoals bij de berekeningen van het voorbeeld met 1 munt. De grootte van de basis is dus gelijk aan 4+4$\sqrt{3}\approx 10,9282$ cm. Met deze basis weten we dat de hoogte van de driehoek 9,4641 cm is. Hieruit vinden we :
+	De grootte van basis van de driehoek is gelijk aan twee keer de grootte van de projectie van het lijnstuk $[AB]$ (op de figuur), dus twee keer de grootte van $[AC]$, en de lengte van $[BD]$. Deze laatste is twee keer de straal van de jetons, dus gelijk aan $4 \cm$, omdat de cirkels elkaar juist raken. De grootte van $[AC]$ heeft grootte $2\sqrt{3}$ cm zoals bij de berekeningen van het voorbeeld met 1 munt. De grootte van de basis is dus gelijk aan 4+4$\sqrt{3}\approx 10,9282 \cm$. Met deze basis weten we dat de hoogte van de driehoek $9,4641 \cm$ is. Hieruit vinden we :
 	
 	\begin{itemize}
-	\item Oppervlakte dienblad = 51,7128 cm$^2$.
+	\item Oppervlakte dienblad $= 51,7128 \cm^2$.
 	\item Efficiëntie = 48,60\%
 \end{itemize}
 	
@@ -239,15 +242,16 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 	\item \textbf{Rechthoekig dienblad:}\\
 	De rechthoek die de 2 munten omvat heeft een lengte van 4 keer de straal van de munten en de breedte is gewoon de diameter. Zo vinden we dus :
 	\begin{itemize}
-	\item Oppervlakte dienblad = 32 cm$^2$
+	\item Oppervlakte dienblad $= 32 \cm^2$
 	\item Efficiëntie = 78,54\%
 \end{itemize}
 	
 	\item \textbf{Zeshoekig dienblad:}\\
 	\todo{Een oplossing duizend keer makkelijk dan die in het bestand van Jordy, maar wel met dezelfde uikomst. Maar controleer het toch nog maar eens goed.}
-	Om de oppervlakte van de zeshoek te weten willen we graag de straal (= de zijde) van de zeshoek. Deze kunnen we vinden door het berekenen van de lengte va $[AI]$ en $[IH]$. Dit laatste is gewoon de straal van 2 cm. $|AI|$ kunnen we vinden als we $I$ loodrecht gaan projecteren op $AB$. $|GI|$ is dan ook de straal en we weten dat in deze driehoek de hoek $G\hat{A}I=60°$. Hieruit halen we dat $|AI|=\frac{|GI|}{\sin(60°)}=2,3094$ cm en dus de grootte van de straal is 4,3094 cm.
+	Om de oppervlakte van de zeshoek te berekenen, willen we graag de straal (= de zijde) van de zeshoek bereken. Deze kunnen we vinden door het berekenen van de lengte van $[AI]$ en $[IH]$. Dit laatste is gewoon de straal van $2 \cm$ %\question{$|IH|=4\cm$ toch, want de straal van een jeton in $2\cm$ en als ik naar de figuur kijk, dan loopt $IH$ van het centrum van één jeton naar het centrum van een andere jeton. Of bekijk ik het fout? OOPS, hier ben ik fout, ik was op de verkeerde figuur aan het kijken... Dus we zullen zeker die figuren nog moeten apart bij elk stukje plaatsen, anders is dit te verwarrend. Het lijkt me wel een goede redenatie als ik het nu opnieuw lees!}
+. $|AI|$ kunnen we vinden als we $I$ loodrecht gaan projecteren op $AB$. $|GI|$ is dan ook de straal en we weten dat in deze driehoek de hoek $G\hat{A}I=60°$. Hieruit halen we dat $|AI|=\frac{|GI|}{\sin(60°)}=2,3094 \cm$ en dus de grootte van de straal is $4,3094 \cm$.
 	\begin{itemize}
-	\item Oppervlakte dienblad = 48,2487 cm$^2$
+	\item Oppervlakte dienblad $= 48,2487 \cm^2$
 	\item Efficiëntie = 52,09\%
 \end{itemize}
 \end{itemize}
@@ -257,11 +261,11 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 
 
 \begin{vb}[Dienblad met 3 munten]
-
-
+\mbox{}
 \begin{figure}[h]
 \centering
 \includegraphics[width=18cm]{3munten}
+\\\todo{figuren apart plaatsen bij elk voorbeeld $\rightarrow$ Oké, ik probeer dit in orde te brengen (morgen wss...)!}
 \caption{De dienbladen voor 3 munten}
 \label{3munt}
 \end{figure}
@@ -277,12 +281,12 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 
 \begin{itemize}
   \item \textbf{Cirkelvormig dienblad:}\\
-  De straal van de cirkel is deze keer gelijk aan de som van de lengtes van twee lijnstukken, $|HA|$ en $|AD|$. De lengte van $[HA]$ is gelijk aan de straal van de munten. De lengte van $[AD]$ vinden we in de driehoek $ABC$. Doordat deze driehoek gelijkzijdig is, geldt dat de hoogtelijnen elkaar in 1 punt snijden, het hoogtepunt. En dit punt verdeelt elke hoogtelijn van de driehoek in twee delen waarvan het ene deel twee keer zo groot is als het ander. Met andere woorden, de lengte van $[AD]$ is twee keer de lengte van $[DE]$. Doordat $|AE|=\sqrt{|AB|^2-|BE|^2}=\sqrt{16-4}=\sqrt{12}\approx 3,4641$ cm, is de lengte van $[AD]$ gelijk aan 2,3094cm. Hieruit volgt dat de straal van het cirkelvormig dienblad een lengte van 4,3094 cm heeft. Het is ook niet verwonderlijk dat dit dezelfde straal geeft als de zeshoek in vorig voorbeeld. \\
+  De straal van de cirkel is deze keer gelijk aan de som van de lengtes van twee lijnstukken, $|HA|$ en $|AD|$. De lengte van $[HA]$ is gelijk aan de straal van de munten. De lengte van $[AD]$ vinden we in de driehoek $ABC$. Doordat deze driehoek gelijkzijdig is, geldt dat de hoogtelijnen elkaar in 1 punt snijden, het hoogtepunt. En dit punt verdeelt elke hoogtelijn van de driehoek in twee delen waarvan het ene deel twee keer zo groot is als het ander. Met andere woorden, de lengte van $[AD]$ is twee keer de lengte van $[DE]$. Doordat $|AE|=\sqrt{|AB|^2-|BE|^2}=\sqrt{16-4}=\sqrt{12}\approx 3,4641 \cm$, is de lengte van $[AD]$ gelijk aan $2,3094 \cm$. Hieruit volgt dat de straal van het cirkelvormig dienblad een lengte van $4,3094 \cm$ heeft. Het is ook niet verwonderlijk dat dit dezelfde straal geeft als de zeshoek in vorig voorbeeld. \\
  We vinden dus volgende resultaten:
    
   
   \begin{itemize}
-	\item Oppervlakte dienblad = 58,36 cm$^2$.
+	\item Oppervlakte dienblad $= 58,36 \cm^2$.
 	\item Efficiëntie= 64,62 \%
 \end{itemize}
      
@@ -290,7 +294,7 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 	Aangezien het driehoekige dienblad bij drie munten hetzelfde is als dat bij twee munten hoeven we de berekeningen voor de oppervlakte van het dienblad niet opnieuw te doen. We weten dus dat:
 	
 	\begin{itemize}
-	\item Oppervlakte dienblad = 14,80 cm$^2$.
+	\item Oppervlakte dienblad $= 14,80 \cm^2$.
 	\item Compactheid dienblad = 72,90 \%
 \end{itemize}
 	
@@ -298,35 +302,39 @@ We zullen dus bij elk voorbeeld duidelijk de oppervlakte van de jetons, de opper
 	Zoals je ziet zijn er twee figuren van rechthoeken opgenomen in dit voorbeeld. Hierin is duidelijk te zien welke rechthoekig dienblad het meest efficiënt is (namelijk die waar de drie glazen naast elkaar staan). Deze efficiëntie kunnen we eigenlijk al overnemen van de vorige voorbeelden, omdat je als het waren 3 vierkante dienbladen van 1 munt naast elkaar plakt. Als we echter toch even de eenvoudige berekeningen hernemen, bekomen we dat de lengte van het rechthoekig dienblad 6 keer de straal is van de munten en de breedte de diameter. Voor zo een rechthoek geldt dus:
 	
 	\begin{itemize}
-	\item Oppervlakte dienblad = 45 cm$^2$
+	\item Oppervlakte dienblad $= 45 \cm^2$
 	\item Efficiëntie = 78,54\%
 \end{itemize} 
 	
 	
 	\item \textbf{Zeshoekig dienblad:}\\
-	Om de straal van de zeshoek $ABCDEF$ te verkrijgen berekenen we eerst de lengte van het groene lijnstuk. Dit groene lijnstuk $[FB]$ is in twee gelijke delen verdeeld ($|FH|$ en $|HB|$). Deze delen hebben een lengte die gelijk is aan de hoogte van de meest compacte gelijkzijdige driehoek bij 1 munt min 1 keer de straal van de munt (Dit kan je zien door bijvoorbeeld de driehoek die vertrekt in top B te beschouwen met de meest linkse cirkel). Dus $|HB|=|FH|=4$cm. De lengte van het groene lijnstuk heeft dus een lengte van 8 cm. De lengte van de straal in de zeshoek kunnen we nu eenvoudig verkrijgen in de rechthoekige driehoek $AFH$. Daarin geldt namelijk $\cos(30°)=\frac{4}{z}$ met $z$ de zijde van de zeshoek. Deze $z$ is dus gelijk aan 4,6188 cm. Zo kunnen we besluiten dat 
+	Om de straal van de zeshoek $ABCDEF$ te verkrijgen berekenen we eerst de lengte van het groene lijnstuk. Dit groene lijnstuk $[FB]$ is in twee gelijke delen verdeeld ($|FH|$ en $|HB|$). Deze delen hebben een lengte die gelijk is aan de hoogte van de meest compacte gelijkzijdige driehoek bij 1 munt min 1 keer de straal van de munt (Dit kan je zien door bijvoorbeeld de driehoek die vertrekt in top B te beschouwen met de meest linkse cirkel). Dus $|HB|=|FH|=4 \cm$. De lengte van het groene lijnstuk heeft dus een lengte van 8 cm. De lengte van de straal in de zeshoek kunnen we nu eenvoudig verkrijgen in de rechthoekige driehoek $AFH$. Daarin geldt namelijk $\cos(30°)=\frac{4}{z}$ met $z$ de zijde van de zeshoek. Deze $z$ is dus gelijk aan $4,6188 \cm$. Zo kunnen we besluiten dat 
 	\begin{itemize}
-	\item Oppervlakte dienblad = 55,4256 cm$^2$
+	\item Oppervlakte dienblad $= 55,4256 \cm^2$
 	\item Efficiëntie = 68,02\%
 \end{itemize}
-	
 	
 \end{itemize}
 \end{vb}
 
+\todo{PP: Ok, hier geraakt in mijn uurtje tussen twee lessen..}
+\question{Ik heb in deze sectie soms ook een probleem met afronden, namelijk wanneer schrijf ik $\approx$ en wanneer gewoon = ?}
+\question{Ik zou eigenlijk die titeltjes van 'voorbeeld (dienblad met ...)' willen veranderen door subsubsubsections (allez, begrijp je :p?), gewoon titeltjes zonder nummering, maar gewoon een vetgedrukt titeltje met Dienbladen met 3 munten' of zoix ...'}
 
-\subsection{Efficiëntie voor een driehoekig dienblad met 4 munten bewijzen.}
+\subsubsection{Efficiëntie voor een driehoekig dienblad met 4 munten bewijzen.}
 
-\teacher{De sectie is vooral bedoeld voor de leerlingen om hen te doen inzien dat ze het ook belangrijk is om niet steeds zomaar op de intuïtie in te gaan, maar dat dit ook moet aangetoond worden om zeker te zijn. In ons geval is echter onze intuïtie correct volgens het bewijs. De leerlingen kunnen dit bewijs zelf doorlopen met deze cursus en dit begrijpen via een figuur die ze zelf knutselen.}
+\teacher{De sectie is vooral bedoeld voor de leerlingen om hen te doen inzien dat ze het ook belangrijk is om niet steeds zomaar op de intuïtie in te gaan. Het uitproberen met geogebra is leuk, het experimenteren met figuren ook. Je ziet dan snel in \textquoteleft op het gevoel' dat je niet efficiënter kan, maar het is belangrijk om dit ook te kunnen aantonen. In ons geval is onze intuïtie weldegelijk correct volgens het bewijs, nu zijn we dus zeker. De leerlingen kunnen dit bewijs zelf doorlopen met deze cursus en dit begrijpen via een figuur die ze zelf knutselen.}
 
-Bij de voorbeelden in vorige sectie was het algauw intuïtief duidelijk hoe we de munten moeten plaatsen om zo efficiënt mogelijk het dienblad te vullen. Het is echter soms belangrijk dat je echt ook zeker weet dat er geen configuratie bestaand die het dienblad nog efficiënter vult. 
+Bij de voorbeelden in vorige sectie was het algauw intuïtief duidelijk hoe we de munten moeten plaatsen om zo efficiënt mogelijk het dienblad te vullen. Het is echter soms belangrijk dat je echt ook zeker weet dat er geen configuratie bestaat die het dienblad nog efficiënter vult. 
 
 We zullen ons nu richten op het probleem met 4 munten voor een driehoekig dienblad.
 
-Jullie hebben daarnet met de geogebra-applet of bij het schuiven waarbij je op een bepaald moment niet meer verder met de munten kon verschuiven, maar waarbij je wist dat de configuratie beter.
+Jullie hebben daarnet met de geogebra-applet of met die jetons configuraties proberen maken. Soms was het waarschijnlijk zo dat bij het schuiven je op een bepaald moment niet meer verder kon, maar waarbij je wist dat de configuratie toch voor verbetering vatbaar was.
+
 \ask{Geef drie voorbeelden van configuraties met 4 munten die je niet verder kan verschuiven}
 
-\answer{\todo{Pieter, kan jij er 4 trekken met je jetons?? Ofwel doen we het gewoon met geogebra zoals op onderstaande figuur}
+\answer{\todo{Pieter, kan jij er 4 trekken met je jetons?? Ofwel doen we het gewoon met geogebra zoals op onderstaande figuur. Zowiezo moet deze nog aangepast worden, bijvoorbeeld omdat er staat opp ABC en dat er staat efficiëntie 0.59 bij rechtsboven, maar dat moet 0.61 zijn, gewoon omdat ik niet zo goed had geprobeerd :p ...}
+Hieronder vind je alvast vier mogelijkheden ...
 \begin{figure}[h]
 \includegraphics[width=\columnwidth]{4muntenconfig}
 \caption{Configuraties met 4 munten, die je niet verder kunt duwen, met verschillende efficiënties}
@@ -347,72 +355,229 @@ Knip een cirkel uit, liefst van stevig, doorzichtig plasic, maar het kan ook uit
 Deze figuur zal ons helpen om ons vermoeden te bewijzen dat de configuratie met drie cirkels in de hoeken en één in het midden, de meest efficiënte is. 
 Stel dat de vier cirkels straal $r$ hebben, dan kunnen we een belangrijke vaststelling doen dat het middelpunt van een cirkel met straal $r$ die volledig binnen de grote driehoek ligt, steeds binnnen de kleine driehoek ligt (of op de rand). Dit kan je eenvoudigweg ook uitproberen met je geknutselde figuur.
 
-We gaan nu aantonen dat er binnen de grote driehoek geen vier cirkels passen die groter zijn dan de cirkels die we al hebben. Moest dit wel het geval zijn, dan zouden we de configuratie die we dan bekomen kunnen gebruiken in het geval van onze munten en deze geeft dan een grotere efficiëntie dan diegene die we eerst hadden beschouwd als meest efficiënte.
+We gaan nu aantonen dat er binnen de grote driehoek geen vier cirkels passen die groter zijn dan de cirkels die we al hebben. Moest dit wel het geval zijn, dan zouden we de configuratie die we dan bekomen, kunnen gebruiken in het geval van onze munten en deze geeft dan een grotere efficiëntie dan diegene die we eerst hadden beschouwd als meest efficiënte.
 
 \ask{Als er dus een beter oplossing zou zijn, met grotere cirkels met straal $R>r$, waar zullen de middelpunten van die cirkels dan liggen? Kunnen ze nog steeds op de rand van de kleine driehoek liggen?}
 \answer{De middelpunten van die cirkels zullen nog altijd in de kleine driehoek liggen, maar nu zullen ze niet meer op de rand van deze driehoek kunnen liggen.}
 
 We gaan nu het gebied waar de middelpunten van de grotere cirkels zouden kunnen liggen verdelen in drie gebieden. Als we kunnen aantonen dat in die gebieden er ten hoogste maar één middelpunt van een grotere cirkel kan liggen, dan hebben we aangetoond dat we inderdaad geen grotere cirkels kunnen hebben dan deze die we al gevonden hebben, nl. als $R=r$.
 
-Beschouw volgende figuur\todo{Maken!!}.
+Beschouw volgende figuur.
 
-%\begin{figure}[]
-%\includegraphics[width=\columnwidth]{bewijs}
-%\caption{Figuur voor het bewijs dat deze configuratie het meest efficiënt is }
-%\label{bewijs}
-%\end{figure}
+\begin{figure}[h]
+\includegraphics[width=13cm]{bewijs}
+\caption{Figuur voor het bewijs dat deze configuratie het meest efficiënt is }
+\label{bewijs}
+\end{figure}
 
+We hebben, zoals je op de figuur kan zien, de kleine driehoek opgedeeld in drie gebieden, die allemaal de vorm van een vlieger hebben. Als scheiding tussen de drie vliegers zien we lijnen staan die bestaan uit een doorgetrokken lijn en een stippellijn. Dit is gedaan om aan te geven in welk gebiedje de punten óp de scheidingslijn moeten liggen, namelijk aan de kant van de doorgetrokken lijn. Zoals we eerder zeiden, is het mooie van deze opdeling dat we vier middelpunten van de vier grotere cirkels hebben, en slechts drie gebiedjes waar die middelpunten in moeten liggen. In één van de gebieden zullen dus twee middelpunten moeten liggen. 
+
+\task{Bereken hoeveel de grootte van de twee diagonalen van de vlieger zijn, m.a.w. bereken $|EJ|$ en $|GH|$.}
+
+\answer{Het is onmiddellijk duidelijk dat $|EJ|=2r$. De afstand van $G$ naar $H$ vinden we door in de driehoek $GHJ$ te kijken. Je kan deze gelijkbenige driehoek in twee verdelen door de hoogtelijn te tekenen uit het hoekpunt $J$. Hieruit volgt dat $\sin(60°)=\frac{|PH|}{r}$, met $P$ het voetpunt zoals op de figuur. We vinden dus dat de lengte van de kleine diagonaal van deze vlieger gelijk is aan $\sqrt{3}r$. }
+
+Uit deze berekeningen halen we dat twee middelpunten in een vlieger nooit verder uit elkaar kunnen liggen dan $2r$. In de verbeterede configuratie met grotere cirkels moeten de middelpunten $2R$ uit elkaar liggen. $R$ mag dus niet groter zijn dan $r$, zodat we dus inzien dat grotere cirkels dan deze die we al hadden, niet in deze driehoek kunnen.
+
+We weten dat de oplossing met $R=r$ bestaat, aangezien we deze reeds zelf geconstrueerd hebben. 
+
+\ask{Zouden er nog andere configuraties met vier munten zijn, die in dit driehoekig dienblad passen?}
+\answer{Neen, er is maar één oplossing. Het is namelijk zo dat van de twee middelpunten van de cirkels die in hetzelfde vliegergebied moeten liggen, er één in een hoekpunt moet liggen en de ander precies in het midden van de kleine driehoek, want alleen dan is hun afstand gelijk aan $2r$. Daarna blijven alleen dan de andere twee hoekpunten van de kleine driehoek over als middelpunt voor de laatste twee cirkels.}
+
+We weten nu dat deze configuratie ook effectief de meest optimale compactheid geeft. Laten we dan ten slotte ook effectief uitrekenen wat die efficiëntie ook is.
+
+\task{Bereken de efficiëntie van vier gelijke munten met straal $r$ bij een driehoekig dienblad.}
+\answer{ De oppervlakte van de vier cirkels is $4\pi r^2$. Om de oppervlakte van de driehoek te bepalen hebben we de basis en de hoogte van de grote driehoek nodig.
+De basis vinden we door deze op te splitsen. Het eerste stuk $|BK|$ is gelijk aan $\frac{r}{tan(30°)}=r\sqrt{3}$. We weten ook dat $|KL|=|EH|=\cos(30°)2r=r\sqrt{3}$. De twee andere delen van $[BC]$ vinden we analoog en zo bekomen we dus een basis van grootte $4r\sqrt{3}$. De hoogte van de grootte driehoek is $\sqrt{b^2-(\frac{b}{2})^2}= 6r$. De oppervlakte van het driehoekig dienblad is dus $12\sqrt{3}r^2 $. De efficiëntie halen we hier gemakkelijk uit door het delen van de twee oppervlaktes. Zo bekomen we dat er $\frac{4\pi}{12\sqrt{3}}.100\approx 60,46\%$ van de oppervlakte van het dienblad is gevuld met munten bij deze optimale configuratie.}
 
 \subsubsection{Berekeningen voor enkele specifieke gevallen}
 
-Ten slotte zullen we nog van enkele specifieke gevallen de efficiëntie uitrekenen. 
+Ten slotte zullen we nog bij elk van de verschillende vormen van dienbladen de efficiëntie berekenen.
 
 \teacher{Het is niet de bedoeling dat de leerlingen dit allemaal gaan uitrekenen, maar het is een aanbod waaruit de leerkracht dan een selectie kan nemen.}
 
-\begin{vb}[Dienblad met 5 munten]
+\begin{vb}[Cirkelvormig dienblad met 5 munten]
+\todo{Ik wou graag met wrapfigure werken om de figuur zo rechts te zetten maar dat lukt blijkbaar niet :s ...}
+
+%\begin{wrapfigure}{r}{0.5\textwidth}
+%\vspace{-1mm}
+ %\begin{center}
+  % \includegraphics[width=0.48\textwidth]{5munten}
+ %\end{center}
+  %\vspace{-5mm}
+  %\caption{Cirkelvormig dienblad met 5 munten}
+%\end{wrapfigure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{5munten}
+\caption{Cirkelvormig dienblad voor 5 munten}
+\label{2munt}
+\end{figure}
+
+
+\mbox{}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=10cm]{munten}
+%\caption{De dienbladen voor 2 munten}
+%\label{2munt}
+%\end{figure}
 
 \begin{itemize}
-  \item \textbf{Cirkelvormig dienblad:}\\
-  Om de oppervlakte te berekenen 
-   \begin{itemize}
-	\item Oppervlakte dienblad = 
+\item[] 
+\begin{itemize}
+	\item Oppervlakte munten =  $20 \pi\approx 62,8319 \cm^2$
 \end{itemize}
-  
+\end{itemize}
+De straal die we moeten berekenen bestaat uit twee delen. Het eerste deel heeft als lengte de straal van de munt en het tweede deel loopt verder van het middelpunt van de muntjes naar het middelpunt van de cirkel. Dit tweede deel kunnen we berekenen in de gelijkzijdige vijfhoek $ABCDE$. Daarin geldt dat de hoek $AFE= 72°$ \todo{NOg eens de formule opzoeken voor grote van hoek in regelmatige $n$-hoek}. Door toepassing van de cosinusregel in de driehoek $AFE$ kunnen we de lengte van het tweede deel van de straal van de cirkel (=$|EF|=x$) vinden. Er geldt dat 
+\[4^2=x^2+x^2-2x^2.\cos(72°)\Leftrightarrow 16=(2-2\cos(72°))x^2\Leftrightarrow x^2\approx 11,5777.\]
+Hieruit volgt dat $x=3,4026$ cm, waardoor we weten dat de straal van het cirkelvormig dienblad gelijk is aan 5,4026 cm. Hieruit volgt dat:
+\begin{itemize}
+\item[]
+\begin{itemize}
+	\item Oppervlakte dienblad = 91,6970
+	\item Efficiëntie = 68,52\%
+\end{itemize}
 \end{itemize}
 \end{vb}
 
+\begin{vb}[Zeshoekig dienblad met 7 munten]
+\mbox{}
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{7munten}
+\caption{Zeshoekig dienblad voor 7 munten}
+\label{7munt}
+\end{figure}
 
 
-\begin{vb}[Dienblad met 7 munten]
+
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=10cm]{munten}
+%\caption{De dienbladen voor 2 munten}
+%\label{2munt}
+%\end{figure}
 
 \begin{itemize}
-  \item \textbf{Driehoekig dienblad:}\\
-  Om de oppervlakte te berekenen 
-   \begin{itemize}
-	\item Oppervlakte dienblad = 
+\item[] 
+\begin{itemize}
+	\item Oppervlakte 7 munten =  $28 \pi\approx 87,9646 \cm^2$
 \end{itemize}
-  
 \end{itemize}
+
+We zoeken de lengte van de stral van de zeshoek $ABCDEF$. Hiervoor berekenen we eerst de lengte van het lijnstuk $[JG]$. Deze lengte is $2+\sqrt{4^2-2^2}=2+2\sqrt{3}\approx 5,4641$ cm. De lengte van de straal van de zeshoek is dan $\frac{5,4641}{\cos(30°)}=
+= 6,3093$ cm. Hieruit volgt
+
+\begin{itemize}
+\item[]
+\begin{itemize}
+	\item Oppervlakte dienblad = 103,4223
+	\item Efficiëntie = 85.05\%
+\end{itemize}
+\end{itemize}
+
+
 \end{vb}
 
 
-\begin{vb}[Dienblad met 11 munten]
+\begin{vb}[Rechthoekig dienblad met 11 munten]
+Dit voorbeeld geeft een voorbeeld van een dienblad waarbij de het lange dienblad van allemaal munten naast ekaar niet het meest efficiënte is.
+Hiervoor gaan we de efficiëntie berekenen voor volgende drie configuraties.
+\mbox{}
+\begin{figure}[h]
+\centering
+\includegraphics[width=14cm]{11munten}
+\caption{Rechthoekige dienbladen voor 11 munten}
+\label{11munt}
+\end{figure}
+\mbox{}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=10cm]{munten}
+%\caption{De dienbladen voor 2 munten}
+%\label{2munt}
+%\end{figure}
 
 \begin{itemize}
-  \item \textbf{Rechthoekig dienblad:}\\
-  Om de oppervlakte te berekenen 
-   \begin{itemize}
-	\item Oppervlakte dienblad = 
+\item[] 
+\begin{itemize}
+	\item Oppervlakte 11 munten =  $44 \pi\approx 138,2300 \cm^2$
 \end{itemize}
-  
 \end{itemize}
+
+
+\begin{itemize}
+\item Rechthoek $ABCD$
+Het eerste dienblad dat te zien is op de figuur heeft volgende afmetingen: een lengte van 44 cm en een breedte van 4 cm. We vinden dus dat 
+\begin{itemize}
+	\item Oppervlakte dienblad = 176 cm$^2$
+	\item Efficiëntie = 78,54\%
+\end{itemize}
+
+\item Rechthoek $EFGH$
+Het tweede dienblad heeft een lengte van 16 cm en een breedte van $2.2 + 2. \sqrt{16-4}\approx 10,9282$ cm waaruit we halen dat: 
+\begin{itemize}
+	\item Oppervlakte dienblad = 119,4256 cm$^2$
+	\item Efficiëntie = 79,06\%
+\end{itemize}
+
+\item Rechthoek $IJKL$
+De afmetingen van het derde rechthoekige dienblad zijn 24 cm $\times$ $4+2\sqrt{3}\approx 7,4641$ cm.
+\end{itemize}
+\begin{itemize}
+	\item Oppervlakte dienblad = 179,1384 cm$^2$
+	\item Efficiëntie = 77,16\%
+\end{itemize}
+
+
+\end{vb}
+
+\begin{vb}[Driehoekig dienblad met 13 munten]
+  \mbox{}
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{13munten}
+\caption{Driehoekig dienblad voor 13 munten}
+\label{13munt}
+\end{figure}
+
+
+
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=10cm]{munten}
+%\caption{De dienbladen voor 2 munten}
+%\label{2munt}
+%\end{figure}
+
+\begin{itemize}
+\item[] 
+\begin{itemize}
+	\item Oppervlakte 13 munten =  $52 \pi\approx 163,3628 \cm^2$
+\end{itemize}
+\end{itemize}
+
+Om de oppervlakte van driehoek $ABC$ te berkenen, zoeken we eerste de lengte van de basis door deze, zoals gewoonlijk op te splitsen in verschillende stukken.
+Het eerste en laatste stuk, zoals ook in de vorige voorbeelden met driehoeken, $4\sqrt{3}$ cm. Vervolgens hebben we nog een stuk met een grootte van 8 stralen, dus 16 cm. De basis heeft dus een grootte van 22,9282 cm. De hoogte halen we uit onze gekende formule $\sqrt{b^2-(\frac{b}{2})^2}$ en dit geeft in ons geval 19,8564 cm. Met deze gegevens kunnen we de oppervlakte en de efficiëntie berekenen en we bekomen:
+
+\begin{itemize}
+\item[]
+\begin{itemize}
+	\item Oppervlakte dienblad = 227,6358 cm$^2$
+	\item Efficiëntie = 71,76\%
+\end{itemize}
+\end{itemize}
+
+Merk op dat dit dezelfde oppervlak geeft voor een driehoek met 15 munten. Daar zou de efficiëntie dan echter 82,8\% zijn.
 \end{vb}
 
 
 
 \subsubsection{Conclusie}
 
-Als we alle gegevens in de overzichtstabel hebben gezet, zouden we (ongeveer) volgend resultaat moeten krijgen, waarbij de grootste waarden in een kleurtje staan \todo{Hoe doe je dit in LaTeX om in een tabel een vakje te kleuren??}:
+Jullie hebben met geogebra of met jetons en karton kunnen uitproberen voor welke munten we nu het beste dienblad hebben. Vervolgens hebben we dit voor een aantal dingen ook effectief uitgerekend en zelfs bewezen.
+
+Als we alle gegevens in de overzichtstabel hebben gezet, zouden we (ongeveer) volgend resultaat moeten krijgen, waarbij de grootste waarden in een kleurtje staan. De gegevens zijn hier voornamelijk verkregen door het effectief uitrekenen zoals in bovenstaande sectie of via de geogebra-applets. 
 
 
 \begin{table}[h]

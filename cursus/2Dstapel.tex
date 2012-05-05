@@ -313,8 +313,10 @@ We zullen dus bij elk voorbeeld de oppervlakte van de jetons, de oppervlakte van
 \end{vb}
 
 \todo{PP: Ok, hier geraakt in mijn uurtje tussen twee lessen..}
+\question{Ik heb in deze sectie soms ook een probleem met afronden, namelijk wanneer schrijf ik $\approx$ en wanneer gewoon = ?}
+\question{Ik zou eigenlijk die titeltjes van 'voorbeeld (dienblad met ...)' willen veranderen door subsubsubsections (allez, begrijp je :p?), gewoon titeltjes zonder nummering, maar gewoon een vetgedrukt titeltje met Dienbladen met 3 munten' of zoix ...'}
 
-\subsection{Efficiëntie voor een driehoekig dienblad met 4 munten bewijzen.}
+\subsubsection{Efficiëntie voor een driehoekig dienblad met 4 munten bewijzen.}
 
 \teacher{De sectie is vooral bedoeld voor de leerlingen om hen te doen inzien dat ze het ook belangrijk is om niet steeds zomaar op de intuïtie in te gaan. Het uitproberen met geogebra is leuk, het experimenteren met figuren ook. Je ziet dan snel in \textquoteleft op het gevoel' dat je niet efficiënter kan, maar het is belangrijk om dit ook te kunnen aantonen. In ons geval is onze intuïtie weldegelijk correct volgens het bewijs, nu zijn we dus zeker. De leerlingen kunnen dit bewijs zelf doorlopen met deze cursus en dit begrijpen via een figuur die ze zelf knutselen.}
 
@@ -384,54 +386,193 @@ De basis vinden we door deze op te splitsen. Het eerste stuk $|BK|$ is gelijk aa
 
 \subsubsection{Berekeningen voor enkele specifieke gevallen}
 
-Ten slotte zullen we nog van enkele specifieke gevallen de efficiëntie uitrekenen. 
+Ten slotte zullen we nog bij elk van de verschillende vormen van dienbladen de efficiëntie berekenen.
 
 \teacher{Het is niet de bedoeling dat de leerlingen dit allemaal gaan uitrekenen, maar het is een aanbod waaruit de leerkracht dan een selectie kan nemen.}
 
-\begin{vb}[Dienblad met 5 munten]
+\begin{vb}[Cirkelvormig dienblad met 5 munten]
+\todo{Ik wou graag met wrapfigure werken om de figuur zo rechts te zetten maar dat lukt blijkbaar niet :s ...}
+
+%\begin{wrapfigure}{r}{0.5\textwidth}
+%\vspace{-1mm}
+ %\begin{center}
+  % \includegraphics[width=0.48\textwidth]{5munten}
+ %\end{center}
+  %\vspace{-5mm}
+  %\caption{Cirkelvormig dienblad met 5 munten}
+%\end{wrapfigure}
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{5munten}
+\caption{Cirkelvormig dienblad voor 5 munten}
+\label{2munt}
+\end{figure}
+
+
+\mbox{}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=10cm]{munten}
+%\caption{De dienbladen voor 2 munten}
+%\label{2munt}
+%\end{figure}
 
 \begin{itemize}
-  \item \textbf{Cirkelvormig dienblad:}\\
-  Om de oppervlakte te berekenen 
-   \begin{itemize}
-	\item Oppervlakte dienblad = 
+\item[] 
+\begin{itemize}
+	\item Oppervlakte munten =  $20 \pi\approx 62,8319 \cm^2$
 \end{itemize}
-  
+\end{itemize}
+De straal die we moeten berekenen bestaat uit twee delen. Het eerste deel heeft als lengte de straal van de munt en het tweede deel loopt verder van het middelpunt van de muntjes naar het middelpunt van de cirkel. Dit tweede deel kunnen we berekenen in de gelijkzijdige vijfhoek $ABCDE$. Daarin geldt dat de hoek $AFE= 72°$ \todo{NOg eens de formule opzoeken voor grote van hoek in regelmatige $n$-hoek}. Door toepassing van de cosinusregel in de driehoek $AFE$ kunnen we de lengte van het tweede deel van de straal van de cirkel (=$|EF|=x$) vinden. Er geldt dat 
+\[4^2=x^2+x^2-2x^2.\cos(72°)\Leftrightarrow 16=(2-2\cos(72°))x^2\Leftrightarrow x^2\approx 11,5777.\]
+Hieruit volgt dat $x=3,4026$ cm, waardoor we weten dat de straal van het cirkelvormig dienblad gelijk is aan 5,4026 cm. Hieruit volgt dat:
+\begin{itemize}
+\item[]
+\begin{itemize}
+	\item Oppervlakte dienblad = 91,6970
+	\item Efficiëntie = 68,52\%
+\end{itemize}
 \end{itemize}
 \end{vb}
 
+\begin{vb}[Zeshoekig dienblad met 7 munten]
+\mbox{}
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{7munten}
+\caption{Zeshoekig dienblad voor 7 munten}
+\label{7munt}
+\end{figure}
 
 
-\begin{vb}[Dienblad met 7 munten]
+
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=10cm]{munten}
+%\caption{De dienbladen voor 2 munten}
+%\label{2munt}
+%\end{figure}
 
 \begin{itemize}
-  \item \textbf{Driehoekig dienblad:}\\
-  Om de oppervlakte te berekenen 
-   \begin{itemize}
-	\item Oppervlakte dienblad = 
+\item[] 
+\begin{itemize}
+	\item Oppervlakte 7 munten =  $28 \pi\approx 87,9646 \cm^2$
 \end{itemize}
-  
 \end{itemize}
+
+We zoeken de lengte van de stral van de zeshoek $ABCDEF$. Hiervoor berekenen we eerst de lengte van het lijnstuk $[JG]$. Deze lengte is $2+\sqrt{4^2-2^2}=2+2\sqrt{3}\approx 5,4641$ cm. De lengte van de straal van de zeshoek is dan $\frac{5,4641}{\cos(30°)}=
+= 6,3093$ cm. Hieruit volgt
+
+\begin{itemize}
+\item[]
+\begin{itemize}
+	\item Oppervlakte dienblad = 103,4223
+	\item Efficiëntie = 85.05\%
+\end{itemize}
+\end{itemize}
+
+
 \end{vb}
 
 
-\begin{vb}[Dienblad met 11 munten]
+\begin{vb}[Rechthoekig dienblad met 11 munten]
+Dit voorbeeld geeft een voorbeeld van een dienblad waarbij de het lange dienblad van allemaal munten naast ekaar niet het meest efficiënte is.
+Hiervoor gaan we de efficiëntie berekenen voor volgende drie configuraties.
+\mbox{}
+\begin{figure}[h]
+\centering
+\includegraphics[width=14cm]{11munten}
+\caption{Rechthoekige dienbladen voor 11 munten}
+\label{11munt}
+\end{figure}
+\mbox{}
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=10cm]{munten}
+%\caption{De dienbladen voor 2 munten}
+%\label{2munt}
+%\end{figure}
 
 \begin{itemize}
-  \item \textbf{Rechthoekig dienblad:}\\
-  Om de oppervlakte te berekenen 
-   \begin{itemize}
-	\item Oppervlakte dienblad = 
+\item[] 
+\begin{itemize}
+	\item Oppervlakte 11 munten =  $44 \pi\approx 138,2300 \cm^2$
 \end{itemize}
-  
 \end{itemize}
+
+
+\begin{itemize}
+\item Rechthoek $ABCD$
+Het eerste dienblad dat te zien is op de figuur heeft volgende afmetingen: een lengte van 44 cm en een breedte van 4 cm. We vinden dus dat 
+\begin{itemize}
+	\item Oppervlakte dienblad = 176 cm$^2$
+	\item Efficiëntie = 78,54\%
+\end{itemize}
+
+\item Rechthoek $EFGH$
+Het tweede dienblad heeft een lengte van 16 cm en een breedte van $2.2 + 2. \sqrt{16-4}\approx 10,9282$ cm waaruit we halen dat: 
+\begin{itemize}
+	\item Oppervlakte dienblad = 119,4256 cm$^2$
+	\item Efficiëntie = 79,06\%
+\end{itemize}
+
+\item Rechthoek $IJKL$
+De afmetingen van het derde rechthoekige dienblad zijn 24 cm $\times$ $4+2\sqrt{3}\approx 7,4641$ cm.
+\end{itemize}
+\begin{itemize}
+	\item Oppervlakte dienblad = 179,1384 cm$^2$
+	\item Efficiëntie = 77,16\%
+\end{itemize}
+
+
+\end{vb}
+
+\begin{vb}[Driehoekig dienblad met 13 munten]
+  \mbox{}
+\begin{figure}[h]
+\centering
+\includegraphics[width=7cm]{13munten}
+\caption{Driehoekig dienblad voor 13 munten}
+\label{13munt}
+\end{figure}
+
+
+
+%\begin{figure}[h]
+%\centering
+%\includegraphics[width=10cm]{munten}
+%\caption{De dienbladen voor 2 munten}
+%\label{2munt}
+%\end{figure}
+
+\begin{itemize}
+\item[] 
+\begin{itemize}
+	\item Oppervlakte 13 munten =  $52 \pi\approx 163,3628 \cm^2$
+\end{itemize}
+\end{itemize}
+
+Om de oppervlakte van driehoek $ABC$ te berkenen, zoeken we eerste de lengte van de basis door deze, zoals gewoonlijk op te splitsen in verschillende stukken.
+Het eerste en laatste stuk, zoals ook in de vorige voorbeelden met driehoeken, $4\sqrt{3}$ cm. Vervolgens hebben we nog een stuk met een grootte van 8 stralen, dus 16 cm. De basis heeft dus een grootte van 22,9282 cm. De hoogte halen we uit onze gekende formule $\sqrt{b^2-(\frac{b}{2})^2}$ en dit geeft in ons geval 19,8564 cm. Met deze gegevens kunnen we de oppervlakte en de efficiëntie berekenen en we bekomen:
+
+\begin{itemize}
+\item[]
+\begin{itemize}
+	\item Oppervlakte dienblad = 227,6358 cm$^2$
+	\item Efficiëntie = 71,76\%
+\end{itemize}
+\end{itemize}
+
+Merk op dat dit dezelfde oppervlak geeft voor een driehoek met 15 munten. Daar zou de efficiëntie dan echter 82,8\% zijn.
 \end{vb}
 
 
 
 \subsubsection{Conclusie}
 
-Als we alle gegevens in de overzichtstabel hebben gezet, zouden we (ongeveer) volgend resultaat moeten krijgen, waarbij de grootste waarden in een kleurtje staan \todo{Hoe doe je dit in LaTeX om in een tabel een vakje te kleuren??}:
+Jullie hebben met geogebra of met jetons en karton kunnen uitproberen voor welke munten we nu het beste dienblad hebben. Vervolgens hebben we dit voor een aantal dingen ook effectief uitgerekend en zelfs bewezen.
+
+Als we alle gegevens in de overzichtstabel hebben gezet, zouden we (ongeveer) volgend resultaat moeten krijgen, waarbij de grootste waarden in een kleurtje staan. De gegevens zijn hier voornamelijk verkregen door het effectief uitrekenen zoals in bovenstaande sectie of via de geogebra-applets. 
 
 
 \begin{table}[h]

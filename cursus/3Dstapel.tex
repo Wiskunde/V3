@@ -15,81 +15,97 @@ Voor deze les gaan we ons wat inleven in de rol van Sir Walter Raleigh. Alleen z
 Bolvormige kanonskogels kun je op verschillende manieren als een piramide op elkaar stapelen. Je kunt bijvoorbeeld beginnen om de eerste laag kogels in een vierkant patroon te leggen, maar ook volgens gelijkzijdige driehoeken is het mogelijk, net als bij de jetons in het vlak of de blikjes/glazen op het dienblad. 
 Omdat we toevallig niet voldoende kanonskogels bij de hand hebben, kunnen we knikkers gebruiken om dit uit te proberen (ook tafeltennisballetjes of sinaasappelen zijn geschikt).
 
-\todo{Uitgangspunt cursus}
-Het is nu de bedoeling dat de leerlingen zelf de formule gaan zoeken en vinden door dit uit te testen voor verschillende vormen van grondvlakken en voor verschillende lagen ($n = 1, 2, ... , 6 , ... , 100$).
-\begin{itemize}
-	\item Vierkant grondvlak
-	\item Driehoekig grondvlak
-	\item Zeshoekig grondvlak
-	\item Cirkelvormig grondvlak
-\end{itemize}
-\question{We zien wel wat haalbaar is. Ook voor ons om een formule te vinden ...
-De knikkers lijken mij het handigste, alleen weet ik eigenlijk niet hoe die best blijven liggen, want gewoon op tafel rollen die natuurlijk weg en kan je bijvoorbeeld nooit 6 lagen deftig krijgen.}
+\task{Ga op zoek naar de formule voor het aantal kanonskogels in een (regelmatige) piramide met vierkant en driehoekig grondvlak (ook voor cirkelvormig en zeshoekig grondvlak zou je dit kunnen uitproberen) met $n$ lagen. \\
+Test dit eerst uit door het zelf uit te testen met knikkers voor 1,2, 3 ... lagen. Vul dit in onderstaande tabel in en probeer hieruit zelf tot een formule te komen. Ga dan eens na hoeveel kogels je moet hebben voor 100 lagen.}
 
-\todo{Uitgangspunt cursus}
-De leerlingen zullen algauw gevonden hebben hoeveel knikkers ze moeten gebruiken voor de verschillende rijen.
-\newpage
+\begin{table}
+\centering
+\begin{tabular}{l|c|c|c|c|c|c}
+Aantal lagen: &&&&&&\\\hline\hline
+Driehoek: &&&&&& \\\hline
+Vierkant: &&&&&& \\
+\end{tabular}
+\caption{Aantal knikkers voor verschillende piramides met $n=1,...,6$ lagen}
+\end{table}
+
+
+
+\answer{
+Het is nu de bedoeling dat de leerlingen zelf de formule gaan zoeken en vinden door dit uit te testen voor verschillende vormen van grondvlakken en voor verschillende lagen ($n = 1, 2, ... , 6 , ... , 100$). Hiervoor kunnen ze dus gebruik maken van knikkers, waarbij je best ook zorgt voor een ruwe ondergrond of een soort omkadering voor het grondvlak. Ook andere bolvormige voorwerpen kunnen gebruikt worden.
+De leerlingen zullen algauw gevonden hebben hoeveel knikkers ze moeten gebruiken voor de verschillende rijen en de tabel als volgt hebben ingevuld.
 
 \begin{table}
 \centering
 \begin{tabular}{l|c|c|c|c|c|c}
 Aantal lagen: &1&2&3&4&5&6\\\hline\hline
 Driehoek: &1&4&10&20&35&56 \\\hline
-Vierkant: &1&5&14&30&55&91 \\\hline
-Zeshoek: &&&&&&\\\hline
-Cirkel:&&&&&&
+Vierkant: &1&5&14&30&55&91 \\
 \end{tabular}
-\caption{Aantal knikkers voor verschillende piramides met $n$ lagen}
+\caption{Aantal knikkers voor verschillende piramides met $n=1,..,6$ lagen}
 \end{table}
 
-\todo{Uitgangspunt cursus}
 Ook de formule met de sommen moet zeker mogelijk zijn om gevonden te worden.
 
 \begin{itemize}
 	\item Formule bij piramide met driehoekig grondvlak:
 	 $$d(n)= \frac{1.2}{2} + \frac{2.3}{2}+\frac{3.4}{2} + \cdots + \frac{n(n+1)}{2}$$
-	\item Formule bij piramide mert vierkant grondvlak: $$v(n)=1^2 + 2^2 + \cdots + n^2$$
+	\item Formule bij piramide mert vierkant grondvlak: \[v(n)=1^2 + 2^2 + \cdots + n^2\]
 \end{itemize}
+}
 
-Ook kunnen we de leerlingen andere zaken laten onderzoeken met deze knikkers:
+\task{Test met de knikkers als je volgende vragen een positief antwoord kunnen hebben of vermoedelijk fout zijn...
 \begin{itemize}
-	\item Kan je van twee vierkante piramides een nieuwe vierkante piramide maken? Of beter geformuleerd: denk je dat ... vermoed je dat ...
+	\item Kan je van twee vierkante piramides een nieuwe vierkante piramide maken? 
 	\item Kan je van twee driehoekige piramides een nieuwe driehoekige piramide maken?
 	\item Kan je van een combinatie van driehoekige en vierkante piramides een vierkante piramide maken?\\
-Opmerking: piramides van één verdiep hoog worden niet meegerekend ;).
+Opmerking: piramides van één verdiep hoog worden niet meegerekend.
 \end{itemize}
+}
 
-Na deze testfase is het de bedoeling dat we dit klassikaal overlopen.
+\teacher{
+Na deze testfase is het de bedoeling dat we dit klassikaal overlopen en de antwoorden verklaren.}
 
 
 \subsubsection{Het aantal kanonskogels bij een piramide met vierkant grondvlak}
 
-\todo{De volgende alinea vind ik een goede manier om te schrijven. Gebruik van 'We' en 'Je' en niet zoals voordien gebruik van 'De leerlingen'}
-
 We zullen beginnen met de vierkante stapeling.
 Om bijvoorbeeld een stapel van vier lagen hoog te maken begin je om 16 kogels netjes in een 4 bij 4 vierkant te leggen. Vervolgens leg je daarop een laag van 9 kogels in een 3 bij 3 vierkant, dan een laag met $2\times2=4$ kogels, en ten slotte is er nog plaats voor één kogel als top van de piramide. Voor een 'vierkante' stapel van vier lagen hoog heb je dus $16+9+4+1=30$ kogels nodig.
-Als we kijken naar de rij die de leerlingen gevonden hebben, zou er normaal moeten gevonden zijn dat je eigenlijk telkens de eerste $n$ kwadraten optelt.
-Om het aantal kogels in een stapel van honderd lagen te bepalen moet je dus ook de eerste honderd kwadraten bij elkaar optellen. Dit is wel te doen, maar een nadeel van dit algoritme is dat de hoeveelheid werk afhangt van de hoogte van de stapel. Voor duizend lagen is het minstens tienmaal zoveel werk als voor honderd. We zullen nu een formule afleiden, waarmee je de som van de eerste $n$ kwadraten direct kunt uitrekenen. Het rekenwerk in een formule is vrijwel onafhankelijk van de hoogte van de piramide. Dat is het verschil met het algoritme waarin de kwadraten worden opgeteld. 
+Als je kijkt naar de antwoorden die je in de tabel gevonden hebt, zijn dat eigenlijk telkens de eerste $n$ kwadraten en dus verkrijg je volgende formule:
 
-\question{Dit is wat in het Zebraboekje staat:\\
-We vinden deze formule door elk kwadraat te schrijven als het verschil van twee termen uit een andere rij. Die rij kennen we nog niet, we noemen hem $x_0, x_1, x_2 ... $ Deze rij moet zodanig zijn, dat verschillen van opeenvolgende termen kwadraten zijn:
-TOVERMOMENTJE: waarom kies je juist deze kwadraten. Ik ga eens proberen om dit laatste stuk te omzeilen. Lezen  jullie dit zeker goed na dat hier geen fouten instaan, want dat zou wel stom zijn natuurlijk ...}
+\[v(n)=1^2 + 2^2 + \cdots + n^2.\]
 
-Als we het aantal kogels bij een piramide met $n$ lagen voorstellen door $v(n)$. Dan is $v(1)=1$, $v(2) = 5$ en $v(n)= 1^2 + 2^2+ \cdots +(n-1)^2 + n^2 $. We merken op dat de verschillen tussen twee opeenvolgende $v(i)$'s steeds een kwadraat is, namelijk $v(n)-v(n-1)=n^2$.
-We willen proberen om nu een eenvoudigere formule te vinden voor $v(n)$, een functie die afhangt van $n$. Omdat er in de formule 
-$$v(n) = 1^2 + 2^2+ \cdots +(n-1)^2 + n^2 $$
-enkel kwadraten in voorkomen, kunnen we eens proberen als een kwadratische functie zou kunnen. Stel bijvoorbeeld
+\ask{Wat is het nadeel van deze formule als jij bijvoorbeeld het aantal kogels in een stapel van honderd lagen wil bepalen?}
+\answer{Om het aantal kogels in een stapel van honderd lagen te bepalen moet je dus ook de eerste honderd kwadraten bij elkaar optellen. Dit is wel te doen, maar een nadeel van dit algoritme is dat de hoeveelheid werk afhangt van de hoogte van de stapel. Voor duizend lagen is het minstens tienmaal zoveel werk als voor honderd.} 
+
+We zullen daarom nu een formule afleiden, waarmee je de som van de eerste $n$ kwadraten direct kunt uitrekenen. Het rekenwerk in een formule is vrijwel onafhankelijk van de hoogte van de piramide. Dat is het verschil met het algoritme waarin de kwadraten worden opgeteld. 
+
+Als we het aantal kogels bij een piramide met $n$ lagen voorstellen door $v(n)$. Dan is $v(1)=1$, $v(2) = 5$ en $v(n)= 1^2 + 2^2+ \cdots +(n-1)^2 + n^2 $. 
+
+\ask{Wat merk je op als je verschillen tussen twee opeenvolgende $v(i)$'s bekijkt?}
+\answer{We merken op dat de verschillen tussen twee opeenvolgende $v(i)$'s steeds een kwadraat is, namelijk $v(n)-v(n-1)=n^2$.}
+We willen proberen om nu een eenvoudigere formule te vinden voor $v(n)$, een functie die afhangt van $n$, waarbij we dus ook rekening houden met bovenstaande opmerking. Omdat er in de formule 
+\[v(n) = 1^2 + 2^2+ \cdots +(n-1)^2 + n^2 \]
+enkel kwadraten in voorkomen, kunnen we eens proberen als een kwadratische functie zou kunnen. 
+
+Stel bijvoorbeeld
 $$ v(n) = an^2+bn+c.$$
 Als dit klopt, dan moet er gelden dat 
 \begin{align*}
 n^2&=v(n) - v(n-1)=(an^2+bn+c) - (a(n-1)^2+b(n-1)+c)\\
 &= (an^2+bn+c) - (an^2-2an)  - (bn-b)-c=2an+(-a+b).
 \end{align*}
-Je ziet dat helaas de term $an^2$ wegvalt. Er blijft geen kwadratische term over, dus we krijgen het zo nooit voor elkaar om voor elke $n$ waarde $n^2$ uit te komen \question{waarom niet? Deze vraag stond zo in het boekje, zouden we dit zo overnemen? Of de uitleg erbij schrijven? Of gwn die 'waarom niet?' weglaten? PP: $an^2$ valt weg dus kan je in $v(n)=an^2+bn+c$ $a, b, c$ niet zodanig kiezen dat er in het RL ook $n^2$ staat. Wat wel moet, want in het LL staat $n^2$.}. We zien hier ook de volgende eigenschap van rijen opduiken: De verschilrij van een kwadratische rij is een lineaire rij. \question{Hier nog meer uitleg bij?}
 
-Een volgend idee is om voor $v(n)$ een derdegraadsfunctie in $n$ te nemen: $$v(n)=an^3+bn^2+cn+d.$$
-Dan valt waarschijnlijk de derdegraadsterm weer weg, maar misschien hou je iets kwadratisch over. Er is nog een ander reden waarom dit niet zo'n vreemd idee is. Het aantal kanonskogels in piramide heeft iets te maken met zijn inhoud. Inhoud is zoiets als lengte maal breedte maal hoogte. De lengte, breedte en hoogte zijn van de orde $n$, dus zal het aantal waarschijnlijk iets met de derde macht van $n$ te maken hebben. Deze aanpak blijkt inderdaad goed te werken:
+\ask{Is het mogelijk om hieruit een formule voor $v(n)$ te vinden? Waarom wel/niet?}
+\answer{
+Je ziet dat helaas de term $an^2$ wegvalt. Er blijft geen kwadratische term over, dus we krijgen het zo nooit voor elkaar om voor elke $n$ waarde $n^2$ uit te komen
+In het rechterlid staat iets lineair, in het linkerlid iets kwadratisch. We kunnen nooit $a, b$ en $c$ vinden die dit in orde maken.We zien hier ook de volgende eigenschap van rijen opduiken: De verschilrij van een kwadratische rij is een lineaire rij.}
 
+Aangezien dit niet werkt, is een volgend idee om voor $v(n)$ een derdegraadsfunctie in $n$ te nemen: \[v(n)=an^3+bn^2+cn+d.\]
+
+Dan valt waarschijnlijk de derdegraadsterm weer weg, maar misschien hou je iets kwadratisch over. Er is nog een ander reden waarom dit niet zo'n vreemd idee is. Het aantal kanonskogels in piramide heeft iets te maken met zijn inhoud. Inhoud is iets driedimensionaal met zoiets als de lengte, breedte en hoogte, die telkens van de orde $n$ zijn, dus zal het aantal waarschijnlijk iets met de derde macht van $n$ te maken hebben. 
+
+\task{Ga nu zelf na op analoge wijze dat deze aanpak inderdaad goed blijkt te werken en probeer via een stelsel de juiste waarden voor $a,b$ en $c$ te vinden.}
+\answer{
 \begin{align*}
 n^2&=v(n)-v(n-1)=(an^3+bn^2+cn+d) -(a(n-1)^3+b(n-1)^2+c(n-1)+d)\\
 &= (an^3+bn^2+cn+d) -[(an^3-3an^2+3an-a)+(bn^2-2bn+b)+(cn-c)+d]\\
@@ -108,29 +124,38 @@ In deze formule staat aan de linkerkant $n^2$ en rechts een kwadratische functie
   \end{array}\right.
   \]
   
-Het oplossen van dit stelsel levert ons de waarden $a=\frac{1}{3}$, $b=\frac{1}{2}$ en $c=\frac{1}{6}$. Er geldt dus dat 
-$$v(n)= 1^2 + 2^2 + \cdots + n^2= \sum_{i=1}^{n}i^2= \frac{1}{3}n^3+\frac{1}{2}n^2+\frac{1}{6}n + d.$$
-Omdat $v(1)=1=1+d$ is $d=0$ en krijgen we het volgende resultaat:
-$$ v(n)= 1^2 + 2^2 + \cdots + n^2= \frac{1}{3}n^3+\frac{1}{2}n^2+\frac{1}{6}n .$$
+  Het oplossen van dit stelsel levert ons de waarden $a=\frac{1}{3}$, $b=\frac{1}{2}$ en $c=\frac{1}{6}$. Er geldt dus dat 
+$$v(n)= 1^2 + 2^2 + \cdots + n^2= \sum_{i=1}^{n}i^2= \frac{1}{3}n^3+\frac{1}{2}n^2+\frac{1}{6}n + d.$$ En omdat $v(1)=1=1+d$ is $d=0$.
+
+}
+
+ 
+We verkrijgen dus het volgende resultaat:
+\[ v(n)= 1^2 + 2^2 + \cdots + n^2= \frac{1}{3}n^3+\frac{1}{2}n^2+\frac{1}{6}n .\]
 Met deze formule kun je dus eenvoudig uitrekenen voor hoeveel kanonskogels er in een stapel van een bepaalde hoogte gaan. Voor een hoogte van $n=4$ lagen krijg je inderdaad 30 kogels, zoals we al eerder zagen. Voor 100 lagen zijn maar liefst 338350 kanonskogels nodig.
 
-\begin{opm}
-De formule voor het aantal kanonskogels bij een piramide van $n$ lagen hoog met vierkant grondvlak is eigenlijk de som van de eerste $n$ kwadraten. 
-Meestal wordt de formule geschreven als $$\sum_{i=1}^{n}i^2=\frac{n(n+1)(2n+1)}{6}. $$ Reken dit even uit om te zien dat dit inderdaad overeenkomt met de formule die wij reeds vonden.
-\end{opm}
 
-\begin{opm}
-Eén merkwaardig aspect van deze formule is dat er breuken in staan, terwijl het eindantwoord een aantal is en dus altijd een natuurlijk getal moet zijn. Dat dit toch altijd goed uitkomt, ondanks de breuken, kun je zien door de formule te schrijven zoals in de vorige opmerking, namelijk $v(n)=\frac{n(n+1)(2n+1)}{6}$.\\ 
+De formule voor het aantal kanonskogels bij een piramide van $n$ lagen hoog met vierkant grondvlak is eigenlijk de som van de eerste $n$ kwadraten. 
+Meestal wordt de formule geschreven als \[\sum_{i=1}^{n}i^2=\frac{n(n+1)(2n+1)}{6}. \]
+
+\taks{ Reken dit even uit om te zien dat dit inderdaad overeenkomt met de formule die wij reeds vonden.}
+
+
+Eén merkwaardig aspect van deze formule is dat er breuken in staan, terwijl het eindantwoord een aantal is en dus altijd een natuurlijk getal moet zijn. 
+\todo{Ik vind het moeilijk om hier een vraag of opdracht van te maken, omdat dit wel niet zo makkelijk is om als 16jarige dit op te lossen. Anders gewoon dit zoals ervoor als opmerking schrijven.}
+
+Dat dit toch altijd goed uitkomt, ondanks de breuken, kun je zien door de formule te schrijven zoals in de vorige opmerking, namelijk $v(n)=\frac{n(n+1)(2n+1)}{6}$.\\ 
 Deze vorm zal het ons eenvoudiger maken om te controleren dat de formule effectief een geheel getal is. We willen aantonen dat $n(n+1)(2n+1)$ deelbaar is door 6, of dus deelbaar is door 2 en door 3.\\
 Dat $n(n+1)(2n+1)$ deelbaar is door 2 volgt uit het feit dat elk getal $n$ even is, of anders is $n+1$ het wel. Dit betekent dat $n(n+1)$ altijd deelbaar is door 2. 
 Als je nu nog kan aantonen dat $n(n+1)(2n+1)$ altijd deelbaar is door 3, dan weten we dat de formule steeds te schrijven is als een geheel getal.
 Stel dat $n$ en $n+1$ niet deelbaar zijn door 3, waarbij de resten bij deling door 3 steeds 1 en 2 moeten zijn. Aangezien $2n+1=n+(n+1)$ geeft dit dus 3 (dus 0) als rest bij deling door 3. Hieruit volgt dat $v(n)$ weldegelijk steeds een natuurlijk getal geeft. 
-\end{opm}
+
 
 \subsubsection{Het aantal kanonskogels bij een piramide met driehoekig grondvlak}
 
 Vervolgens kijken we eens naar een piramide met driehoekig grondvlak, meerbepaald een gelijkzijdige (of regelmatige) driehoek als grondvlak.
-De leerlingen zouden zeker moeten gevonden hebben dat ze bij een stapel van vier hoog 10+6+3+1=20 kogels nodig hebben. Merken we op dat 1, 3, 6 en 10 driehoeksgetallen zijn, ze zijn namelijk van de vorm $\frac{n(n+1)}{2}$. Dit komt omdat je per laag een driehoek bekomt met op de top 1 bol, daaronder 2, daaronder 3 enzovoort tot ten slotte $n$ bollen als we ons bevinden op de grondlaag, en de som van de natuurlijke getallen tot en met $n$ is $\frac{n(n+1)}{2}$
+
+Bij het experimenteren daarnet heb je zeker gevonden dat je bij een stapel van vier hoog $10+6+3+1=20$ kogels nodig hebben. Merken we op dat 1, 3, 6 en 10 driehoeksgetallen zijn, ze zijn namelijk van de vorm $\frac{n(n+1)}{2}$. Dit komt omdat je per laag een driehoek bekomt met op de top 1 bol, daaronder 2, daaronder 3 enzovoort tot ten slotte $n$ bollen als we ons bevinden op de grondlaag, en de som van de natuurlijke getallen tot en met $n$ is $\frac{n(n+1)}{2}$
 
 Als je nu dezelfde werkwijze als hierboven toepast, bekom je dat 
 \begin{align*}
@@ -138,14 +163,15 @@ d(n) &= \frac{1.2}{2} + \frac{2.3}{2}+\frac{3.4}{2} + \cdots + \frac{n(n+1)}{2}=
 &=\frac{1}{6}n^3 + \frac{1}{2}n^2+\frac{1}{3}n.
 \end{align*}
 
-Met deze formule kun je dus eenvoudig uitrekenen voor hoeveel kanonskogels er in een stapel van een bepaalde hoogte gaan. Voor een hoogte van $n=4$ lagen krijg je inderdaad 20 kogels, zoals we al eerder zagen. Voor 100 lagen hebben we deze keer 171700 kanonskogels nodig.
+Met deze formule kun je dus eenvoudig uitrekenen voor hoeveel kanonskogels er in een stapel van een bepaalde hoogte gaan. Voor een hoogte van $n=4$ lagen krijg je inderdaad 20 kogels, zoals we al eerder zagen. 
 
-\begin{opdracht}
-Ga op analoge wijze als bij de piramide met vierkant grondvlak tewerk en ga na dat dit effectief de juiste formule is.
-\end{opdracht}
+\ask{Hoeveel kanonskogels heb je nodig voor 100 lagen?}
+\answer{Voor 100 lagen hebben we deze keer 171700 kanonskogels nodig.}
 
-\begin{proof}[Oplossing]
+\task{
+Ga op analoge wijze als bij de piramide met vierkant grondvlak tewerk en ga na dat dit effectief de juiste formule is.}
 
+\answer{
 Als we het aantal kogels bij een driehoekige piramide met $n$ lagen voorstellen door $d(n)$. Dan is $d(1)=1$, $d(2) = 4$ en $d(n)= \frac{1.2}{2} + \frac{2.3}{2}+\frac{3.4}{2} + \cdots + \frac{n(n+1)}{2}$. We merken op dat de verschillen tussen twee opeenvolgende $v(i)$'s steeds een driehoeksgetal is, namelijk $d(n)-d(n-1)=\frac{n(n+1)}{2}$.
 We willen proberen om nu een eenvoudigere formule te vinden voor $d(n)$, een functie die afhangt van $n$. Omdat er in de formule
 enkel kwadraten in voorkomen, kunnen we eens proberen als een kwadratische functie zou kunnen. Analoog als bij het geval met de vierkante piramide zie je dat de term $an^2$ wegvalt. Er blijft geen kwadratische term over.
@@ -175,12 +201,7 @@ d(n) &= \frac{1.2}{2} + \frac{2.3}{2}+\frac{3.4}{2} + \cdots + \frac{n(n+1)}{2}=
 \end{align*}
 
 Omdat $d(1)=1=1+d$ is $d=0$ en krijgen we het gezochte resultaat.
-\end{proof}
-
-\subsubsection{Het aantal kanonskogels bij een piramide met zeshoekig grondvlak}
-Na een regelmatig viervlak en een regelmatige driehoek als grondvlak, proberen we nu een piramide te bouwen met een regelmatige zeshoek als grondvlak.
-
-\todo{Dit heb ik nog niet geprobeerd. Deze vakantie gaan we eens onze knikkers van de zolder halen en ga ik het zelf eens proberen... Ik zal dan ook kijken als de hoogte van een stapel te veralgemenen is voor het zeshoekig geval.}
+}
 
 \subsubsection{Combinaties van bepaalde piramides}
 We weten nu hoeveel kogels er nodig zijn om een 'driehoekige', 'vierkante' of 'zeshoekige' piramide van kogels te stapelen. Is het nu mogelijk om van een driehoekige stapel van een bepaalde hoogte een vierkante piramide te maken, zonder dat je kogels overhoudt? Als je kijkt naar het lijstje, dat we vroeger reeds maakten, met de aantallen die nodig zijn voor een driehoekige, vierkante en zeshoekige piramide, dan zie je dat dit nooit lijkt te kunnen (behalve natuurlijk voor een stapel van één kogel hoog).\\

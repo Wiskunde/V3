@@ -147,7 +147,7 @@ In de volgende sectie zullen wij enkele gevallen effectief uitrekenen.
 %\question{Hey Pieter, als je dit naleest, wil jij vooral ook letten op het feit dat ik consequent de hoeken in graden schrijf en dat er bij de afstanden en oppervlaktes steeds cm en cm$^2$ bij staan? Ik ga nu eerst verdertypen en daarna het zelf doen, maar het zou kunnen zijn dat jij het eerder nalees dan ik :p ... Merci :) Aja, en ook overal efficiëntie ipv compactheid ofzo.
 %De lay-out is hier ook nog niets waard, maar dit zou ik pas op het einde in orde maken als alle andere todo's en zo weggewerkt zijn ...}
 
-Wij zullen voor de berekeningen gebruik maken van de afmetingen van een jeton met een straal van $2 \cm$. Deze afmetingen zijn ook zo bij de geogebra-applets \todo{Dit aanpassen}.
+Wij zullen voor de berekeningen gebruik maken van de afmetingen van een jeton met een straal van $2 \cm$. Deze afmetingen zijn ook zo bij de geogebra-applets.
 De oppervlakte van 1 jeton is $4*\pi\approx 12,5664 \cm^2$. We zijn voornamelijk geïnteresseerd in de efficiëntie van een dienblad. Dit is de hoeveel oppervlakte van het dienblad die de munten innemen, uitgedrukt in percentage. De efficiëntie kunnen we berekenen door de oppervlakte van de munten te delen door de oppervlakte van het dienblad en dit te vermenigvuldigen met 100. Het is echter zo dat een resultaat van $\frac{\pi}{3\sqrt{3}}$ niet zoveel zegt. Als we schrijven dat de efficiëntie $60,46\%$ is, hebben we een beter beeld en we zullen dus steeds de afmetingen steeds als decimale getallen schrijven die we afronden op 4 cijfers na de komma en de percentage decimale getallen, afgerond tot op de honderdtallen.
 
 We zullen dus bij elk voorbeeld de oppervlakte van de jetons, de oppervlakte van het dienblad en de efficiëntie berekenen.
@@ -157,50 +157,61 @@ We zullen dus bij elk voorbeeld de oppervlakte van de jetons, de oppervlakte van
 \begin{itemize}
 \item[] 
 \begin{itemize}
-	\item Oppervlakte jetons = $4\pi\approx 12,5664 \cm^2$
+	\item Oppervlakte jetons = $4\pi= 12,5664 \cm^2$
 \end{itemize}
 \end{itemize}
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=10cm]{1munten}
-\\\todo{vier aparte figuren die telkens bij het relevant vb staan}
-\caption{De dienbladen voor 1 munt}
-\label{1munt}
-\end{figure}
 
 \begin{itemize}
 	\item \textbf{Cirkelvormig dienblad:} \\
+	\begin{center}
+	  \input{figuren/dienbladen/cirkel_1}
+	\end{center}
 	Wanneer we slechts 1 munt hebben, is een cirkelvormig dienblad het efficiëntst, omdat er dan geen vrije ruimte meer overblijft. Eén munt neemt dus 100\% van de oppervlakte van het cirkelvormig dienblad in. We kunnen dit als volgt samenvatten:
 	
 	\begin{itemize}
-	\item Oppervlakte dienblad $= 12,5664 \cm^2$
-	\item Efficiëntie = 100\%
-\end{itemize}
+  	\item Oppervlakte dienblad $= 12,5664 \cm^2$
+  	\item Efficiëntie = 100\%
+  \end{itemize}
 	
 	\item \textbf{Driehoekig dienblad:}\\
-	Bij een driehoekig dienblad is de lengte van de basis gelijk aan $2.2.\tan(\pi/6)=4\sqrt{3}\approx 6,9282$ cm. De hoogte is $\sqrt{b^2-(\frac{b}{2})^2}= 6$ cm. Daaruit volgt dat:
+	\begin{center}
+	  \input{figuren/dienbladen/driehoek_1}
+	\end{center}
+	Bij een driehoekig dienblad is de lengte van de basis gelijk aan $b=2\cdot2\cdot\tan(\pi/6)=4\sqrt{3}=6,9282 \cm$. De hoogte is $h=\sqrt{b^2-\left(\frac{b}{2}\right)^2}= 6$ cm. Daaruit volgt dat:
 	\begin{itemize}
-	\item Oppervlakte dienblad = $20,7846$ cm$^2$
-	\item Efficiëntie = 60,46 \%
-\end{itemize}	
+  	\item Oppervlakte dienblad = $20,7846 \cm^2$
+  	\item Efficiëntie = 60,46 \%
+  \end{itemize}	
 
 	\item \textbf{Rechthoekig dienblad:}\\
-	De oppervlakte van de meest compacte rechthoek voor 1 jeton is niet moeilijk te vinden. Aangezien we zien dat de lengte en de breedte beide gelijk zijn aan de diamter van de munt, weten we dat:
+	\begin{center}
+	  \input{figuren/dienbladen/vierkant_1}
+	\end{center}
+	De oppervlakte van de meest compacte rechthoek voor 1 jeton is niet moeilijk te vinden. Aangezien we zien dat de lengte en de breedte beide gelijk zijn aan de diameter van de munt, weten we dat:
 	
 	\begin{itemize}
-	\item Oppervlakte dienblad = $16$ cm$^2$
+	\item Oppervlakte dienblad = $16 \cm^2$
 	\item Efficiëntie = 78,54\%
 \end{itemize}
 	
 	\item \textbf{Zeshoekig dienblad:}\\
-	Om de oppervlakte van de gelijkzijdige zeshoek te berekenen, moeten we de straal van deze zeshoek berekenen (of zijde, die daaraan gelijk is). Deze is gelijk aan de straal van de jeton gedeeld door $\cos(\frac{\pi}{6})$. Dus in de formule $\frac{3}{2}.z^2.\sqrt{3}$ is $z=2,3094$ en vinden we dus dat de oppervlakte van de zeshoek gelijk is aan 13,8564 cm$^2$. 
+	\begin{center}
+	  \input{figuren/dienbladen/zeshoek_1}
+	\end{center}
+	Om de oppervlakte van de gelijkzijdige zeshoek te berekenen is het voldoende dat we de oppervlakte van de driehoek $\Delta OCE$ kennen, want er zitten $12$ zulke driehoekjes in de zeshoek. We weten dat $|OC|=2$ is, want deze is gelijk aan de straal van onze jeton. Er zitten $12$ zulke driehoeken in de zeshoek, dus $|\hat{O}|=\frac{360\degree}{12}=30\degree$.
+	
+	\ask{Welke driehoeksmeetkunde formule heb je nu nodig om de lengte van $z=|CE|$ te bepalen?}
+	
+	\answer[2cm]{$\tan30\degree=\frac{z}{2}$, dus $z=2\cdot\tan{30\degree}=\frac{2}{\sqrt{3}}$.}
+	
+	\task{Bereken nu nog de oppervlakte van het driehoekje en vermenigvuldig dit met $12$ om de oppervlakte van de regelmatige zeshoek te vinden.}
+	
+	\answer[2cm]{We gebruiken de formule basis maal hoogte gedeeld door twee. We vinden dat de oppervlakte gelijk is aan $\frac{2}{\sqrt{3}}$. Dit maal twaalf geeft ons de oppervlakte.}
 	
 	\begin{itemize}
 	\item Oppervlakte dienblad $= 13,8564 \cm^2$
 	\item Efficiëntie = 90,69\%
-\end{itemize}
+  \end{itemize}
 \end{itemize}
 
 \end{vb}

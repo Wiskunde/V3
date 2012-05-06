@@ -1,0 +1,20 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\newcommand{\degre}{\ensuremath{^\circ}}
+\begin{document}
+\definecolor{qqwuqq}{rgb}{0,0.39,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-4,-1) rectangle (4,7);
+\fill[line width=1.2pt,fill=black,fill opacity=0.15] (-3.46,0) -- (3.46,0) -- (0,6) -- cycle;
+\draw [line width=1.2pt,fill=black,fill opacity=0.15] (0,2) circle (2cm);
+\draw [shift={(3.46,0)},color=qqwuqq,fill=qqwuqq,fill opacity=0.1] (0,0) -- (150:0.6) arc (150:180:0.6) -- cycle;
+\draw (0,6)-- (0,0);
+\draw (0,2)-- (3.46,0);
+\begin{scriptsize}
+\draw[color=qqwuqq] (2.4,0.3) node {$30\textrm{\degre}$};
+\end{scriptsize}
+\end{tikzpicture}
+\end{document}

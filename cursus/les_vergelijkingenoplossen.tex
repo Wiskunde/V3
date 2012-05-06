@@ -1,7 +1,7 @@
 
 \section{Oplossen van vergelijkingen}
 
-Het vullen van vierkanten, kubussen en n-dimensionale kubussen kan heel origineel gebruikt worden om vergelijkingen op te lossen. 
+Het vullen van vierkanten, kubussen en $n$-dimensionale kubussen kan heel origineel gebruikt worden om vergelijkingen op te lossen. 
 
 \subsection{Oplossen van vierkantsvergelijkingen}
 
@@ -9,8 +9,8 @@ Een {\bf vierkantsvergelijking} is een vergelijking van de vorm $ax^2 + bx + c =
 \begin{itemize}
   \item Merkwaardige producten gebruiken.
   \item Ontbinden in factoren door delers te zoeken.
+  \item Gebruik maken van de som en product.
   \item De formule met behulp van discriminant.
-  \item Door kwadraatafsplitsing te gebruiken.
 \end{itemize}
 
 \ask{Welke van de bovenstaande methoden kennen jullie reeds?}
@@ -28,7 +28,7 @@ $$
 
 \answer[3cm]{We kunnen een merkwaardig product gebruiken om de veelterm te ontbinden in factoren: $x^2+2x+1=(x+1)^2$ Nadien kunnen we de oplossingen aflezen. De vergelijking heeft als oplossing twee keer $-1$, dus de oplossingsverzameling is $Opl=\{-1\}$.}
 
-We zullen hier nu nog een methode aan toevoegen. Dit door een vierkant te construeren met kleinere vierkanten en rechthoeken. Hiervoor zullen we alle kwadraten zien als een vierkant, de andere getallen zullen we zien als rechthoeken. In ons bovenstaand voorbeeld hebben we als kwadraten alvast $x^2$ en $1$. We construeren twee vierkanten:
+We zullen hier nu nog een methode voor het oplossen van een vierkantsvergelijking aan toevoegen. Dit door een vierkant te construeren met kleinere vierkanten en rechthoeken. Hiervoor zullen we de kwadratische term en de constante term zien als een vierkant, de andere getallen zullen we zien als rechthoeken. In ons bovenstaand voorbeeld hebben we $x^2$ en $1$. We construeren twee vierkanten:
 
 \begin{center}
 \input{figuren/vgl_5x5_1x1}
@@ -88,7 +88,7 @@ De oppervlakte van deze nieuwe figuur is dus de oppervlakte van de vorige figuur
 
 We zien dat we in de figuur het vierkant $x^2$ te groot hebben getekend ten opzicht van de rechthoek van $x$ bij $2$ maar dat is niet erg. Het was maar een schets.
 
-\ask{De vergelijking $x^2+4x-5=0$ heeft nog een tweede oplossing. Bepaal deze met een methode die je reeds kent (hint: aangezien $x=1$ een oplossing is, heb je reeds de deler $(x-1)$ van de veelterm $x^2+4x-5$ gevonden.) Waarom denk je dat het niet mogelijk is om door het vullen van een vierkant de andere oplossing te vinden?}
+\task{De vergelijking $x^2+4x-5=0$ heeft nog een tweede oplossing. Bepaal deze met een methode die je reeds kent (hint: aangezien $x=1$ een oplossing is, heb je reeds de deler $(x-1)$ van de veelterm $x^2+4x-5$ gevonden.) Waarom denk je dat het niet mogelijk is om door het vullen van een vierkant de andere oplossing te vinden?}
 
 \answer[4cm]{We berekenen het quoti\"ent van $x^2+4x-5$ en $x-1$. We zien dat dit $x+5$ is. De andere oplossing voor $x$ is dus $-5$. Omdat negatieve getallen geen lengte voor kunnen stellen kan hiermee dan ook geen vierkant geconstrueerd worden.}
 
@@ -102,6 +102,8 @@ $$
 \ask{Is het mogelijk om dezelfde techniek als voordien toe te passen? Waarom niet?}
 
 \answer[3cm]{Neen. We kunnen geen rechthoeken construeren want de co\"effici\"ent bij de term van de eerste graad is negatief.}
+
+\ask{Heb je een idee hoe je dit probleem zou kunnen verhelpen?}
 
 Volg nu mee om deze vergelijking toch op te lossen.
 
@@ -142,11 +144,11 @@ $$ x-4 = 6\;.$$
 We vinden dus een oplossing $x=10$. De andere oplossing kan bepaald worden door de tweedegraadsveelterm $x^2-8x-20$ te delen door $x-10$.
 } 
 
-Zo zie je maar. Een probleem uit de algebra kan gerust opgelost worden met een beetje meetkunde!
+Zo zie je maar. Een probleem uit de algebra kan gerust opgelost worden met een beetje meetkunde! Deze methode voor het oplossen van vierkantsvergelijkingen gebruikt het idee van kwadraatafsplitsen en werd voor het eerst gebruikt door {\it Al-Khwarizmi}. Deze werd geboren in Uzbekistan rond 780. Hij schreef verscheidene boeken over wiskunde waaronder een invloedrijk boek over eerste- en tweedegraadsvergelijkingen. Hierin werd alles dus op een meetkundige manier beschreven, zoals ook wij daarnet deden.
 
 \subsection{Oplossen van derdegraadsvergelijkingen}
 
-De ontdekking van een methode om algemeen derdegraadsvergelijkingen op te lossen steunt op het vullen van een kubus! Hiervoor moeten we terug gaan naar het begin van de 16de eeuw. In Bologna was een universiteit waar wiskundigen uit gans Europa verzamelden. Daar waren wiskunde wedstrijden met toeschouwers populair! De wiskundigen daagden elkaar uit om in zo weinig mogelijk tijd bepaalde problemen op te lossen. Men geloofde echter dat het oplossen van derdegraadsvergelijkingen onmogelijk was.
+Net zoals we vierkantsvergelijkingen meetkundig kunnen oplossen met behulp van een vierkant, kunnen we dit uitbreiden voor derdegraadsvergelijkingen. De ontdekking van een methode om algemeen derdegraadsvergelijkingen op te lossen steunt op het vullen van een kubus! Hiervoor moeten we terug gaan naar het begin van de 16de eeuw. In Bologna was een universiteit waar wiskundigen uit gans Europa verzamelden. Daar waren wiskunde wedstrijden met toeschouwers populair! De wiskundigen daagden elkaar uit om in zo weinig mogelijk tijd bepaalde problemen op te lossen. Men geloofde echter dat het oplossen van derdegraadsvergelijkingen onmogelijk was.
 
 \begin{wrapfigure}[9]{r}{0.2\textwidth}
   \centering
@@ -155,7 +157,7 @@ De ontdekking van een methode om algemeen derdegraadsvergelijkingen op te lossen
   Tartaglia
 \end{wrapfigure}
 
-De italiaan Tartaglia zou aantonen dat iedereen ongelijk had. Tartaglia wat staat voor de stotteraar was de bijnaam van Niccolo Fontanas. Als twaalfjarig kind werd hij verminkt in het gezicht door een Franse soldaat. Het resultaat was een groot en lelijk litteken en een spraakgebrek. Zijn leeftijdsgenoten negeerden hem. Reden om als kind diep ongelukkig te zijn. Gelukkig voor de jonge Tartaglian vond hij in de wiskunde een wereld vol uitdagingen. Het duurde dan ook niet lang voordat hij een methode vond om een welbepaalde vorm van derdegraadsvergelijkingen op te lossen.
+De Italiaan Tartaglia zou aantonen dat iedereen ongelijk had. Tartaglia wat staat voor de stotteraar was de bijnaam van Niccolo Fontanas. Als twaalfjarig kind werd hij verminkt in het gezicht door een Franse soldaat. Het resultaat was een groot en lelijk litteken en een spraakgebrek. Zijn leeftijdsgenoten negeerden hem. Reden om als kind diep ongelukkig te zijn. Gelukkig voor de jonge Tartaglian vond hij in de wiskunde een wereld vol uitdagingen. Het duurde dan ook niet lang voordat hij een methode vond om een welbepaalde vorm van derdegraadsvergelijkingen op te lossen.
 
 Ook een andere jonge wiskundige beweerde dat hij ook derdegraadsvergelijkingen kon oplossen. Wanneer de ontdekkingen algemeen bekend werden organiseerde men maar al te graag een wedstrijd om beide jongeren tegen elkaar uit te brengen.
 

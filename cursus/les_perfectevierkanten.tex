@@ -3,7 +3,7 @@
 
 \subsection{Vierkant vullen met vierkanten}
 
-In hetgeen komt zullen we steeds met natuurlijke getallen werken. We zullen voor geen enkele grootte een komma getal of een breuk nemen. Nemen we een vierkant met zijde $10$, dan kan dit vierkant gevuld worden met $100$ kleinere vierkantjes van grootte $1$. Dit is duidelijk in Figuur \ref{fig:vierkant10_1x1}. Hetzelfde vierkant kunnen we ook vullen met vierkantjes van grootte $2$, waarbij we nu $25$ kleinere vierkantjes hebben in het grote vierkant. Als we nu echter dit vierkant compleet wensen te vullen met vierkantjes van grootte $3$, dan zien we dat dit niet lukt, zie Figuur \ref{fig:vierkant10_3x3}.
+In hetgeen komt zullen we steeds met natuurlijke getallen werken. We zullen voor geen enkele grootte een kommagetal of een breuk nemen. Nemen we een vierkant met zijde $10$, dan kan dit vierkant gevuld worden met $100$ kleinere vierkantjes van grootte $1$. Dit is duidelijk in Figuur \ref{fig:vierkant10_1x1}. Hetzelfde vierkant kunnen we ook vullen met vierkantjes van grootte $2$, waarbij we nu $25$ kleinere vierkantjes hebben in het grote vierkant. Als we nu echter dit vierkant compleet wensen te vullen met vierkantjes van grootte $3$, dan zien we dat dit niet lukt, zie Figuur \ref{fig:vierkant10_3x3}.
 
 \begin{figure}[ht]
   \centering
@@ -25,7 +25,7 @@ Het gaat uiteraard over vierkanten. Dus om met de oppervlakten te werken moeten 
   \Leftrightarrow 100   &= 81 + 19
 \end{align*}
 
-In het linkerlid staat dus de oppervlakte van het groter vierkant. Het rechter lid is opgesplitst in het totale oppervlakte van de kleinere vierkanten plus wat er nog overblijft als rest.
+In het linkerlid staat dus de oppervlakte van het grotere vierkant. Het rechterlid is opgesplitst in de totale oppervlakte van de kleinere vierkanten plus wat er nog overblijft als rest.
 
 \task{Vul nu zelf de vierkanten met zijde $9$ uit Figuur \ref{fig:vierkant9}. Eerst met kleinere vierkantjes van grootte $1$, dan met kleinere vierkantjes van grootte $2$ en uiteindelijk met kleinere vierkantjes van grootte $3$. Gebruik wat je kent over delen van getallen en rest bij deling om het resultaat te verklaren.}
 
@@ -51,11 +51,11 @@ waarbij $q$ het aantal keer is dat we $d$ in $a$ krijgen en $r$ de rest is die d
   a^2  &= (q\cdot d + r)^2\\
   \Leftrightarrow a^2   &= (q\cdot d)^2 + 2\cdot q\cdot d\cdot r + r^2\;.\\
 \end{align*}
-In een groot vierkant zal de oppervlakte dus $a^2$ zijn en het wordt gevuld met $q^2$ kleinere vierkanten van oppervlakte $d^2$. In het totaal blijft een oppervlakte van $2\cdot q\cdot r + r^2$ over. Laten we deze restoppervlakte nu de overschot noemen. Dit kunnen we ontleden in een stukje oppervlakte van $q\cdot r$ dat rechts overblijft, een stukje oppervlakte van $q\cdot r$ dat bovenaan overblijft en een stukje oppervlakte $r^2$ dat rechtsboven overblijft.
+In een groot vierkant zal de oppervlakte dus $a^2$ zijn en het wordt gevuld met $q^2$ kleinere vierkanten van oppervlakte $d^2$. In het totaal blijft een oppervlakte van $2\cdot q\cdot d \cdot r + r^2$ over. Laten we deze restoppervlakte nu de overschot noemen. Dit kunnen we ontleden in een stukje oppervlakte van $q\cdot d\cdot r$ dat rechts overblijft, een stukje oppervlakte van $q\cdot d\cdot r$ dat bovenaan overblijft en een stukje oppervlakte $r^2$ dat rechtsboven overblijft.
 
 \ask{Duid deze nog aan op Figuur \ref{fig:vierkant10_4x4} waarbij een groot vierkant met zijde $10$ werd opgedeeld in vierkanten met zijde $4$.}
 
-\answer{Het blauwe en rode stukje hebben oppervlakte $q\cdot r$, het groene stukje heeft oppervlakte $r^2$.}
+\answer{Het blauwe en rode stukje hebben oppervlakte $q\cdot d \cdot r$, het groene stukje heeft oppervlakte $r^2$.}
 
 \begin{figure}[ht]
   \centering
@@ -86,7 +86,7 @@ In de jaren 30 werd aangenomen dat het onmogelijk was om een vierkant op te dele
 
 Uiteindelijk vond {\it R.P. Sprague} in 1938 een oplossing! Hij construeerde een perfect vierkant van orde 55. Daarmee gaf hij ook aan dat perfecte vierkanten toch bestaan. Een jaar later vindt {\it R.L. Brooks} al een perfect vierkant van een lagere orde (orde 38). Van dan af aan zoeken wiskundigen naar het perfecte vierkant met de laagste orde.
 
-In 1962 schrijft de informaticus {\it A.J.W. Duijvestijn} zijn doctoraat over de perfecte vierkanten. Hierbij gebruikt hij computers om aan te tonen dat er geen perfecte vierkanten bestaan van orde lager dan $20$. Hij geeft dus enkel een ondergrens. Zijn onderzoek moet nu nog wachten tot de computers snel genoeg zijn! Pas op 22 maart 1978 vindt hij, met behulp van computers, het perfecte vierkant met de laagste orde. Zie het in Figuur \ref{fig:pv21}.
+In 1962 schrijft de informaticus {\it A.J.W. Duijvestijn} zijn doctoraat over de perfecte vierkanten. Hierbij gebruikt hij computers om aan te tonen dat er geen perfecte vierkanten bestaan van orde lager dan $20$. Hij geeft dus enkel een ondergrens. Zijn onderzoek moet nu nog wachten tot de computers snel genoeg zijn! Pas op 22 maart 1978 vindt hij, met behulp van computers, het perfecte vierkant met de laagste orde. Je ziet het in Figuur \ref{fig:pv21}.
 
 \subsubsection{Zelf een ondergrens vinden}
 
@@ -150,8 +150,6 @@ Dit lukt dus niet om meerdere perfecte vierkanten te vinden. Laten we nu eens ie
 
 \answer[5]{Het kleinste vierkantje heeft grootte $2$ en het totale vierkant heeft grootte $50+35+27=112$. Als we dus alle lengtes vermenigvuldigen met $\frac{112}{2}=56$ dan past in het nieuwe kleinste vierkantje het originele perfecte vierkant!}
 
-\question{zou er niet beter gesproken worden over homothetie?}
-
 Nu vinden we dus al een extra perfect vierkant aan de hand van ons oorspronkelijk perfect vierkant. Deze procedure kan herhaald worden om dan een derde, vierde, vijfde, \ldots perfecte vierkant te vinden. Deze procedure kan ook in de andere richting herhaald worden. Dus ook het kleine vierkantje kan gevuld worden met hetzelfde perfecte vierkant. Dan moeten natuurlijk wel alle groottes gedeeld worden. Als we nu in beide richtingen deze procedure oneindig lang herhalen dan krijgen we een meetkundige figuur die zelfgelijkend is. Zulk een figuur noemen we een {\bf fractaal}.
 
 \subsubsection{Eigenschap over het kleinste vierkant in een perfect vierkant}
@@ -174,17 +172,15 @@ Hier geef je een bewijs uit het ongerijmde. Je veronderstelt dat je wel iets kan
 
 \subsection{Perfecte kubussen}
 
-In de wiskunde veralgemenen we graag onze resultaten naar alle dimensies. In de les van de perfecte vierkanten hebben we steeds in een vlak gewerkt. Daarbinnen hebben we dan in een vierkant gewerkt. Dit is het tweedimensionale geval. Er bestaat dus een simpeler \'e\'endimensionale geval. Hier wordt dan op een rechte een interval genomen.% Dit interval moet dan gevuld worden met allemaal intervallen met verschillende natuurlijke lengtes.
+In de wiskunde veralgemenen we graag onze resultaten naar alle dimensies. In de les van de perfecte vierkanten hebben we steeds in een vlak gewerkt. Daarbinnen hebben we dan in een vierkant gewerkt. Dit is het tweedimensionale geval. Er bestaat dus een simpeler \'e\'endimensionale geval. Hier wordt dan op een rechte een lijnstuk genomen.% Dit interval moet dan gevuld worden met allemaal intervallen met verschillende natuurlijke lengtes.
 
-\question{zou ik lijnstuk gebruiken in plaats van interval?}
+\task{Geef zelf een definitie voor een perfect lijnstuk analoog als voor een perfect vierkant.}
 
-\task{Geef zelf een definitie voor een perfect interval analoog als voor een perfect vierkant.}
+\answer[3cm]{Een lijnstuk is een {\bf perfect lijnstuk} als het volledig gevuld wordt met kleinere lijnstukken die allemaal een andere lengte hebben.}
 
-\answer[3cm]{Een interval is een {\bf perfect interval} als het volledig gevuld wordt met kleinere intervallen die allemaal een andere lengte hebben.}
+\ask{Toon aan hoe je een perfect lijnstuk kunt construeren met de kleinere lijnstukken van lengte $1$, $2$ en $3$. Waarom zullen we hier weinig nieuwe wiskunde in ontdekken?}
 
-\ask{Toon aan hoe je een perfect interval kunt construeren met de kleinere intervallen van lengte $1$, $2$ en $3$. Waarom zullen we hier weinig nieuwe wiskunde in ontdekken?}
-
-\answer[3cm]{Plaats de drie lijnstukken achter elkaar. Dit geeft dan een nieuw interval dat aan de voorgaande definitie van perfect interval voldoet. Hadden we de drie intervallen in een andere volgorde geplaatst, dan was de constructie van een perfect interval ook gelukt. Het is steeds mogelijk om perfecte intervallen te vinden zonder te puzzelen, voeg gewoon een nieuw interval met nieuwe lengte toe en we hebben een nieuw perfect interval.}
+\answer[3cm]{Plaats de drie lijnstukken achter elkaar. Dit geeft dan een nieuw interval dat aan de voorgaande definitie van perfect interval voldoet. Hadden we de drie lijnstukken in een andere volgorde geplaatst, dan was de constructie van een perfect lijnstuk ook gelukt. Het is steeds mogelijk om perfecte lijnstukken te vinden zonder te puzzelen, voeg gewoon een nieuw lijnstuk met nieuwe lengte toe en we hebben een nieuw perfect interval.}
 
 Als dan het 1-dimensionale geval weinig uitdagend is, dan is het 3-dimensionale geval het misschien wel. Als we een kubus krijgen, is het dan mogelijk om deze kubus op te splitsen in een eindig aantal kleinere kubussen waarvan er geen twee dezelfde grootte hebben? Het antwoord op deze vraag blijkt neen te zijn!
 

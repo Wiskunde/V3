@@ -39,14 +39,19 @@ Om te berekenen hoe efficiënt een schikking met cirkels is, maken we gebruik van
 	\item \textbf{Vierkante rangschikking}:\\
 	\answer[2cm]{Als je cirkels neemt met straal gelijk aan 1, dan heeft het strakke 'omgeschreven' vierkant in de vierkante betegeling een zijde met lengte 2. De oppervlakte van de cirkel hier is $\pi$, de oppervlakte van het vierkant is 4. (Uiteraard konden we andere afmetingen genomen hebben, maar de verhoudingen blijven steeds hetzelfde.) Er is dus $\frac{\pi}{4}=0,78538...$, of ruim 78\% van het totale vlak bedekt door de cirkels.}
 	\item \textbf{Hexagonale rangschikking}:\\
-	\answer[2cm]{De zeshoek om een cirkel met straal 1 kan worden opgedeeld in twaalf halve gelijkzijdige driehoekjes met een basis met lengte 1 en een hoogte van $\frac{1}{\sqrt{3}}$. De oppervlakte van de zeshoek is dus $12.\frac{1}{2}.1.\frac{1}{\sqrt{3}}=2\sqrt{3}$. De efficiëntie of bedekkingsgraad is dus $\frac{\pi}{\sqrt{12}}=0.90689$.}
+	\answer[2cm]{De zeshoek om een cirkel met straal 1 kan worden opgedeeld in twaalf halve gelijkzijdige driehoekjes met een basis met lengte 1 en een hoogte van $\frac{1}{\sqrt{3}}$. De oppervlakte van de zeshoek is dus $12.\frac{1}{2}.1.\frac{1}{\sqrt{3}}=2\sqrt{3}$. De efficiëntie of bedekkingsgraad is dus $\frac{\pi}{\sqrt{12}}=0.90689$.
+	\begin{figure}[h]
+	\centering
+\includegraphics[height=5cm]{hexagon}
+\caption{Omgeschreven zeshoek van een cirkel met straal 1}
+\end{figure}}
 \end{enumerate}
 
 
 \begin{figure}[h]
   \centering
-  \subfloat[]{\includegraphics[width=0.45\textwidth]{voronoi_sqr}\label{vs}}\qquad
-  \subfloat[]{\includegraphics[width=0.45\textwidth]{voronoi_hex}\label{vh}}
+  \subfloat[]{\includegraphics[height= 4cm]{voronoi_sqr}\label{vs}}\qquad
+  \subfloat[]{\includegraphics[height=4cm]{voronoi_hex}\label{vh}}
   \caption{Vierkante en hexagonale rangschikking met pokerjetons en hun voronoicellen}  
 \end{figure}
 
@@ -138,7 +143,14 @@ Vooraf is het dan misschien handig om eerst enkele formules op te frissen:
 	\item \ask{Hoogte in gelijkzijdige driehoek met zijde $b$:} \answer{$\sqrt{b^2-(\frac{b}{2})^2}$}	
 \end{itemize}
 
-\teacher{Indien de formule voor de regelmatige zeshoek niet gekend is, is het goed dit samen eerst met de leerlingen te bepalen.}
+\teacher{Indien de formule voor de regelmatige zeshoek niet gekend is, is het goed dit samen eerst met de leerlingen te bepalen.
+Dit kan op analoge wijze als bij het bepalen van de oppervlakte zoals we deden bij de hexagonale betegeling, namelijk door de zeshoek te verdelen in 12 driehoekjes. De oppervlakte van zo één driehoekje is $\frac{1}{2}.\frac{z}{2}.(\cos(30°).z)=\frac{z^2\sqrt{3}}{8}$. We vinden dus effectie dat de oppervlakte van de zeshoek $12.\frac{z^2\sqrt{3}}{8}=\frac{3}{2}.z^2.\sqrt{3}$ is.
+\begin{figure}[h]
+\centering
+\includegraphics[height=4cm]{hexagon2}
+\caption{Zeshoek met zijde $z$}
+\end{figure}
+}
 
 In de volgende sectie zullen wij enkele gevallen effectief uitrekenen.
 
@@ -258,7 +270,6 @@ We zullen dus bij elk voorbeeld de oppervlakte van de jetons, de oppervlakte van
 \end{itemize}
 	
 	\item \textbf{Zeshoekig dienblad:}\\
-	\todo{Een oplossing duizend keer makkelijk dan die in het bestand van Jordy, maar wel met dezelfde uikomst. Maar controleer het toch nog maar eens goed.}
 	Om de oppervlakte van de zeshoek te berekenen, willen we graag de straal (= de zijde) van de zeshoek bereken. Deze kunnen we vinden door het berekenen van de lengte van $[AI]$ en $[IH]$. Dit laatste is gewoon de straal van $2 \cm$ %\question{$|IH|=4\cm$ toch, want de straal van een jeton in $2\cm$ en als ik naar de figuur kijk, dan loopt $IH$ van het centrum van één jeton naar het centrum van een andere jeton. Of bekijk ik het fout? OOPS, hier ben ik fout, ik was op de verkeerde figuur aan het kijken... Dus we zullen zeker die figuren nog moeten apart bij elk stukje plaatsen, anders is dit te verwarrend. Het lijkt me wel een goede redenatie als ik het nu opnieuw lees!}
 . $|AI|$ kunnen we vinden als we $I$ loodrecht gaan projecteren op $AB$. $|GI|$ is dan ook de straal en we weten dat in deze driehoek de hoek $G\hat{A}I=60°$. Hieruit halen we dat $|AI|=\frac{|GI|}{\sin(60°)}=2,3094 \cm$ en dus de grootte van de straal is $4,3094 \cm$.
 	\begin{itemize}
@@ -283,7 +294,7 @@ We zullen dus bij elk voorbeeld de oppervlakte van de jetons, de oppervlakte van
 
 
 \begin{itemize}
-	\item 
+	\item[ ] 
 	\begin{itemize}
 	\item Oppervlakte 3 munten= $12\pi\approx 37,70$ cm$^2$
 \end{itemize}
@@ -615,5 +626,5 @@ Aantal / vorm & cirkelvormig & driehoekig & rechthoekig& zeshoekig\\\hline\hline
 \end{table}
 
 
-Zoals we in de overzichtslijst kunnen zien, zijn de rechthoekige dienbladen gemiddeld genomen het efficiëntst. Op de tweede plaats komen de cirkelvormige en de zeshoekige dienbladen. In de realiteit merken we dat men in de restaurants en in de cafés bijna altijd cirkelvormige en rechthoekige dienbladen gebruikt. Waarschijnlijk zullen de uitbaters de compactheden van hun dienbladen niet berekend hebben, maar de fabrikanten van de dienbladen wel. Het is dus ook logisch dat de uitbaters dienbladen gebruiken die het meest efficiënt zijn. De rechthoekige dienbladen hebben inderdaad de grootste efficiëntie. Dit komt echter voornamelijk omdat we gewerkt hebben met lange smalle dienbladen waarbij alle glazen achter elkaar staan. Hadden we echter gewerkt met vierkanten, zouden we waarschijnlijk niet zo een hoge efficiëntie hebben gehad. Zeshoekige dienbladen zal men in de praktijk minder gebruiken, want ondanks dat er wel zeshoekige dienbladen zijn die een hoge compactheid hebben, zijn er ook veel zeshoekige dienbladen die een relatief kleine compactheid hebben. De cirkelvormige dienbladen zijn dan weer beter en misschien wel het best van alle dienbladen. Want ondanks dat zij nooit echt de hoogste compactheid hebben, zijn ze toch redelijk efficiënt te noemen. De waardne van de efficiënties kennen immers geen grote pieken en dalen en blijven gemiddeld genomen rond de 70\% draaien, wat een mooie waarde is. 
+Zoals we in de overzichtslijst kunnen zien, zijn de rechthoekige dienbladen gemiddeld genomen het efficiëntst. Op de tweede plaats komen de cirkelvormige en de zeshoekige dienbladen. In de realiteit merken we dat men in de restaurants en in de cafés bijna altijd cirkelvormige en rechthoekige dienbladen gebruikt. Waarschijnlijk zullen de uitbaters de compactheden van hun dienbladen niet berekend hebben, maar de fabrikanten van de dienbladen wel. Het is dus ook logisch dat de uitbaters dienbladen gebruiken die het meest efficiënt zijn. De rechthoekige dienbladen hebben inderdaad de grootste efficiëntie. Dit komt echter voornamelijk omdat we gewerkt hebben met lange smalle dienbladen waarbij alle glazen achter elkaar staan. Hadden we echter gewerkt met vierkanten, zouden we waarschijnlijk niet zo een hoge efficiëntie hebben gehad. Zeshoekige dienbladen zal men in de praktijk minder gebruiken, want ondanks dat er wel zeshoekige dienbladen zijn die een hoge compactheid hebben, zijn er ook veel zeshoekige dienbladen die een relatief kleine compactheid hebben. De cirkelvormige dienbladen zijn dan weer beter en misschien wel het best van alle dienbladen. Want ondanks dat zij nooit echt de hoogste compactheid hebben, zijn ze toch redelijk efficiënt te noemen. De waarden van de efficiënties kennen immers geen grote pieken en dalen en blijven gemiddeld genomen rond de 70\% draaien, wat een mooie waarde is. 
 Onze laatste vaststelling is dat de driehoekige dienbladen nooit een grote efficiëntie hebben met het logische gevolg dat we dus ook zo goed als geen driehoekige dienbladen tegenkomen in de dagelijkse wereld. 

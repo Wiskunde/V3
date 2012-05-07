@@ -73,6 +73,7 @@ Als je kijkt naar de antwoorden die je in de tabel gevonden hebt, zijn dat eigen
 \[v(n)=1^2 + 2^2 + \cdots + n^2.\]
 
 \ask{Wat is het nadeel van deze formule als jij bijvoorbeeld het aantal kogels in een stapel van honderd lagen wil bepalen?}
+
 \answer{Om het aantal kogels in een stapel van honderd lagen te bepalen moet je dus ook de eerste honderd kwadraten bij elkaar optellen. Dit is wel te doen, maar een nadeel van dit algoritme is dat de hoeveelheid werk afhangt van de hoogte van de stapel. Voor duizend lagen is het minstens tienmaal zoveel werk als voor honderd.} 
 
 We zullen daarom nu een formule afleiden, waarmee je de som van de eerste $n$ kwadraten direct kunt uitrekenen. Het rekenwerk in een formule is vrijwel onafhankelijk van de hoogte van de piramide. Dat is het verschil met het algoritme waarin de kwadraten worden opgeteld. 
@@ -80,6 +81,7 @@ We zullen daarom nu een formule afleiden, waarmee je de som van de eerste $n$ kw
 Als we het aantal kogels bij een piramide met $n$ lagen voorstellen door $v(n)$. Dan is $v(1)=1$, $v(2) = 5$ en $v(n)= 1^2 + 2^2+ \cdots +(n-1)^2 + n^2 $. 
 
 \ask{Wat merk je op als je verschillen tussen twee opeenvolgende $v(i)$'s bekijkt?}
+
 \answer{We merken op dat de verschillen tussen twee opeenvolgende $v(i)$'s steeds een kwadraat is, namelijk $v(n)-v(n-1)=n^2$.}
 We willen proberen om nu een eenvoudigere formule te vinden voor $v(n)$, een functie die afhangt van $n$, waarbij we dus ook rekening houden met bovenstaande opmerking. Omdat er in de formule 
 \[v(n) = 1^2 + 2^2+ \cdots +(n-1)^2 + n^2 \]
@@ -94,6 +96,7 @@ n^2&=v(n) - v(n-1)=(an^2+bn+c) - (a(n-1)^2+b(n-1)+c)\\
 \end{align*}
 
 \ask{Is het mogelijk om hieruit een formule voor $v(n)$ te vinden? Waarom wel/niet?}
+
 \answer{
 Je ziet dat helaas de term $an^2$ wegvalt. Er blijft geen kwadratische term over, dus we krijgen het zo nooit voor elkaar om voor elke $n$ waarde $n^2$ uit te komen
 In het rechterlid staat iets lineair, in het linkerlid iets kwadratisch. We kunnen nooit $a, b$ en $c$ vinden die dit in orde maken.We zien hier ook de volgende eigenschap van rijen opduiken: De verschilrij van een kwadratische rij is een lineaire rij.}
@@ -103,6 +106,7 @@ Aangezien dit niet werkt, is een volgend idee om voor $v(n)$ een derdegraadsfunc
 Dan valt waarschijnlijk de derdegraadsterm weer weg, maar misschien hou je iets kwadratisch over. Er is nog een ander reden waarom dit niet zo'n vreemd idee is. Het aantal kanonskogels in piramide heeft iets te maken met zijn inhoud. Inhoud is iets driedimensionaal met zoiets als de lengte, breedte en hoogte, die telkens van de orde $n$ zijn, dus zal het aantal waarschijnlijk iets met de derde macht van $n$ te maken hebben. 
 
 \task{Ga nu zelf na op analoge wijze dat deze aanpak inderdaad goed blijkt te werken en probeer via een stelsel de juiste waarden voor $a,b$ en $c$ te vinden.}
+
 \answer{
 \begin{align*}
 n^2&=v(n)-v(n-1)=(an^3+bn^2+cn+d) -(a(n-1)^3+b(n-1)^2+c(n-1)+d)\\
@@ -132,16 +136,14 @@ Meestal wordt de formule geschreven als \[\sum_{i=1}^{n}i^2=\frac{n(n+1)(2n+1)}{
 
 \task{ Reken dit even uit om te zien dat dit inderdaad overeenkomt met de formule die wij reeds vonden.}
 
-
+\begin{opm}
 Eén merkwaardig aspect van deze formule is dat er breuken in staan, terwijl het eindantwoord een aantal is en dus altijd een natuurlijk getal moet zijn. 
-\todo{Ik vind het moeilijk om hier een vraag of opdracht van te maken, omdat dit wel niet zo makkelijk is om als 16jarige dit op te lossen. Anders gewoon dit zoals ervoor als opmerking schrijven.}
-
 Dat dit toch altijd goed uitkomt, ondanks de breuken, kun je zien door de formule te schrijven zoals in de vorige opmerking, namelijk $v(n)=\frac{n(n+1)(2n+1)}{6}$.\\ 
 Deze vorm zal het ons eenvoudiger maken om te controleren dat de formule effectief een geheel getal is. We willen aantonen dat $n(n+1)(2n+1)$ deelbaar is door 6, of dus deelbaar is door 2 en door 3.\\
 Dat $n(n+1)(2n+1)$ deelbaar is door 2 volgt uit het feit dat elk getal $n$ even is, of anders is $n+1$ het wel. Dit betekent dat $n(n+1)$ altijd deelbaar is door 2. 
 Als je nu nog kan aantonen dat $n(n+1)(2n+1)$ altijd deelbaar is door 3, dan weten we dat de formule steeds te schrijven is als een geheel getal.
 Stel dat $n$ en $n+1$ niet deelbaar zijn door 3, waarbij de resten bij deling door 3 steeds 1 en 2 moeten zijn. Aangezien $2n+1=n+(n+1)$ geeft dit dus 3 (dus 0) als rest bij deling door 3. Hieruit volgt dat $v(n)$ weldegelijk steeds een natuurlijk getal geeft. 
-
+\end{opm}
 
 \subsubsection{Het aantal kanonskogels bij een piramide met driehoekig grondvlak}
 
@@ -438,6 +440,5 @@ Een eerste punt dat naar voor komt als je de evolutie van het bewijs van Kepler 
 Of toch niet? Want doordat Hales dit probleem met de computer bewezen heeft, laaide opnieuw de discussie op over de rol van de computer in bewijsvoeringen. De ene wiskundige vindt het goed dat er computers gebruikt worden, maar de andere denkt dat we op die manier te veel gehecht gaan geraken aan technologische hulpmiddelen, waardoor wiskundigen geen bewijzen meer zullen kunnen opstellen op de traditionele manuele manier. 
 
 \ask{Wat vinden jullie van een bewijs met de computer?}
-\question{Is deze vraag misschien te moeilijk voor kinderen van het middelbaar??}
 
 Ondanks het bestaan van computers en alsmaar meer kennis blijven er echter nog veel problemen onopgelost. Er zijn nog veel nieuwe interessante dingen te ontdekken en uitdagingen aan te gaan. Daardoor blijft de wiskunde nog zeer actueel en levendig.

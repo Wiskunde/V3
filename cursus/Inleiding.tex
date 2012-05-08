@@ -6,9 +6,13 @@ Als introductie op deze lessenreeks over het vullen van vlakken en volumes, zull
   \centering
   \subfloat[]{\includegraphics[height=4.8cm]{tess5}}
   \subfloat[]{\includegraphics[height=4.8cm]{escher2}}
-  \subfloat[]{\includegraphics[height=4.8cm]{tess104}}\\
-\end{figure}\\
-Op deze drie afbeeldingen zien we vlakvullingen van Escher. Hier zullen we later nog op ingaan.\\
+  \subfloat[]{\includegraphics[height=4.8cm]{tess104}}
+  \caption{Vlakvullingen van Escher.}
+  \label{fig:vlakv_escher}
+\end{figure}
+
+
+In Figuur \ref{fig:vlakv_escher} zien we een aantal vlakvullingen van Escher. Hier zullen we later nog op ingaan.\\
 We zullen nu zelf op zoek gaan naar figuren om een vlak te vullen.
 
 \ask{Welke eenvoudige meetkundige vlakke figuren kennen jullie?}
@@ -70,6 +74,8 @@ We zullen nu onze bevindingen wiskundig correct proberen te formuleren en bewijz
 
 \teacher{Bewijs: De som van de binnenhoeken van een $n$-hoek is $180\degree(n-2)$. Omdat een regelmatige $n$-hoek $n$ hoeken heeft is dus de grootte van \'{e}\'{e}n binnenhoek gelijk aan $\frac{180\degree(n-2)}{n} = 180\degree(1-\frac{2}{n})$. Als we $r$ regelmatige $n$-hoeken plaatsen op \'{e}\'{e}n punt, zodanig dat ze niet overlappen en geen gaten laten, dan moet de som van alle binnenhoeken gelijk zijn aan $360\degree$.\\We krijgen dus de volgende identiteit: $$r\cdot 180\degree(1-\frac{2}{n}) = 360\degree \;.$$ Dit kan vereenvoudigd worden tot $$n = \frac{2r}{r-2}\;.$$ Omdat $n$, het aantal hoekpunten van de regelmatige veelhoek, zeker positief moet zijn, volgt alvast dat $r\geq 3$. Omdat de veelhoek met het kleinste aantal hoekpunten de driehoek is, hebben we $n\geq 3$ en volgt er dus dat $r\leq 6$. Vullen we nu $r = 3, 4, 5 \mbox{ en } 6$ in, dan krijgen we $n=6,4,\frac{10}{3} \mbox{ en } 3$. Het nummer $n$ is een natuurlijk getal, dus $n= 6, 4 \mbox{ en } 3$ zijn mogelijk. Ofwel, enkel regelmatige zeshoeken, regelmatige vierhoeken of regelmatige driehoeken kunnen een oneindig groot vlak compleet opvullen.}
 
+\teacher{
+De verschillende mogelijke reguliere betegelingen staan in Figuur \ref{fig:reguliere_betegelingen}. Steeds is \'{e}\'{e}n regelmatig veelvlak de sjabloon. Deze sjabloon wordt dan over het ganse vlak herhaald na verschuiven of roteren.
 \begin{figure}[ht]
   \centering
   \subfloat[Regelmatige driehoeken]{\input{figuren/fig_reguliere_betegeling_met_driehoeken.tex}}
@@ -78,8 +84,7 @@ We zullen nu onze bevindingen wiskundig correct proberen te formuleren en bewijz
   \caption{De drie mogelijke reguliere betegelingen}
   \label{fig:reguliere_betegelingen}
 \end{figure}
-
-De verschillende mogelijke reguliere betegelingen staan in bovenstaande Figuur \ref{fig:reguliere_betegelingen}. Steeds is \'{e}\'{e}n regelmatig veelvlak de sjabloon. Deze sjabloon wordt dan over het ganse vlak herhaald na verschuiven of roteren.
+}
 
 \subsection{Vullen van een vlak of ruimte met een welbepaalde vorm}
 Anderzijds is het nu ook mogelijk om te proberen een gegeven vlak met een welbepaalde vorm te vullen met identieke figuren. We kunnen bijvoorbeeld een rechthoek met een bepaalde grootte vullen met vierkantjes of rechthoekjes of $\ldots$ Laat ons even nadenken over de volgende vragen.
@@ -144,7 +149,7 @@ Maurits Cornelis Escher werd in 1898 geboren te Leeuwarden en stierf in 1972. Hi
   \label{fig:driehoekenparadox}
 \end{figure}
 
-\ask{Wat is er in Figuur \ref{fig:driehoekenparadox} aan de hand?}
+\ask{Hoe komt het dat er door het verplaatsen van de figuren in Figuur \ref{fig:driehoekenparadox} een gat ontstaat?}
 
 \answer[2cm]{Bekijk de oppervlaktes van de rode driehoek, de blauwe driehoek en de grote driehoek. Deze laatste is eigenlijk geen driehoek, want als je kijkt naar de verhoudingen van basis en hoogte van de kleine driehoeken, zie je dat er een knik zit in de zogezegde schuine zijde van de grote driehoek. Zie ook \cite{18}.}
 

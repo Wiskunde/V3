@@ -28,9 +28,7 @@ Vierkant: &&&&&& \\
 \caption{Aantal knikkers voor verschillende piramides met $n=1,...,6$ lagen}
 \end{table}
 
-
-
-\answer{Het is nu de bedoeling dat de leerlingen zelf de formule gaan zoeken en vinden door dit uit te testen voor verschillende vormen van grondvlakken en voor verschillende lagen ($n = 1, 2, ... , 6 , ... , 100$). Hiervoor kunnen ze dus gebruik maken van knikkers, waarbij je best ook zorgt voor een ruwe ondergrond of een soort omkadering voor het grondvlak. Ook andere bolvormige voorwerpen kunnen gebruikt worden.
+\teacher{Het is nu de bedoeling dat de leerlingen zelf de formule gaan zoeken en vinden door dit uit te testen voor verschillende vormen van grondvlakken en voor verschillende lagen ($n = 1, 2, ... , 6 , ... , 100$). Hiervoor kunnen ze dus gebruik maken van knikkers, waarbij je best ook zorgt voor een ruwe ondergrond of een soort omkadering voor het grondvlak. Ook andere bolvormige voorwerpen kunnen gebruikt worden.
 De leerlingen zullen algauw gevonden hebben hoeveel knikkers ze moeten gebruiken voor de verschillende rijen en de tabel als volgt hebben ingevuld.
 \begin{table}
 \centering
@@ -60,8 +58,7 @@ Opmerking: piramides van één verdiep hoog worden niet meegerekend.
 \end{itemize}
 }
 
-\teacher{
-Na deze testfase is het de bedoeling dat we dit klassikaal overlopen en de antwoorden verklaren.}
+\teacher{Na deze testfase is het de bedoeling dat we dit klassikaal overlopen en de antwoorden verklaren.}
 
 
 \subsubsection{Het aantal kanonskogels bij een piramide met vierkant grondvlak}
@@ -74,7 +71,7 @@ Als je kijkt naar de antwoorden die je in de tabel gevonden hebt, zijn dat eigen
 
 \ask{Wat is het nadeel van deze formule als jij bijvoorbeeld het aantal kogels in een stapel van honderd lagen wil bepalen?}
 
-\answer{Om het aantal kogels in een stapel van honderd lagen te bepalen moet je dus ook de eerste honderd kwadraten bij elkaar optellen. Dit is wel te doen, maar een nadeel van dit algoritme is dat de hoeveelheid werk afhangt van de hoogte van de stapel. Voor duizend lagen is het minstens tienmaal zoveel werk als voor honderd.} 
+\answer[2cm]{Om het aantal kogels in een stapel van honderd lagen te bepalen moet je dus ook de eerste honderd kwadraten bij elkaar optellen. Dit is wel te doen, maar een nadeel van dit algoritme is dat de hoeveelheid werk afhangt van de hoogte van de stapel. Voor duizend lagen is het minstens tienmaal zoveel werk als voor honderd.} 
 
 We zullen daarom nu een formule afleiden, waarmee je de som van de eerste $n$ kwadraten direct kunt uitrekenen. Het rekenwerk in een formule is vrijwel onafhankelijk van de hoogte van de piramide. Dat is het verschil met het algoritme waarin de kwadraten worden opgeteld. 
 
@@ -82,7 +79,7 @@ Als we het aantal kogels bij een piramide met $n$ lagen voorstellen door $v(n)$.
 
 \ask{Wat merk je op als je verschillen tussen twee opeenvolgende $v(i)$'s bekijkt?}
 
-\answer{We merken op dat de verschillen tussen twee opeenvolgende $v(i)$'s steeds een kwadraat is, namelijk $v(n)-v(n-1)=n^2$.}
+\answer[1.5cm]{We merken op dat de verschillen tussen twee opeenvolgende $v(i)$'s steeds een kwadraat is, namelijk $v(n)-v(n-1)=n^2$.}
 We willen proberen om nu een eenvoudigere formule te vinden voor $v(n)$, een functie die afhangt van $n$, waarbij we dus ook rekening houden met bovenstaande opmerking. Omdat er in de formule 
 \[v(n) = 1^2 + 2^2+ \cdots +(n-1)^2 + n^2 \]
 enkel kwadraten in voorkomen, kunnen we eens proberen als een kwadratische functie zou kunnen. 
@@ -97,8 +94,7 @@ n^2&=v(n) - v(n-1)=(an^2+bn+c) - (a(n-1)^2+b(n-1)+c)\\
 
 \ask{Is het mogelijk om hieruit een formule voor $v(n)$ te vinden? Waarom wel/niet?}
 
-\answer{
-Je ziet dat helaas de term $an^2$ wegvalt. Er blijft geen kwadratische term over, dus we krijgen het zo nooit voor elkaar om voor elke $n$ waarde $n^2$ uit te komen
+\answer[3cm]{Je ziet dat helaas de term $an^2$ wegvalt. Er blijft geen kwadratische term over, dus we krijgen het zo nooit voor elkaar om voor elke $n$ waarde $n^2$ uit te komen
 In het rechterlid staat iets lineair, in het linkerlid iets kwadratisch. We kunnen nooit $a, b$ en $c$ vinden die dit in orde maken.We zien hier ook de volgende eigenschap van rijen opduiken: De verschilrij van een kwadratische rij is een lineaire rij.}
 
 Aangezien dit niet werkt, is een volgend idee om voor $v(n)$ een derdegraadsfunctie in $n$ te nemen: \[v(n)=an^3+bn^2+cn+d.\]
@@ -107,7 +103,7 @@ Dan valt waarschijnlijk de derdegraadsterm weer weg, maar misschien hou je iets 
 
 \task{Ga nu zelf na op analoge wijze dat deze aanpak inderdaad goed blijkt te werken en probeer via een stelsel de juiste waarden voor $a,b$ en $c$ te vinden.}
 
-\answer{
+\answer[4.5cm]{
 \begin{align*}
 n^2&=v(n)-v(n-1)=(an^3+bn^2+cn+d) -(a(n-1)^3+b(n-1)^2+c(n-1)+d)\\
 &= (an^3+bn^2+cn+d) -[(an^3-3an^2+3an-a)+(bn^2-2bn+b)+(cn-c)+d]\\
@@ -161,12 +157,12 @@ Met deze formule kun je dus eenvoudig uitrekenen voor hoeveel kanonskogels er in
 
 \ask{Hoeveel kanonskogels heb je nodig voor 100 lagen?}
 
-\answer{Voor 100 lagen hebben we deze keer 171700 kanonskogels nodig.}
+\answer[1.5cm]{Voor 100 lagen hebben we deze keer 171700 kanonskogels nodig.}
 
 \task{
 Ga op analoge wijze als bij de piramide met vierkant grondvlak tewerk en ga na dat dit effectief de juiste formule is.}
 
-\answer{
+\answer[5cm]{
 Als we het aantal kogels bij een driehoekige piramide met $n$ lagen voorstellen door $d(n)$. Dan is $d(1)=1$, $d(2) = 4$ en $d(n)= \frac{1.2}{2} + \frac{2.3}{2}+\frac{3.4}{2} + \cdots + \frac{n(n+1)}{2}$. We merken op dat de verschillen tussen twee opeenvolgende $v(i)$'s steeds een driehoeksgetal is, namelijk $d(n)-d(n-1)=\frac{n(n+1)}{2}$.
 We willen proberen om nu een eenvoudigere formule te vinden voor $d(n)$, een functie die afhangt van $n$. Omdat er in de formule
 enkel kwadraten in voorkomen, kunnen we eens proberen als een kwadratische functie zou kunnen. Analoog als bij het geval met de vierkante piramide zie je dat de term $an^2$ wegvalt. Er blijft geen kwadratische term over.\\
@@ -198,22 +194,24 @@ We weten nu hoeveel kogels er nodig zijn om een \textquoteleft driehoekige' of \
 
 \ask{Is het nu mogelijk om van een driehoekige stapel van een bepaalde hoogte een vierkante piramide te maken, zonder dat je kogels overhoudt?} 
 
+\answer[1cm]{}
+
 Als je kijkt naar het lijstje, dat we vroeger reeds maakten, met de aantallen die nodig zijn voor een driehoekige, vierkante en zeshoekige piramide, dan zie je dat dit nooit lijkt te kunnen, behalve natuurlijk voor een stapel van één kogel hoog.
 De aantallen in de driehoekige stapel lijken niet voor te komen in de rij van de vierkante piramides. De tabel kun je nog veel groter maken, maar als er nog steeds geen gelijke getallen voorkomen weet je niet zeker of het nooit gebeurt. Misschien gebeurt het namelijk toch een keer voor een heel er grote stapel. Twee Nederlandse wiskundigen (Frits Beukers en Jaap Top) hebben in 1982 bewezen dat het inderdaad nooit gebeurt, maar het bewijs is te moeilijk om er hier op in te gaan.
 
 \ask{Kan je van twee stapels knikkers in driehoekige piramides een nieuwe vierkante piramide maken?}
 
-\answer{Dit is inderdaad mogelijk.}
+\answer[1cm]{Dit is inderdaad mogelijk.}
 
 \ask{Kan je hiervan een voorbeeld geven?}
 
-\answer{Een driehoekige piramide van 3 lagen en een van 4 lagen bestaan samen bijvoorbeeld uit $10+20=30$ kogels, precies genoeg voor een vierkante piramide van 4 lagen hoog.}
+\answer[1.5cm]{Een driehoekige piramide van 3 lagen en een van 4 lagen bestaan samen bijvoorbeeld uit $10+20=30$ kogels, precies genoeg voor een vierkante piramide van 4 lagen hoog.}
 
 Aan de hand van de verkregen formules kan je aantonen dat dit altijd waar is.
 
 \task{Als je het aantal kogels in een vierkante stapel nog steeds stelt als $v(n)= \frac{1}{3}n^3+\frac{1}{2}n^2+\frac{1}{6}n $ en in een driehoekige stapel als $d(n) =\frac{1}{6}n^3 + \frac{1}{2}n^2+\frac{1}{3}n$, controleer dan dat effectief \[d(n-1)-d(n)=v(n).\]}
 
-\answer{
+\answer[3.5cm]{
 Als we dit met de formules uitschrijven, krijgen we inderdaad
 \begin{align*} 
 d(n-1) + d(n)&= \frac{1}{6}(n-1)^3 + \frac{1}{2}(n-1)^2+\frac{1}{3}(n-1)+ \frac{1}{6}n^3 + \frac{1}{2}n^2+\frac{1}{3}n\\
@@ -227,11 +225,11 @@ Ten slotte kunnen we ook onderstaande vraag positief beantwoorden.
 
 \task{Geef een voorbeeld van zo een combinatie.}
 
-\answer{Een vierkante piramide van 5 lagen en een driehoekige piramide van 4 lagen bevatten samen 65 kogels. Een vierkante piramide van 5 lagen en een driehoekige piramide van 3 lagen bevatten samen ook 65 kogels.}  
+\answer[1.5cm]{Een vierkante piramide van 5 lagen en een driehoekige piramide van 4 lagen bevatten samen 65 kogels. Een vierkante piramide van 5 lagen en een driehoekige piramide van 3 lagen bevatten samen ook 65 kogels.}  
 
 \task{Hier zit een algemeen patroon achter. Schrijf deze formule op en probeer deze te bewijzen a.d.h.v. de formule uit vorige opdracht.}
 
-\answer{Uit $v(n)=d(n-1)+d(n)$ halen we dat 
+\answer[1.5cm]{Uit $v(n)=d(n-1)+d(n)$ halen we dat 
 \[ v(n)+d(n+1)=d(n-1) + d(n) + d(n+1) = d(n-1) + v(n+1).\]}
 
 %Snifsnif, dit moet weg :s ...
@@ -299,15 +297,15 @@ Ten slotte kunnen we ook onderstaande vraag positief beantwoorden.
 \subsubsection{Het ontstaan}
 \subsubsection*{Thomas Harriot}
 
-\begin{wrapfigure}[7]{r}{3cm}
+Je kon al lezen dat Thomas Harriot (1560-1621) door Sir Walter Raleigh (1554-1618) aan het probleem van de piramidestapels werd gezet. Hij was in die tijd als amateur-astronoom bezig met het waarnemen van zonnevlekken en kometen, maar daarnaast was hij ook een bekende wiskundige en dankzij de kennis die hij als wiskundige had, kon hij het probleem van Raleigh in een wip oplossen. Maar nadat hij de oplossing geleverd had, bleef het kanonskogelprobleem in zijn hoofd rondspoken en hij raakte over dit onderwerp in correspondentie met Kepler.
+
+\begin{wrapfigure}[8]{r}{3cm}
   \vspace*{-1cm}
   \begin{center}
   \includegraphics[width=3cm]{harriot}\\
   Thomas Harriot
   \end{center}
 \end{wrapfigure}
-
-Je kon al lezen dat Thomas Harriot (1560-1621) door Sir Walter Raleigh (1554-1618) aan het probleem van de piramidestapels werd gezet. Hij was in die tijd als amateur-astronoom bezig met het waarnemen van zonnevlekken en kometen, maar daarnaast was hij ook een bekende wiskundige en dankzij de kennis die hij als wiskundige had, kon hij het probleem van Raleigh in een wip oplossen. Maar nadat hij de oplossing geleverd had, bleef het kanonskogelprobleem in zijn hoofd rondspoken en hij raakte over dit onderwerp in correspondentie met Kepler.
 
 Kepler, die we straks verder zullen bespreken, had al een tijdje een levendige correspondentie met Harriot over het lichtbrekingsverschijnsel. Hij was dan ook niet verbaasd toen hij een briefje kreeg van Harriot. Maar toen hij las dat het over het stapelen van bolvormige voorwerpen ging, werd zijn nieuwsgierigheid aangewakkerd. Niet veel later kwam plots de gedachte bij hem op, om aan de hand van bolstapelingen de structuur van sneeuwkristallen te verklaren. En zo verhuisde het bolstapelprobleem definitief van de gedachten van Thomas Harriot naar die van Johannes Kepler.
 
@@ -339,13 +337,13 @@ Het is niet toevallig dat bij de dichtste bolstapeling die Kepler beschrijft, el
 
 \ask{Wat wordt bedoeld met 'kissing numbers'?}
 
-\answer{Een 'kissing number' is gedefinieerd als het aantal niet-overlappende eenheidssferen dat aan een gegeven eenheidssfeer raakt.}
+\answer[1.5cm]{Een 'kissing number' is gedefinieerd als het aantal niet-overlappende eenheidssferen dat aan een gegeven eenheidssfeer raakt.}
 
 Andere namen hiervoor zijn bijvoorbeeld 'Newton number' of 'contact number'
 
 \ask{Wat is het 'Kissing number' in één dimensie? En in twee dimensies? Teken de situatie}
 
-\answer{In één dimensie is het 'kissing number' 2, in twee dimensies 6.}
+\answer[3cm]{In één dimensie is het 'kissing number' 2, in twee dimensies 6.}
 \begin{figure}[h]
   \centering
   \subfloat[]{\includegraphics[width= 4 cm]{kissing1}}\qquad

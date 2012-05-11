@@ -1,0 +1,87 @@
+\begin{frame}
+  \frametitle{Vullen van vierkanten}
+  \framesubtitle{Resultaten: vullen van een vierkant met kleinere vierkanten}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \input{afbeeldingen/vierkant10_3x3}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+    \begin{itemize}
+      \item Voorbeeld:
+      \begin{align*}
+        10^2  &= (3\cdot 3 + 1)^2\\
+        \Leftrightarrow 100   &= (3\cdot 3)^2 + 2\cdot 3\cdot 3\cdot 1 + 1^2\\
+        \Leftrightarrow 100   &= 81 + 19
+      \end{align*}
+      \pause
+      \item Algemeen:
+      \begin{align*}
+         a^2  &= (q\cdot d + r)^2\\
+        \Leftrightarrow a^2   &= (q\cdot d)^2 + 2\cdot q\cdot d\cdot r + r^2
+      \end{align*}
+      {\tiny met $a$ de zijde van het grote vierkante, $d$ de zijde van de kleine vierkanten, $q$ het aantal keer we $d$ in $a$ krijgen en $r$ de rest die dan nog overblijft}
+    \end{itemize}
+    \end{column}
+  \end{columns}  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Vullen van vierkanten}
+  \framesubtitle{Alles over perfecte vierkanten}
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      \only<1-3>{\input{afbeeldingen/fig_pv21}}
+      \only<4>{\input{afbeeldingen/fig_pv21_fractaal}}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+    {\scriptsize
+      \begin{itemize}
+        \item Een {\bf perfect vierkant} is een vierkant dat opgedeeld kan worden in een eindig aantal kleinere vierkanten waarvan geen twee dezelfde grootte hebben.
+        \item De {\bf orde} van een perfect vierkant is het aantal kleinere vierkanten dat het bevat.
+        \pause
+        \item Het vierkant heeft $8$ symmetriën, de dihedrale groep $D4$, dus één oplossing leidt tot 8 isomorfe oplossingen.
+          \begin{center}
+            \includegraphics[width=0.8\textwidth]{dih4}
+          \end{center}
+        \pause
+        \item Door het perfecte vierkant te hertekenen binnen het kleinste vierkantje construeren we nieuwe perfecte vierkanten.
+        \item Een {\bf fractaal} is een meetkundige figuur die zelfgelijkend is. 
+      \end{itemize}
+    }
+    \end{column}
+  \end{columns}  
+\end{frame}
+
+\begin{frame}
+  \frametitle{Vullen van vierkanten}
+  \framesubtitle{Eigenschap kleinste vierkantje in een perfect vierkant}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      %\only<1>{\input{afbeeldingen/pv_kleinstevierkant}}
+      \input{afbeeldingen/pv_kleinstevierkant}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+    {\scriptsize
+      \begin{stelling}
+      Het kleinste vierkantje in een perfect vierkant kan nooit aan de rand liggen.
+      \end{stelling}
+      {\tiny
+        \begin{list}{}{\leftmargin=0pt}
+          \pause
+          \item Uit het ongerijmde.
+          \item Veronderstel dat het kleinste vierkantje in een perfect vierkant op de rand ligt.
+          \pause
+          \item Hoeveel vierkantjes liggen dan nog rond het kleinste vierkantje?
+          \item Wat weten we over de vierkantjes die rond het kleinste vierkantje liggen?
+          \pause
+          \item Dus één van de vierkantjes komt over de rand!
+          \pause
+          \item Dus we hebben geen perfect vierkant, een strijdigheid!
+          \item Dus het kleinste vierkantje kan niet op de rand liggen!
+        \end{list}
+      }
+    }
+    \end{column}
+  \end{columns}  
+\end{frame}
+

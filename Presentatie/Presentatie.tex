@@ -22,7 +22,15 @@
 \hypersetup{bookmarksnumbered} %voor de bookmarks in pdf de nrs zetten ook
 \hypersetup{pdfborder=0.1pt} %de rand rond de links smaller maken
 \hypersetup{linktocpage=true} %titels of pgnrs omkaderen in toc
-\hypersetup{colorlinks=true} %kaders rond links of tekst in kleur, kaders gaan weg bij afprinten, kleur blijft
+%\hypersetup{colorlinks=true} %kaders rond links of tekst in kleur, kaders gaan weg bij afprinten, kleur blijft
+
+
+%\usepackage{float} % Om figuren exact op hun plaats te hebben
+%\usepackage{subfig}	
+%\usepackage{wrapfig}
+%\usepackage{graphicx}
+%\usepackage{graphics}
+%\usepackage{latexsym}
 
 \swapnumbers\newtheorem{stelling}{Stelling}[section]
 \newtheorem{hulpstelling}[stelling]{Hulpstelling}
@@ -50,7 +58,7 @@
 \setbeamercolor{title in head/foot}{fg=white}
 \setbeamercolor{section in head/foot}{fg=white}
 \setbeamercolor{subsection in head/foot}{fg=white}
-\setbeamertemplate{headline}{}
+%\setbeamertemplate{headline}{}
 \setbeamertemplate{navigation symbols}{}
 
 \definecolor{darkblue}{rgb}{0,0,0.6}
@@ -303,9 +311,6 @@
 
 \input{les4_2D}
 
-\begin{frame}{Didactische wenken}
-\end{frame}
-
 
 \subsection{Les 6: Het dienbladenprobleem: berekenen, bewijzen en besluiten}
 \begin{frame}
@@ -324,17 +329,47 @@
 
 \begin{frame}{Lesdoelstellingen}
 \begin{itemize}
-\item De leerlingen beseffen dat men uit experimenteren belangrijke informatie kan halen en beseffen ook het belang van bewijzen.
-\item De leerlingen kunnen aan de hand van een stappenplan het bewijs zelf verwerven.
-\item De leerlingen kunnen de effici\"{e}ntie van ingewikkelde configuraties berekenen.
-\item De leerlingen kunnen vorige berekeningen gebruiken om ingewikkelde configuraties te vereenvoudigen.
-\item De leerlingen kunnen uit experimentele resultaten conclusies trekken over de meest effici\"{e}nte dienbladen, en kunnen ook (mogelijke) verklaringen geven.
+\item De leerlingen beseffen dat men uit experimenteren belangrijke informatie kan halen en \textbf{beseffen ook het belang van bewijzen}.
+\item De leerlingen kunnen aan de hand van een \textbf{stappenplan} het bewijs zelf verwerven.
+\item De leerlingen kunnen de \textbf{effici\"{e}ntie} van ingewikkelde configuraties berekenen.
+\item De leerlingen kunnen vorige berekeningen gebruiken om ingewikkelde configuraties te \textbf{vereenvoudigen}.
+\item De leerlingen kunnen uit experimentele resultaten \textbf{conclusies} trekken over de meest effici\"{e}nte dienbladen, en kunnen ook (mogelijke) verklaringen geven.
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Didactische wenken}
+
+\begin{enumerate}
+	\item Onderwijsleergesprek
+	\begin{itemize}
+	\item Doel van deze les en de opdracht uitleggen
+\end{itemize}
+	
+	\item In groepjes werken
+	\begin{itemize}
+	\item A.d.h.v. een bundeltje met vragen en opdrachten iets bewijzen waarbij ze het stappenplan kunnen volgen
+	\item M.b.v. een (zelfgemaakte) figuur het bewijs visueel maken
+	\item Experimenteren, tekenen en berekenen
+	% Leerkracht helpt waar nodig en loopt rond!!
+\end{itemize}
+
+  \item Onderwijsleergesprek
+  \begin{itemize}
+  \item Moeilijkheden en problemen in het bewijs samen overlopen
+  \item Eventueel nog enkele ingewikkeldere configuraties berekenen
+	\item Resultaten in de tabel samenleggen.
+\end{itemize}
+
+  \item Klasgesprek
+  \begin{itemize}
+	  \item Opmerkelijke zaken bespreken
+	  \item Conclusies trekken
+  \end{itemize}
+\end{enumerate}
 \end{frame}
 
+
+%\input{les6_2D}
 
 \subsection{Les 7: Kanonskogels stapelen}
 \begin{frame}

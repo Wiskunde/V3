@@ -18,7 +18,11 @@
 \usepackage{translator}
 \usepackage{pgf,tikz}
 \usetikzlibrary{arrows}
-
+\usepackage{float} % Om figuren exact op hun plaats te hebben
+\usepackage{wrapfig}
+\usepackage{graphics}
+\usepackage{latexsym}
+%\usepackage{subfig}
 \usepackage{hyperref} 
 \hypersetup{setpagesize=false}
 \hypersetup{bookmarksopen}
@@ -62,7 +66,6 @@
 \author[Lien Lambert \& Pieter Pareit \& Jordy Vanpoucke ]{Lien Lambert \\Pieter Pareit \\Jordy Vanpoucke}
 \date{\tiny 15 mei 2012}
 \begin{document}
-
 \frame{
 %\begin{figure}[t]
 %	\flushleft
@@ -255,17 +258,37 @@
 
 \begin{frame}{Lesdoelstellingen}
 \begin{itemize}
-\item De leerlingen beseffen dat je een tafel niet volledig kan bedekken met cirkels en dat we daarom op zoek kunnen gaan naar de optimale configuratie, namelijk het hexagonaal rooster.
-\item De leerlingen weten wat een voronoicel is en kunnen hiermee de effici\"{e}ntie van een rooster berekenen.
-\item De leerlingen kunnen de oppervlakte van een driehoek, rechthoek, zeshoek en cirkel berekenen.
-\item De leerlingen kunnen a.d.h.v. een geogebra-applet of door te experimenteren met jetons of munten de effici\"{e}ntie van dienbladen bepalen.
+\item De leerlingen beseffen dat je een tafel \textbf{niet volledig} kan \textbf{bedekken met cirkels} en dat we daarom op zoek kunnen gaan naar de \textbf{optimale configuratie}, namelijk het hexagonaal rooster.
+%\item De leerlingen weten wat een \textbf{voronoicel} is en kunnen hiermee de \textbf{effici\"{e}ntie} van een rooster berekenen.
+%\item De leerlingen kunnen de \textbf{oppervlakte} van een driehoek, rechthoek, zeshoek en cirkel berekenen.
+\item De leerlingen kunnen a.d.h.v. een geogebra-applet of door te experimenteren met jetons of munten de \textbf{effici\"{e}ntie van dienbladen bepalen}.
 \item De leerlingen kunnen de effici\"{e}ntie voor eenvoudige voorbeelden uitrekenen.
-\item De leerlingen ontwikkelen meetkundig inzicht.
+\item De leerlingen kunnen in groepjes \textbf{samenwerken}.
+\item De leerlingen ontwikkelen \textbf{meetkundig inzicht}.
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Didactische wenken}
+
+\begin{enumerate}
+	\item Onderwijsleergesprek
+	\begin{itemize}
+	\item A.d.h.v. een bundeltje met vragen en opdrachten
+\end{itemize}
+	
+	\item In groepjes werken en experimenteren	
+	\begin{itemize}
+	\item Geogebra-applets
+	\item Jetons of munten en karton
+	\item Effectief berekenen
+\end{itemize}
+\end{enumerate}
 \end{frame}
+
+\input{les4_2D}
+
+
+
 
 \subsection{Les 5: Het dienbladenprobleem: experimenteren en effectief berekenen}
 \begin{frame}
@@ -274,7 +297,7 @@
 \item Les 1: Inleiding
 \item Les 2: Vullen van vierkanten met kleinere vierkanten en zo tot Perfecte Vierkanten komen
 \item Les 3: Puzzelen met vierkanten en rechthoeken om vergelijkingen op te lossen
-\item Les 4: Kennismaking met tweedimensionale stapelproblemen en hiermee experimenteren
+\item Les 4: Kennismaking met tweedimensionale stapelproblemen en het dienbaldenprobleem 
 \item {\color{blue}Les 5: Het dienbladenprobleem: experimenteren en effectief berekenen}
 \item Les 6: Het dienbladenprobleem: berekenen, bewijzen en besluiten
 \item Les 7: Kanonskogels stapelen

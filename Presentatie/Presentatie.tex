@@ -10,7 +10,7 @@
 \usepackage{graphicx}
 \usepackage{amssymb, subfigure}
 \usepackage{amsthm}
-\usepackage{amsmath}
+%\usepackage{amsmath}
 \usepackage[utf8]{inputenc}
 \usepackage[normalem]{ulem}
 \usepackage{color}
@@ -19,6 +19,14 @@
 \usepackage{pgf,tikz}
 \usetikzlibrary{arrows}
 
+\usepackage{hyperref} 
+\hypersetup{setpagesize=false}
+%\hypersetup{bookmarksopen}
+\hypersetup{bookmarksnumbered} %voor de bookmarks in pdf de nrs zetten ook
+\hypersetup{pdfborder=0.1pt} %de rand rond de links smaller maken
+\hypersetup{linktocpage=true} %titels of pgnrs omkaderen in toc
+\hypersetup{colorlinks=true} %kaders rond links of tekst in kleur, kaders gaan weg bij afprinten, kleur blijft
+\usepackage{cleveref}
 
 \swapnumbers\newtheorem{stelling}{Stelling}[section]
 \newtheorem{hulpstelling}[stelling]{Hulpstelling}
@@ -85,6 +93,7 @@
 	    \item Les 4+5+6: Tweedimensionale stapelproblemen en het dienbladenprobleem
 	    \item Les 7+8: Driedimensionale stapelproblemen, het bolstapelprobleem van Kepler
     \end{itemize}
+  \item Wijzigingen aanbrengen
 \end{enumerate}
 \end{frame}
 

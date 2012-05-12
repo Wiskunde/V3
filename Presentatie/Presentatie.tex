@@ -10,23 +10,18 @@
 \usepackage{graphicx}
 \usepackage{amssymb, subfigure}
 \usepackage{amsthm}
-%\usepackage{amsmath}
 \usepackage[utf8,latin1]{inputenc}
 \usepackage[normalem]{ulem}
-\usepackage{color}
 \usepackage{cancel}
-%\usepackage{translator}
 \usepackage{pgf,tikz}
 \usetikzlibrary{arrows}
 
 \usepackage{hyperref} 
 \hypersetup{setpagesize=false}
-%\hypersetup{bookmarksopen}
 \hypersetup{bookmarksnumbered} %voor de bookmarks in pdf de nrs zetten ook
 \hypersetup{pdfborder=0.1pt} %de rand rond de links smaller maken
 \hypersetup{linktocpage=true} %titels of pgnrs omkaderen in toc
 \hypersetup{colorlinks=true} %kaders rond links of tekst in kleur, kaders gaan weg bij afprinten, kleur blijft
-\usepackage{cleveref}
 
 \swapnumbers\newtheorem{stelling}{Stelling}[section]
 \newtheorem{hulpstelling}[stelling]{Hulpstelling}
@@ -49,17 +44,14 @@
 
 \graphicspath{{afbeeldingen/}}
 
-%\usetheme{Copenhagen}
-%\usecolortheme{dolphins}
-%rgb ---> 0.3,0.5,0.7 mooi blauw
+\useoutertheme[hooks]{tree}
 \usetheme{Antibes}
-%\definecolor{mycolor}{RGB}{48,96,102}
-%\definecolor{mycolor2}{RGB}{63,125,133}
-%\setbeamercolor*{palette primary}{use=structure,fg=white,bg=mycolor}
-\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{title in head/foot}{fg=white}
+\setbeamercolor{section in head/foot}{fg=white}
+\setbeamercolor{subsection in head/foot}{fg=white}
+\setbeamertemplate{headline}{}
 
 \definecolor{darkblue}{rgb}{0,0,0.6}
-
 
 \title[Vullen van Vlakken en Volumes]{Vullen van Vlakken en Volumes}
 \author[Lien Lambert \& Pieter Pareit \& Jordy Vanpoucke ]{Lien Lambert \\Pieter Pareit \\Jordy Vanpoucke}

@@ -1,5 +1,10 @@
 \documentclass[12pt]{article}
 
+%------Schakel tussen versie leerkracht/leerling
+\newif\ifleerkracht
+\leerkrachttrue
+%\leerkrachtfalse
+
 \textwidth 16cm \textheight 23cm \evensidemargin 0cm
 \oddsidemargin 0cm \topmargin -2cm
 \parindent 0pt
@@ -85,18 +90,22 @@
 \newcommand{\todo}[1]{\textcolor{red}{\##1\#}}
 \newcommand{\question}[1]{\textcolor{blue}{\##1\#}}
 
-% Wissel tussen versie van leerkracht en versie voor leerlingen
 % gebruik: \teacher{Dit is een notitie voor de leerkracht}
 % eerste parameter is de notitie
+\ifleerkracht
 \newcommand{\teacher}[1]{\textcolor{gray}{\emph{\underline{Opmerking:} #1}}}
-%\newcommand{\teacher}[1]{}
+\else
+\newcommand{\teacher}[1]{}
+\fi
 
-% Wissel tussen versie van leerkracht en versie voor leerling door antwoorden te verbergen
 % gebruik: \answer[2cm]{Dit is een antwoord}
 % tussen vierkante haakjes is optioneel de lengte die voorzien moet worden (default = 0cm),
 % de parameter is het antwoord
+\ifleerkracht
 \newcommand{\answer}[2][0cm]{{\textcolor{gray}{\emph{#2}}}}
-%\newcommand{\answer}[2][0cm]{\vspace*{#1}}
+\else
+\newcommand{\answer}[2][0cm]{\vspace*{#1}}
+\fi
 
 \newcommand{\ask}[1]{\underline{\bf Vraag:} #1}
 \newcommand{\task}[1]{\underline{\bf Opdracht:} #1}
@@ -130,8 +139,11 @@
 
   {\Huge\bf 
   Vullen van Vlakken en Volumes:\\\vspace*{0.2cm}
+  \ifleerkracht
   \Large Cursus Leerkracht
-%  \Large Cursus Leerling
+  \else
+  \Large Cursus Leerling
+  \fi
   }
   
   \baselineskip=12pt
